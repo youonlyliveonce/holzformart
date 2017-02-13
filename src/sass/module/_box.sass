@@ -1,0 +1,93 @@
+
+.Box
+	position: relative
+	background-color: #ffffff
+	+transform(perspective( 1000px ))
+	backface-visibility: hidden
+	+bp(medium)
+		display: inline-block
+		float: left
+	&--right
+		+bp(large)
+			float: right
+	&--single
+		width: +unit(12)
+		+bp(medium)
+			width: +unit(12)
+			padding-bottom: +unit(12)
+		+bp(large)
+			width: +unit(6)
+			padding-bottom: 58.333%
+	&--double
+		width: +unit(12)
+		+bp(medium)
+			width: +unit(12)
+			padding-bottom: +unit(7)
+		+bp(large)
+			width: +unit(6)
+			padding-bottom: +unit(4)
+	&--tiny
+		width: +unit(12)
+		padding-top: +unit(3)
+		+bp(medium)
+			padding-top: 0
+			width: +unit(6)
+			padding-bottom: +unit(6)
+		+bp(large)
+			width: +unit(3)
+			padding-bottom: +unit(3)
+	&-body
+		+bp(medium)
+			position: absolute
+			left: 0
+			right: 0
+			bottom: 0
+			top: 0
+	&-top
+		padding: 20px
+		+bp(medium)
+			padding: 0
+			position: absolute
+			top: 50px
+			left: 50px
+			right: 50px
+		+bp(large)
+			left: 80px
+			right: 80px
+	&-bottom
+		padding: 20px
+		+bp(medium)
+			padding: 0
+			position: absolute
+			bottom: 50px
+			left: 50px
+			right: 50px
+		+bp(large)
+			left: 80px
+			right: 80px
+	&-center
+		padding: 20px
+		+bp(medium)
+			padding: 0
+			position: absolute
+			top: 50%
+			+transform(translateY(-50%))
+			left: 50px
+			right: 30px
+		+bp(large)
+			left: 30px
+			right: 30px
+		+bp(larger)
+			left: 80px
+			right: 30px
+	&-right
+		padding: 20px
+		+bp(medium)
+			padding: 0px
+			position: absolute
+			top: 50%
+			+transform(translateY(-50%))
+			left: 50%
+			right: 30px
+		+bp(large)
+			right: 50px

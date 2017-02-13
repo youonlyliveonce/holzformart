@@ -1,0 +1,22 @@
+html
+  height: 100%
+  box-sizing: border-box
+
+*
+  box-sizing: inherit
+  &::before, &::after
+    box-sizing: inherit
+
+&::selection
+  color: #fff
+  background-color: $color-selection
+  text-shadow: none
+
+body
+  height: 100%
+
+.invisible
+	display: inline
+	width: 0px
+	height: 0px
+	float: left

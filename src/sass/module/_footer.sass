@@ -1,0 +1,24 @@
+.Footer
+  background-color: black
+  &-body
+    @extend .Section-body
+    color: white
+    +fontcopy
+    font-size: 0.8em
+    letter-spacing: 0.1em
+    text-align: center
+    padding-bottom: $gap-size-medium
+    +bp('medium')
+      text-align: left
+      div
+        float: left
+        &:last-child
+          float: right
+    a
+      display: inline-block
+      margin: 1em 0
+      line-height: ms(1)
+      text-transform: uppercase
+      +bp(larger)
+        font-size: 1.1em
+        line-height: 1.8em

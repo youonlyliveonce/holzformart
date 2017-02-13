@@ -1,0 +1,33 @@
+.Navigation
+	.Navigation-bg-close
+	.Button--close
+		span
+	nav(role="navigation")
+		table
+			tr
+				- for(var i=1; i<7; i++)
+					td
+						a(href="/"+BaseVZ+"/?section=fact"+i) #{i}
+			tr
+				- for(var i=7; i<13; i++)
+					td
+						a(href="/"+BaseVZ+"/?section=fact"+i) #{i}
+			tr
+				- for(var i=13; i<19; i++)
+					td
+						a(href="/"+BaseVZ+"/?section=fact"+i) #{i}
+			tr
+				- for(var i=19; i<25; i++)
+					td
+						a(href="/"+BaseVZ+"/?section=fact"+i) #{i}
+			tr
+				- for(var i=25; i<31; i++)
+					td
+						a(href="/"+BaseVZ+"/?section=fact"+i) #{i}
+			tr
+				- for(var i=31; i<37; i++)
+					td
+						a(href="/"+BaseVZ+"/?section=fact"+i) #{i}
+
+
+.Navigation-bg-close-content

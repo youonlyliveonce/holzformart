@@ -1,0 +1,70 @@
+.Intro
+
+	background-color: $color-highlight
+	margin-top: $header-height-mobil
+	+bp(medium)
+		margin-top: $header-height
+	&-body
+		@extend .Section-body
+		padding-top: $gap-size
+		padding-bottom: $gap-size
+		text-align: center
+		a
+			color: $color_navigation
+			margin-top: $gap-size-large
+			display: block
+			span
+				display: block
+		p
+			max-width: 700px
+			margin-left: auto
+			margin-right: auto
+			font-weight: 400
+
+		h1
+			position: relative
+			+fontheadline
+			font-size: 36px
+			line-height: 1.5em
+			color: $color_navigation
+			&:after,
+			&:before
+				content: ''
+				width: 25px
+				height: 2px
+				background-color: $color-navigation
+				position: absolute
+				top: 50%
+				left: 50%
+			&:after
+				+transform(translateX(80px))
+				margin-left: 20px
+			&:before
+				+transform(translateX(-80px))
+				margin-left: -45px
+			+bp(smaller)
+				&:after
+					+transform(translateX(140px))
+				&:before
+					+transform(translateX(-140px))
+			+bp(medium)
+				&:after
+					+transform(translateX(140px))
+				&:before
+					+transform(translateX(-150px))
+			+bp(large)
+				font-size: 48px
+				&:after,
+				&:before
+					width: 120px
+				&:after
+					+transform(translateX(180px))
+					margin-left: 40px
+				&:before
+					+transform(translateX(-180px))
+					margin-left: -160px
+
+
+		+bp(large)
+			padding-top: $gap-size-large
+			padding-bottom: $gap-size-large

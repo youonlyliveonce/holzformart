@@ -1,0 +1,64 @@
+@mixin fontcopy()
+	font-family: 'Montserrat', sans-serif
+	font-style: normal
+	font-weight: 400
+
+@mixin fontbold()
+	font-family: 'Montserrat', sans-serif
+	font-style: normal
+	font-weight: 800
+
+@mixin fontheadline()
+	font-family: 'Playfair Display', serif
+	font-style: normal
+	font-weight: 400
+
+body
+	background-color: $color-background
+	color: $color-text
+	+fontcopy()
+	font-size: 100%
+	line-height: ms(1.7)
+	-webkit-font-smoothing: antialiased
+	-moz-osx-font-smoothing: grayscale
+
+p
+	line-height: ms(1.7)
+	+bp(larger)
+		line-height: 1.8em
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+	margin: 0
+	font-size: inherit
+	font-weight: inherit
+	line-height: inherit
+	line-height: ms(1.7)
+
+ul,
+ol
+	margin: 0
+	padding: 0
+	list-style: none
+	font-weight: normal
+
+a
+	color: inherit
+	outline: 0
+	text-decoration: none
+	&,
+	&:active,
+	&:hover,
+	&:focus,
+	&:visited
+		outline: 0
+		text-decoration: none
+
+
+
+strong
+	+fontheadline()

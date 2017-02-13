@@ -1,0 +1,164 @@
+{
+  "root": {
+    "domain": "http://holzformart.de",
+    "appName": "HOLZFORMART",
+    "appDescription": "-",
+    "src": "./src",
+    "dest": "./public/",
+    "assets": "/assets"
+  },
+
+  "tasks": {
+    "browserSync": {
+      "server": {
+        "baseDir": "public"
+      }
+    },
+
+    "js": {
+      "src": "javascript",
+      "dest": "assets",
+      "extractSharedJs": false,
+      "entries": {
+        "app": ["./app.js"],
+        "loader": ["./loader.js"],
+        "analytics": ["./analytics.js"]
+      },
+      "extensions": ["js"]
+    },
+
+    "css": {
+      "src": "sass",
+      "dest": "assets",
+      "autoprefixer": {
+        "browsers": ["last 3 version"]
+      },
+      "sass": {
+        "indentedSyntax": true
+      },
+      "extensions": ["sass", "scss", "css"]
+    },
+
+    "html": {
+      "src": "html",
+      "dest": "./",
+      "extensions": ["html", "json"],
+      "excludeFolders": ["layouts", "shared", "macros", "data"]
+    },
+
+    "iconFonts": {
+      "name": "Post Creator Icons",
+      "src": "./src/icons/**/*.svg",
+      "dest": "./src/sass/generated",
+      "fontsDest": "./public/assets/fonts/iconset",
+      "template": "./src/sass/templates/_icons.scss",
+      "sassOutputName": "_icons.scss",
+      "fontPath": "fonts/iconset/",
+      "className": "custom",
+      "options": {
+        "fontName": "iconset",
+        "formats": ["ttf", "eot", "woff", "woff2", "svg"],
+        "centerHorizontally": true,
+        "appendCodepoints": true,
+        "appendUnicode": true,
+        "normalize": true
+      }
+    },
+
+    "pug": {
+      "src": "pug",
+      "render": "pug/**/*.pug",
+      "dest": "/",
+      "data": {
+        "src": "/pug/",
+        "dest": "/data/",
+        "ext": ".yml"
+      },
+      "lngs":[{
+        "src": "/pug/**/*.pug",
+        "dest": "/"
+      }],
+      "extensions": ["pug"],
+      "excludeFolders": ["_layouts", "_svg", "_data"]
+    },
+
+    "svgbuild": {
+      "sources": [
+        "./src/jade/_svg/map_locations.svg"
+      ],
+      "dest": "./src/jade/_svg/generated"
+    },
+
+    "nunjucks": {
+      "src": "nunjucks",
+      "dest": "./",
+      "dataFile": "data/global.json",
+      "htmlmin": {
+        "collapseWhitespace": true
+      },
+      "extensions": ["html", "json"],
+      "excludeFolders": ["layouts", "shared", "macros", "data"]
+    },
+
+    "images": {
+      "src": "images",
+      "dest": "assets/images",
+      "extensions": ["jpg", "png", "svg", "gif"]
+    },
+
+    "responsiveImages": {
+      "sourcen":
+                ["images/hero"],
+      "destinations":
+                ["assets/images/hero"],
+      "sizetypes": [0],
+      "sizes": [{
+        "folder": "extrasmall",
+        "size": ["250"]
+        },{
+        "folder": "small",
+        "size": ["500"]
+        },{
+        "folder": "medium",
+        "size": ["800"]
+        },{
+        "folder": "desktop",
+        "size": ["1200"]
+        }]
+    },
+
+    "downloads": {
+      "src": "downloads",
+      "dest": "assets/downloads",
+      "extensions": ["pdf"]
+    },
+
+    "skin": {
+      "src": "skin",
+      "dest": "assets/skin",
+      "extensions": ["jpg", "png", "svg", "gif"]
+    },
+
+    "htdocs": {
+      "src": "/htdocs",
+      "dest": "/"
+    },
+
+    "favicons": {
+      "src": "/favicons/favicon.png",
+      "dest": "/assets/favicons",
+      "background" :"#FFF"
+    },
+
+    "sitemap": {
+      "src": [ "./public/**/*.html", "!./public/_*.html", "!./public/assets/**/*.html", "!./public/_layout/*.html"]
+    },
+
+    "production": {
+      "cssSrc": "./public/assets/*.css",
+      "jsSrc": "./public/assets//*.js",
+      "dest": "./public/assets/"
+    }
+
+  }
+}

@@ -1,0 +1,57 @@
+.Figure
+	height: 100%
+	&--top
+		+bp(medium)
+			svg
+				max-height: 70%
+			margin-bottom: +unit(6)
+		+bp(huge)
+			svg
+				max-height: inherit
+	&--extend
+		margin-bottom: +unit(8)
+		+bp(smaller)
+			margin-bottom: +unit(5)
+		+bp(medium)
+			text-align: center
+			svg
+				width: 70%
+		+bp(larger)
+			svg
+				width: 90%
+	&--left
+		width: 100%
+		+bp(medium)
+			width: 50%
+		svg
+			width: 100%
+			height: 100%
+	&--full
+		width: 100%
+		svg
+			width: 100%
+			height: 100%
+	&--input
+		position: absolute
+		left: 50%
+		width: 50%
+		top: 50%
+		+transform(translateX(-50%) translateY(-50%))
+	&--animation
+		position: absolute
+		left: 50%
+		width: 50%
+		top: 50%
+		+transform(translateX(-50%) translateY(-50%))
+		span
+			color: white
+			&.headline,
+			&.subline
+				line-height: 1
+				text-transform: uppercase
+				+fontbold
+			&.counter
+				display: block
+				letter-spacing: 0
+				position: relative
+				+clearfix

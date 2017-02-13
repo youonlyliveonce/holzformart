@@ -1,0 +1,48 @@
+
+$color-selection: #ff75c3
+$color-secondary: #ff75c3
+$color-background: #ffffff
+$color-highlight: #f5f5f5
+$color-content: #000000
+$color-box: lighten(#9e8756, 20%)
+$color-text: #212121
+$color-headline: #cf524a
+$color-navigation: #ff75c3
+$color-navigation-bg: #09d0ad
+$color-button: red
+
+
+// WIDTH SIZE
+$max-size: 1600px
+$header-height: 120px
+$header-height-mobil: 82px
+
+// GAB SIZE
+$gap-size: 20px
+$gap-size-medium: 30px
+$gap-size-large: 40px
+
+// Mixins
+@import mixins/all
+
+// Vendor
+@import vendor/normalize
+@import vendor/swiper
+
+// Globals
+@import globals/reset
+@import globals/typography
+
+// Basic Module
+@import module/section
+@import module/button
+@import module/heading
+@import module/copy
+@import module/figure
+
+// Standard Module
+@import module/header
+@import module/menu
+@import module/hero
+@import module/contact
+@import module/footer

@@ -1,0 +1,15 @@
+.Section
+  &-body
+    position: relative
+    max-width: $max-size
+    padding: 0 $gap-size-large
+    margin: 0 auto
+    +clearfix()
+  &-body--small
+    position: relative
+    max-width: $max-size - 420
+    padding: 0 $gap-size
+    margin: 0 auto
+    +clearfix()
+    +bp('large')
+      padding: 0 4*$gap-size-large
