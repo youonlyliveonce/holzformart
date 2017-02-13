@@ -6,23 +6,23 @@
   <meta http-equiv="pragma" content="no-cache"/>
   <meta http-equiv="expires" content="-1"/>
   <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans"/><!--[if IE]>
-  <link rel="shortcut icon" href="//cdn.amorelie.de/skin/frontend/amorelie/default/ico/favicon.ico"/><![endif]-->
-  <link rel="icon" type="image/png" href="//cdn.amorelie.de/skin/frontend/amorelie/default/ico/favicon.png"/>
-  <link rel="apple-touch-icon-precomposed" href="//cdn.amorelie.de/skin/frontend/amorelie/default/ico/apple-touch-icon-precomposed.png"/>
-  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="//cdn.amorelie.de/skin/frontend/amorelie/default/ico/apple-touch-icon-57x57-precomposed.png"/>
-  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="//cdn.amorelie.de/skin/frontend/amorelie/default/ico/apple-touch-icon-72x72-precomposed.png"/>
-  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="//cdn.amorelie.de/skin/frontend/amorelie/default/ico/apple-touch-icon-76x76-precomposed.png"/>
-  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="//cdn.amorelie.de/skin/frontend/amorelie/default/ico/apple-touch-icon-114x114-precomposed.png"/>
-  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="//cdn.amorelie.de/skin/frontend/amorelie/default/ico/apple-touch-icon-120x120-precomposed.png"/>
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="//cdn.amorelie.de/skin/frontend/amorelie/default/ico/apple-touch-icon-144x144-precomposed.png"/>
-  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="//cdn.amorelie.de/skin/frontend/amorelie/default/ico/apple-touch-icon-152x152-precomposed.png"/>
-  <meta name="application-name" content="Amorelie"/>
-  <meta name="msapplication-TileColor" content="#fff"/>
-  <meta name="msapplication-TileImage" content="//cdn.amorelie.de/skin/frontend/amorelie/default/ico/windows-icon-144x144.png"/>
-  <meta name="msapplication-square70x70logo" content="//cdn.amorelie.de/skin/frontend/amorelie/default/ico/windows-icon-70x70.png"/>
-  <meta name="msapplication-square150x150logo" content="//cdn.amorelie.de/skin/frontend/amorelie/default/ico/windows-icon-150x150.png"/>
-  <meta name="msapplication-wide310x150logo" content="//cdn.amorelie.de/skin/frontend/amorelie/default/ico/windows-icon-310x150.png"/>
-  <meta name="msapplication-square310x310logo" content="//cdn.amorelie.de/skin/frontend/amorelie/default/ico/windows-icon-310x310.png"/>
+  <link rel="shortcut icon" href="/ico/favicon.ico"/><![endif]-->
+  <link rel="icon" type="image/png" href="/ico/favicon.png"/>
+  <link rel="apple-touch-icon-precomposed" href="/ico/apple-touch-icon-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/ico/apple-touch-icon-57x57-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/ico/apple-touch-icon-72x72-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/ico/apple-touch-icon-76x76-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/ico/apple-touch-icon-114x114-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/ico/apple-touch-icon-120x120-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/ico/apple-touch-icon-144x144-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/ico/apple-touch-icon-152x152-precomposed.png"/>
+  <meta name="application-name" content="HOLZFORMART"/>
+  <meta name="msapplication-TileColor" content="#444F50"/>
+  <meta name="msapplication-TileImage" content="/ico/windows-icon-144x144.png"/>
+  <meta name="msapplication-square70x70logo" content="/ico/windows-icon-70x70.png"/>
+  <meta name="msapplication-square150x150logo" content="/ico/windows-icon-150x150.png"/>
+  <meta name="msapplication-wide310x150logo" content="/ico/windows-icon-310x150.png"/>
+  <meta name="msapplication-square310x310logo" content="/ico/windows-icon-310x310.png"/>
   <style>
     body {
     	margin: 0;
@@ -77,32 +77,29 @@
     }
     .preloader .loader {
     	display: inline-block;
-    	width: 60px;
-    	height: 60px;
-    	-webkit-border-radius: 30px;
-    	-moz-border-radius: 30px;
-    	border-radius: 30px;
+    	width: 80px;
+    	height: 80px;
     	position: relative;
-    	background: #ff75c3; /* Old browsers */
-    	background: -moz-linear-gradient(top,  #ff75c3 0%, #09d0ad 100%); /* FF3.6-15 */
-    	background: -webkit-linear-gradient(top,  #ff75c3 0%,#09d0ad 100%); /* Chrome10-25,Safari5.1-6 */
-    	background: linear-gradient(to bottom,  #ff75c3 0%,#09d0ad 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff75c3', endColorstr='#09d0ad',GradientType=0 ); /* IE6-9 */
+    	background: #444F50; /* Old browsers */
     	top: 50%;
+    	margin-top: -30px;
+    	//- margin-left: -60px;
     	animation: loader 2s infinite ease;
     	-webkit-animation: loader 2s infinite ease;
     	-moz-animation: loader 2s infinite ease;
     	-o-animation: loader 2s infinite ease;
     }
     .preloader .loader-inner {
-    	vertical-align: middle;
-    	display: inline-block;
-    	width: 80%;
-    	height: 80%;
-    	-webkit-border-radius: 30px;
-    	-moz-border-radius: 30px;
-    	border-radius: 30px;
+    	display: block;
+    	width: 104%;
+    	height: 104%;
+    	margin: -2%;
+    	//- border: 4px solid #fff;
     	background-color: #fff;
+    	animation: loader-inner 4s infinite ease;
+    	-webkit-animation: loader-inner 4s infinite ease;
+    	-moz-animation: loader-inner 4s infinite ease;
+    	-o-animation: loader-inner 4s infinite ease;
     }
     
     @keyframes loader {
@@ -137,7 +134,7 @@
       }
     }
     @-webkit-keyframes loader {
-      0% {
+    	0% {
         transform: rotate(45deg);
         -webkit-transform: rotate(45deg);
         -ms-transform: rotate(45deg);
@@ -168,7 +165,7 @@
       }
     }
     @-mos-keyframes loader {
-      0% {
+    	0% {
         transform: rotate(45deg);
         -webkit-transform: rotate(45deg);
         -ms-transform: rotate(45deg);
@@ -232,87 +229,127 @@
     
     
     @keyframes loader-inner {
-      0% {
-        height: 0%;
+    	0% {
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
       }
     
       25% {
-        height: 0%;
+        transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
       }
     
       50% {
-        height: 100%;
+        transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
       }
     
       75% {
-        height: 100%;
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
       }
     
       100% {
-        height: 0%;
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
       }
     }
     @-webkit-keyframes loader-inner {
-      0% {
-        height: 0%;
+    	0% {
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
       }
     
       25% {
-        height: 0%;
+        transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
       }
     
       50% {
-        height: 100%;
+        transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
       }
     
       75% {
-        height: 100%;
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
       }
     
       100% {
-        height: 0%;
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
       }
     }
     @-moz-keyframes loader-inner {
-      0% {
-        height: 0%;
+    	0% {
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
       }
     
       25% {
-        height: 0%;
+        transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
       }
     
       50% {
-        height: 100%;
+        transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
       }
     
       75% {
-        height: 100%;
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
       }
     
       100% {
-        height: 0%;
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
       }
     }
     @-o-keyframes loader-inner {
-      0% {
-        height: 0%;
+    	0% {
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
       }
     
       25% {
-        height: 0%;
+        transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
       }
     
       50% {
-        height: 100%;
+        transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
       }
     
       75% {
-        height: 100%;
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
       }
     
       100% {
-        height: 0%;
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
       }
     }
   </style>

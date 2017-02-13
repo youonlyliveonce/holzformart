@@ -1,14 +1,3 @@
 
 mixin responsiveimage(path, image, alt='')
 	img(data-src=""+path+"{width}"+image, data-sizes="auto", alt=""+alt, class="lazyload", srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==")
-
-mixin fbmeta()
-	meta(name="description", content=""+FBFaktText)
-	meta(property="og:url", content=BaseURL+"/"+BaseVZ+"fakt"+FBFaktNr+".html")
-	meta(property="og:type", content="article")
-	meta(property="og:title", content=FBFaktTitle + " - Fakt "+FBFaktNr+FBZusatz)
-	meta(property="og:description", content=""+FBFaktText)
-	meta(property="og:image", content=BaseURL+"/"+BaseVZ+"assets/images/"+FBFaktImage)
-
-mixin metatitle()
-	title!= FBFaktTitle + " - Fakt "+FBFaktNr+FBZusatz
