@@ -22,7 +22,8 @@
       "entries": {
         "app": ["./app.js"],
         "loader": ["./loader.js"],
-        "analytics": ["./analytics.js"]
+        "analytics": ["./analytics.js"],
+				"shim": ["./shim.js"]
       },
       "extensions": ["js"]
     },
@@ -79,7 +80,7 @@
         "dest": "/"
       }],
       "extensions": ["pug"],
-      "excludeFolders": ["_layouts", "_svg", "_data"]
+      "excludeFolders": ["_layout", "_svg", "_sections", "_data"]
     },
 
     "svgbuild": {

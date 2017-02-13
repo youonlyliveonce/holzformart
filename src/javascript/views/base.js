@@ -42,24 +42,6 @@ let Base = View.extend({
 
 		cleanup: function(){
 				//console.log("cleanup");
-		},
-
-		bindSlider: function(items, settings){
-			var el = document.querySelectorAll(items);
-			if (el.length <= 0) return false;
-			var opt = {};
-			if (settings == 'basic'){
-				opt = {
-						pagination: '.swiper-pagination',
-						paginationClickable: true,
-						nextButton: '.swiper-button-next',
-						prevButton: '.swiper-button-prev',
-						spaceBetween: 30,
-						hashnav: false,
-						hashnavWatchState: true
-					}
-			}
-			var swiper = new Swiper(items, opt);
 		}
 
 });

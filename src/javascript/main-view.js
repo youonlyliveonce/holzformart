@@ -3,10 +3,8 @@ import _ from 'underscore';
 import View from 'ampersand-view';
 import dom from 'ampersand-dom';
 import ViewSwitcher from 'ampersand-view-switcher';
-// import Hammer from 'hammerjs';
 
 import "ScrollToPlugin";
-import "DrawSVGPlugin";
 import "TweenMax";
 
 var MainView = View.extend({
@@ -18,9 +16,8 @@ var MainView = View.extend({
 
 		/* Bind basic Events, all link clicks, toggle Navigation, etc. */
 		events: {
-				'click a[href]': 'handleLinkClick'
-				,'click .Button--toggle': 'handleClickToggle'
-				// 'click .Button--close': 'handleClickToggle',
+			'click a[href]': 'handleLinkClick'
+			,'click .Button--toggle': 'handleClickToggle'
 		},
 
 		/* Render Main View */
@@ -46,15 +43,10 @@ var MainView = View.extend({
 						hide: function (oldView, cb) {
 								// Set scope for callback of TweenMax
 								var inSwitcher = this;
-								TweenMax.to(self.headerlogo, 0.1, {opacity:0});
-								TweenMax.to(self.page, 0.25, {scale:1.25, delay:0.15});
 								// Hide oldView if oldView exits
 								if(oldView && oldView.el){
 										oldView.hookBeforeHide();
 										TweenMax.to(oldView.el, 0.4, {opacity:0, onComplete:function(){
-												// scroll to top
-												// TweenMax.to(window, 0.3, {scrollTo:{y:0}});
-												// cb triggers the show function in ViewSwitcher
 												cb.apply(inSwitcher);
 										}});
 								}
@@ -70,7 +62,6 @@ var MainView = View.extend({
 								TweenMax.to(newView.el, 0.8, {opacity:1, onComplete:function(){
 									self.page.setAttribute('class', newView.model.pageClass);
 									// Scroll to paramter 'section'
-									TweenMax.to(self.headerlogo, 0.75, {opacity:1, ease:Cubic.easeOut});
 									self.handleUpdateView();
 									newView.hookAfterShow();
 								}, delay:0.3});
@@ -104,11 +95,6 @@ var MainView = View.extend({
 
 				// Set current view of page switcher (silent)
 				this.pageSwitcher.current = view;
-
-				// Handle resize
-				if(!CM.App._mobile){
-					view.handleResize();
-				}
 
 				// Scroll to paramter 'section'
 				TweenMax.delayedCall(0.15, function(){ self.handleUpdateView() });
@@ -185,7 +171,6 @@ var MainView = View.extend({
 					path = aTag.getAttribute("href"),
 					params = path.split("?")[1];
 
-
 				var local = aTag.host === window.location.host;
 				if (local && !e.ctrlKey && !e.shiftKey && !e.altKey && !e.metaKey && aTag.getAttribute("target") !== "_blank") {
 						// no link handling via Browser
@@ -196,12 +181,12 @@ var MainView = View.extend({
 							this.handleUpdateView();
 						} else {
 							// Route
-							this.pageSwitcher.current.killInterval();
 							CM.App.navigate(path);
 						}
 						// Close Navigation
 						this.handleClickClose();
 				}
+
 		},
 
 		scrollTo: function(){
@@ -213,10 +198,12 @@ var MainView = View.extend({
 
 		updateActiveNav: function () {
 				let path = window.location.pathname.slice(1),
-						topnavi = this.queryAll('.Navigation a[href]'),
-						if (CM.App._params != {} && CM.App._params.section != null){
-							path = `${path}?section=${CM.App._params.section}`;
-						}
+						topnavi = this.queryAll('.Navigation a[href]');
+
+				if (CM.App._params != {} && CM.App._params.section != null){
+					path = `${path}?section=${CM.App._params.section}`;
+				}
+
 				if(path == this.pageSwitcher.current.model.lang + "/"){
 					topnavi.forEach(function (aTag) {
 						dom.removeClass(aTag, 'active')
@@ -231,7 +218,6 @@ var MainView = View.extend({
 						}
 					});
 				}
-
 		}
 
 });

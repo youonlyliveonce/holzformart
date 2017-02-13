@@ -15,15 +15,14 @@ class Loader {
 		window.CM.Loader.mobile = window.mobilecheck();
 		let scope = this;
 		head.ready(document, function() {
-				head.load([	"/assets/css/app.css",
-										"/assets/js/app.js",
-										"/assets/js/shim.js",
+				head.load([	"/assets/app.css",
+										"/assets/app.js",
+										"/assets/shim.js",
 								], CM.Loader.startApplication);
 		});
 	}
 	removeGFX (){
 		document.body.setAttribute("class", document.body.getAttribute("class").split("hideloader").join("run"));
-		CM.App.showPage();
 		let preloader = document.getElementsByClassName("preloader")[0];
 		if(preloader && preloader.parentNode){
 				preloader.parentNode.removeChild(preloader);

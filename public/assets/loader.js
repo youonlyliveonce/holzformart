@@ -45,12 +45,12 @@
 /***/ 0:
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(318);
+	module.exports = __webpack_require__(322);
 
 
 /***/ },
 
-/***/ 318:
+/***/ 322:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -61,7 +61,7 @@
 	
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 	
-	var _head = __webpack_require__(319);
+	var _head = __webpack_require__(323);
 	
 	var _head2 = _interopRequireDefault(_head);
 	
@@ -88,7 +88,7 @@
 			window.CM.Loader.mobile = window.mobilecheck();
 			var scope = this;
 			head.ready(document, function () {
-				head.load(["/assets/css/app.css", "/assets/js/app.js", "/assets/js/shim.js"], CM.Loader.startApplication);
+				head.load(["/assets/app.css", "/assets/app.js", "/assets/shim.js"], CM.Loader.startApplication);
 			});
 		}
 	
@@ -96,7 +96,6 @@
 			key: "removeGFX",
 			value: function removeGFX() {
 				document.body.setAttribute("class", document.body.getAttribute("class").split("hideloader").join("run"));
-				CM.App.showPage();
 				var preloader = document.getElementsByClassName("preloader")[0];
 				if (preloader && preloader.parentNode) {
 					preloader.parentNode.removeChild(preloader);
@@ -129,7 +128,7 @@
 
 /***/ },
 
-/***/ 319:
+/***/ 323:
 /***/ function(module, exports) {
 
 	"use strict";

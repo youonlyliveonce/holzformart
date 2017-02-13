@@ -78,10 +78,6 @@ class App {
 				// we have what we need, we can now start our router and show the appropriate page
 				this.router.history.start();
 		}
-		showPage() {
-			TweenMax.to(this.mainView.page, 0.35, {scale:1, ease:Cubic.easeOut});
-			TweenMax.to(this.mainView.headerlogo, 0.45, {opacity:1, ease:Cubic.easeOut, delay:0.1});
-		}
 
 		// This is how you navigate around the app.
 		// this gets called by a global click handler that handles
