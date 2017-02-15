@@ -1,53 +1,42 @@
 .Heading
-	h1
-		+fontheadline
-		font-size: 2.0em
-		text-align: center
-		line-height: 1em
-		+bp(smaller)
-			font-size: 2.4em
-		+bp(large)
-			font-size: 1.8em
+	&--box
+		text-align: left
+		position: relative
+		+bp(medium)
+			position: absolute
+			left: 0
+			bottom: 0
+			width: +unit(10,17)
 		+bp(larger)
-			font-size: 2.1em
-		+bp(huger)
-			font-size: 2.4em
+			width: +unit(7.4,17)
+		.Heading__body
+			background-color: white
+			padding: 1em $gap-aside
+			+bp(medium)
+				padding: 2em $gap-aside--medium
+			+bp(large)
+				padding: 2em $gap-aside--large
+			+bp(larger)
+				padding: 2em $gap-aside--larger
+	&--major
+		position: relative
 		span
-			font-style: italic
-		&:after
-			content: ''
-			height: 20px
 			display: block
+			text-transform: uppercase
+			+fontsemi
+			font-size: 0.7em
+			+bp(large)
+				font-size: 0.8em
+			letter-spacing: 0.03em
+		&::after
+			content: ''
+			height: 3px
 			width: 30px
 			position: relative
-			border-bottom: 1px solid #000
-			left: 50%
-			margin-left: -15px
-	&--white
-		h1
-			color: white
-			&:after
-				border-color: white
-	&--double
-		h1
+			display: inline-block
+			margin-top: 10px
 			+bp(medium)
-				text-align: left
-				&:after
-					left: 0%
-					margin-left: 0px
-	&--small
-		h1
-			font-size: 1.7em
-			+bp(medium)
-				text-align: left
-				font-size: 1.6em
-				&:after
-					left: 0%
-					margin-left: 0px
-			+bp(large)
-				font-size: 1em
-				line-height: 1.2
-			+bp(larger)
-				font-size: 1.5em
-			+bp(huger)
-				font-size: 1.7em
+				width: 30px
+				margin-top: 20px
+			.red &
+				background-color: $color-red

@@ -12,12 +12,13 @@ var MainView = View.extend({
 		/* Set Properties */
 		props: {
 			isSticky: ['boolean', true, false]
+			,navOpenClass: ['string', true, 'Header--open']
 		},
 
 		/* Bind basic Events, all link clicks, toggle Navigation, etc. */
 		events: {
 			'click a[href]': 'handleLinkClick'
-			,'click .Button--toggle': 'handleClickToggle'
+			,'click .Header .Button--toggle': 'handleClickToggle'
 		},
 
 		/* Render Main View */
@@ -29,7 +30,6 @@ var MainView = View.extend({
 				/* Cache Elements */
 				this.cacheElements({
 						page: '.Page',
-						pageinner: '.Page__inner',
 						main: '[role="main"]',
 						header: '.Header',
 						headerlogo: '.Header__logo',
@@ -81,6 +81,8 @@ var MainView = View.extend({
 
 				var self = this;
 
+				dom.addClass(document.body, view.model.pageClass);
+
 				// Set child view as initial
 				view.isInitial = true;
 
@@ -121,7 +123,8 @@ var MainView = View.extend({
 						});
 				}
 
-				this.page.setAttribute('class', 'Page');
+				dom.addClass(document.body, view.model.pageClass);
+				dom.removeClass(document.body, this.pageSwitcher.current.model.pageClass);
 
 				// SWICTH THE VIEW
 				this.pageSwitcher.set(view);
@@ -144,19 +147,19 @@ var MainView = View.extend({
 
 		handleClickToggle: function (e){
 			var body = document.body;
-			if( dom.hasClass(body, 'Navigation--show') || e == undefined){
-					dom.removeClass(body, 'Navigation--show');
+			if( dom.hasClass(body, this.navOpenClass) || e == undefined){
+					dom.removeClass(body, this.navOpenClass);
 			} else {
-					dom.addClass(body, 'Navigation--show');
+					dom.addClass(body, this.navOpenClass);
 			}
 		},
 		handleClickClose: function (e){
 			var body = document.body;
-			dom.removeClass(body, 'Navigation--show');
+			dom.removeClass(body, this.navOpenClass);
 		},
 		handleClickOpen: function (e){
 			var body = document.body;
-			dom.addClass(body, 'Navigation--show');
+			dom.addClass(body, this.navOpenClass);
 		},
 		/*
 
@@ -189,6 +192,20 @@ var MainView = View.extend({
 
 		},
 
+		handleScroll: function(event){
+			let scrollY = event.scrollY;
+
+			if(scrollY >= 0){
+				if(scrollY > self.header.offsetHeight+50 && !self.isSticky){
+					self.isSticky = true;
+					dom.addClass(document.body, 'Header--sticky-open');
+				} else if(scrollY < self.header.offsetHeight+50 && self.isSticky){
+					self.isSticky = false;
+					dom.removeClass(document.body, 'Header--sticky-open');
+				}
+			}
+		},
+
 		scrollTo: function(){
 			if (CM.App._params != {} && CM.App._params.section != null){
 					var id = this.query('#'+CM.App._params.section);
@@ -198,7 +215,7 @@ var MainView = View.extend({
 
 		updateActiveNav: function () {
 				let path = window.location.pathname.slice(1),
-						topnavi = this.queryAll('.Navigation a[href]');
+						topnavi = this.queryAll('.Menu a[href]');
 
 				if (CM.App._params != {} && CM.App._params.section != null){
 					path = `${path}?section=${CM.App._params.section}`;

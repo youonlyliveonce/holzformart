@@ -1,26 +1,29 @@
 .Hero
-  &-body
-    position: relative
-    text-align: center
-    background-position: center
-    background-repeat: no-repeat
-    background-size: cover
-    padding-bottom: +unit(9,16)
+	position: relative
+	&__body
+		position: relative
+		text-align: center
+		padding-bottom: +unit(12,16)
+		background-color: lightgrey
+		+bp(large)
+			padding-bottom: +unit(9,16)
+		+bp(larger)
+			padding-bottom: +unit(7,16)
 
-    div
-      position: absolute
-      top: 50%
-      left: 50%
-      +transform(translateY(-50%) translateX(-50%))
-      img
-        display: inline-block
-        vertical-align: middle
-        margin: 0 auto
-        width: 200px
-      p
-        color: white
-        text-transform: uppercase
-        letter-spacing: 0.1em
-        margin: 0
-        text-align: center
-        display: block
+	&__content
+		position: absolute
+		top: 50%
+		left: 50%
+		+transform(translateY(-50%) translateX(-50%))
+		img
+			display: inline-block
+			vertical-align: middle
+			margin: 0 auto
+			width: 200px
+		p
+			color: white
+			text-transform: uppercase
+			letter-spacing: 0.1em
+			margin: 0
+			text-align: center
+			display: block

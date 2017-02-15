@@ -47,28 +47,9 @@
       "excludeFolders": ["layouts", "shared", "macros", "data"]
     },
 
-    "iconFonts": {
-      "name": "Post Creator Icons",
-      "src": "./src/icons/**/*.svg",
-      "dest": "./src/sass/generated",
-      "fontsDest": "./public/assets/fonts/iconset",
-      "template": "./src/sass/templates/_icons.scss",
-      "sassOutputName": "_icons.scss",
-      "fontPath": "fonts/iconset/",
-      "className": "custom",
-      "options": {
-        "fontName": "iconset",
-        "formats": ["ttf", "eot", "woff", "woff2", "svg"],
-        "centerHorizontally": true,
-        "appendCodepoints": true,
-        "appendUnicode": true,
-        "normalize": true
-      }
-    },
-
     "pug": {
       "src": "pug",
-      "render": "pug/**/*.pug",
+      "render": "pug/pages/**/*.pug",
       "dest": "/",
       "data": {
         "src": "/pug/",
@@ -76,7 +57,7 @@
         "ext": ".yml"
       },
       "lngs":[{
-        "src": "/pug/**/*.pug",
+        "src": "/pug/pages/**/*.pug",
         "dest": "/"
       }],
       "extensions": ["pug"],

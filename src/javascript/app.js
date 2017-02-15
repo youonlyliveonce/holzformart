@@ -75,8 +75,27 @@ class App {
 
 				})
 
+				this.addEvents();
+
 				// we have what we need, we can now start our router and show the appropriate page
 				this.router.history.start();
+
+
+		}
+
+		addEvents () {
+			let self = this;
+
+			if(window.attachEvent) {
+				if(!this._mobile) {
+					window.attachEvent('scroll', self.mainView.handleScroll);
+				}
+			}
+			else if(window.addEventListener) {
+				if(!this._mobile) {
+					window.addEventListener('scroll', self.mainView.handleScroll, true);
+				}
+			}
 		}
 
 		// This is how you navigate around the app.

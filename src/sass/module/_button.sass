@@ -1,16 +1,27 @@
 .Button
 	&--toggle
-		position: absolute
-		top: 50%
-		+transform(translateY(-50%))
+		display: block
+		position: fixed
+		top: 0
 		right: $gap-size
 		width: 50px
 		height: 48px
 		z-index: 999
 		cursor: pointer
 		background-color: white
+		right: $gap-aside
+		+bp(medium)
+			top: $gap-size
+			right: $gap-aside--medium
+		.Header--open &
+			span
+				+transform(rotate(45deg))
+				&:before
+					+transform(rotate(90deg))
+				&:after
+					+transform(rotate(90deg))
 		+bp(large)
-			right: $gap-size-large + $gap-size
+			display: none
 
 		span
 			position: absolute
@@ -19,10 +30,10 @@
 			display: block
 			width: 80%
 			height: 0.4rem
-			// border: 4px solid $color-navigation
-			+border-radius(5px)
 			margin-top: -0.2rem
-			background-color: $color-navigation-bg
+			background-color: $color-highlight
+			.red &
+				background-color: $color-red
 			+noselect()
 			+transition(all, .3s)
 			&:after,
@@ -31,9 +42,9 @@
 				left: 0
 				width: 100%
 				height: 100%
-				background-color: $color-navigation-bg
-				// border: 3px solid $color-navigation
-				+border-radius(5px)
+				background-color: $color-highlight
+				.red &
+					background-color: $color-red
 				content: ''
 				display: block
 			&:after

@@ -18,7 +18,7 @@ let Base = Model.extend({
 			 tempDom.insertAdjacentHTML('afterbegin', resp);
 			 this.pageTitle = resp.split("<title>")[1].split("</title>")[0];
 			 this.pageContent = tempDom.querySelectorAll('.View')[0];
-			 this.pageClass = tempDom.querySelectorAll('.Page')[0].getAttribute('class');
+			 this.pageClass = tempDom.querySelectorAll('meta[name="pageColor"]')[0].getAttribute('content');
 			 return resp;
 	 },
 		ajaxConfig: function () {

@@ -1,79 +1,65 @@
-.Menu--sticky
-	.Menu-body
-		padding-top: 0.1em
-
 .Menu
-	color: rgb(255,255,255)
-	+bp('medium')
+	color: white
+	position: absolute
+	left: 0
+	top: 50%
+	+transform(translateY(-60%))
+	+bp(large)
+		color: $color-text
 		position: relative
-	&-body
+		left: inherit
+		top: inherit
+		+transform(none)
+	ul
+		opacity: 0
+		+transition(opacity, .3s, ease-in-out, 0.25s)
+		.Header--open &
+			opacity: 1
+
+		padding: 0 $gap-aside
+		text-align: left
+		+bp(medium)
+			padding: 0 $gap-aside--medium
+		+bp(large)
+			text-align: center
+			opacity: 1
+			padding: 0 $gap-aside--large
+		+clearfix
+	a
+		z-index: 999
+		+fontbold
+		font-size: 1rem
+		text-transform: uppercase
+		line-height: $header-height/1.5
+		+bp(large)
+			line-height: $header-height--large
+		+bp(larger)
+			line-height: $header-height--larger
+	li
+		user-select: none
+		-webkit-tap-highlight-color: rgba(0,0,0,0)
+	&__item
+		&--right
+			color: rgba(255,255,255,0.5)
+			+bp(large)
+				position: absolute
+				right: $gap-aside--large
+				color: lighten($color-text, 50%)
+			+bp(larger)
+				right: $gap-aside--larger
+
+	&__body
 		padding: 0
 		text-align: center
-		li
-			user-select: none
-			-webkit-tap-highlight-color: rgba(0,0,0,0)
-			&.active
-				a
-					color: $color-button
-					font-weight: 600
-			a
-				+transition(padding, 0.35s)
-				user-select: none
-				-webkit-tap-highlight-color: rgba(0,0,0,0)
-				z-index: 999
-				+fontcopy
-				color: $color-text
-				line-height: 4rem
-				font-size: 1.1rem
-				&,
-				&:active,
-				&:hover,
-				&:focus,
-				&:visited
-					outline: 0
-					text-decoration: none
+
 		+bp('medium')
 			li
 				a
-
-					padding: 1rem 0.9rem 2rem 0.9rem
-					span
-						position: relative
-						&:after
-							content: ""
-							display: inline-block
-							position: absolute
-							bottom: 0
-							left: 0
-							right: 100%
-							height: 2px
-							background-color: $color-button
-							+transition(right, 0.5s)
-				&:hover
-					a
-						span
-							&:after
-								right: 0
-
-
-
 		+bp('large')
-			padding-top: 2.84em
 			li
 				display: inline-block
 				a
-					padding: 1rem 1.0rem 2rem 1.0rem
-					line-height: 4.5rem
-					color: $color-text
-					font-size: 1.1rem
+					padding: 0 1rem 0 1rem
 		+bp('larger')
 			li
 				a
-					padding: 1rem 2rem
-					padding: 1rem 1.1rem 2rem 1.1rem
-					line-height: 5rem
-					font-size: 1.3rem
-		+bp('huge')
-			li
-				a
-					padding: 1rem 2rem 2rem 2rem

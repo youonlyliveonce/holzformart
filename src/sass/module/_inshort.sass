@@ -1,0 +1,50 @@
+.Inshort
+	&__body
+		+clearfix
+		padding-top: $gap-size
+		+bp(medium)
+			padding-top: $gap-size--large
+	&__spacer
+		float: left
+		width: $gap-aside
+		+bp(medium)
+			width: +unit(3,16)
+		padding-bottom: 20%
+		position: relative
+		&::before
+			height: 3px
+			width: +unit(2,3)
+			position: absolute
+			top: 0
+			background-color: $color-text
+			+bp(medium)
+				content: ''
+			+bp(large)
+				width: +unit(1,3)
+				left: $gap-aside--large
+			+bp(larger)
+				left: $gap-aside--larger
+	&__intro
+		margin-top: -0.4em
+		float: left
+		width: +unit(13,16)
+		+bp(medium)
+			width: +unit(12,16)
+		+bp(large)
+			width: +unit(8,16)
+			padding-right: +unit(2.5,16)
+	&__buttonbar
+		margin-top: -0.4em
+		float: left
+		width: +unit(8,16)
+		padding-left: $gap-aside
+		padding-right: +unit(2,16)
+		+bp(medium)
+			padding-left: +unit(3,16)
+		+bp(large)
+			padding-left: 0
+			width: +unit(5,16)
+		p
+			font-size: 0.9em
+			line-height: 1.5
+			letter-spacing: 0.01em

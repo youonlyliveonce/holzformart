@@ -1,14 +1,10 @@
-.Navigation
-	.Navigation-bg-close
-	.Button--close
-		span
-	nav(role="navigation")
+.Menu(role="navigation")
+	ul.Menu__body
 		li
 			a(href="/"+lang+"/ladenbau") Ladenbau
 		li
 			a(href="/"+lang+"/innenausbau") Innenausbau
 		li
 			a(href="/"+lang+"/ueberuns") Über uns
-
-
-.Navigation-bg-close-content
+		li.Menu__item--right
+			a(href="/"+lang+"/kontakt") Kontakt

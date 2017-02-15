@@ -161,8 +161,25 @@
 									self.mainView.handleUpdateView();
 							});
 	
+							this.addEvents();
+	
 							// we have what we need, we can now start our router and show the appropriate page
 							this.router.history.start();
+					}
+			}, {
+					key: 'addEvents',
+					value: function addEvents() {
+							var self = this;
+	
+							if (window.attachEvent) {
+									if (!this._mobile) {
+											window.attachEvent('scroll', self.mainView.handleScroll);
+									}
+							} else if (window.addEventListener) {
+									if (!this._mobile) {
+											window.addEventListener('scroll', self.mainView.handleScroll, true);
+									}
+							}
 					}
 	
 					// This is how you navigate around the app.
@@ -20523,7 +20540,7 @@
 					tempDom.insertAdjacentHTML('afterbegin', resp);
 					this.pageTitle = resp.split("<title>")[1].split("</title>")[0];
 					this.pageContent = tempDom.querySelectorAll('.View')[0];
-					this.pageClass = tempDom.querySelectorAll('.Page')[0].getAttribute('class');
+					this.pageClass = tempDom.querySelectorAll('meta[name="pageColor"]')[0].getAttribute('content');
 					return resp;
 			},
 			ajaxConfig: function ajaxConfig() {
@@ -23626,13 +23643,14 @@
 	
 		/* Set Properties */
 		props: {
-			isSticky: ['boolean', true, false]
+			isSticky: ['boolean', true, false],
+			navOpenClass: ['string', true, 'Header--open']
 		},
 	
 		/* Bind basic Events, all link clicks, toggle Navigation, etc. */
 		events: {
 			'click a[href]': 'handleLinkClick',
-			'click .Button--toggle': 'handleClickToggle'
+			'click .Header .Button--toggle': 'handleClickToggle'
 		},
 	
 		/* Render Main View */
@@ -23644,7 +23662,6 @@
 			/* Cache Elements */
 			this.cacheElements({
 				page: '.Page',
-				pageinner: '.Page__inner',
 				main: '[role="main"]',
 				header: '.Header',
 				headerlogo: '.Header__logo',
@@ -23693,6 +23710,8 @@
 	
 			var self = this;
 	
+			_ampersandDom2.default.addClass(document.body, view.model.pageClass);
+	
 			// Set child view as initial
 			view.isInitial = true;
 	
@@ -23733,7 +23752,8 @@
 				});
 			}
 	
-			this.page.setAttribute('class', 'Page');
+			_ampersandDom2.default.addClass(document.body, view.model.pageClass);
+			_ampersandDom2.default.removeClass(document.body, this.pageSwitcher.current.model.pageClass);
 	
 			// SWICTH THE VIEW
 			this.pageSwitcher.set(view);
@@ -23755,19 +23775,19 @@
 	
 		handleClickToggle: function handleClickToggle(e) {
 			var body = document.body;
-			if (_ampersandDom2.default.hasClass(body, 'Navigation--show') || e == undefined) {
-				_ampersandDom2.default.removeClass(body, 'Navigation--show');
+			if (_ampersandDom2.default.hasClass(body, this.navOpenClass) || e == undefined) {
+				_ampersandDom2.default.removeClass(body, this.navOpenClass);
 			} else {
-				_ampersandDom2.default.addClass(body, 'Navigation--show');
+				_ampersandDom2.default.addClass(body, this.navOpenClass);
 			}
 		},
 		handleClickClose: function handleClickClose(e) {
 			var body = document.body;
-			_ampersandDom2.default.removeClass(body, 'Navigation--show');
+			_ampersandDom2.default.removeClass(body, this.navOpenClass);
 		},
 		handleClickOpen: function handleClickOpen(e) {
 			var body = document.body;
-			_ampersandDom2.default.addClass(body, 'Navigation--show');
+			_ampersandDom2.default.addClass(body, this.navOpenClass);
 		},
 		/*
 	 	Click Handler for each a[href]
@@ -23797,6 +23817,20 @@
 			}
 		},
 	
+		handleScroll: function handleScroll(event) {
+			var scrollY = event.scrollY;
+	
+			if (scrollY >= 0) {
+				if (scrollY > self.header.offsetHeight + 50 && !self.isSticky) {
+					self.isSticky = true;
+					_ampersandDom2.default.addClass(document.body, 'Header--sticky-open');
+				} else if (scrollY < self.header.offsetHeight + 50 && self.isSticky) {
+					self.isSticky = false;
+					_ampersandDom2.default.removeClass(document.body, 'Header--sticky-open');
+				}
+			}
+		},
+	
 		scrollTo: function scrollTo() {
 			if (CM.App._params != {} && CM.App._params.section != null) {
 				var id = this.query('#' + CM.App._params.section);
@@ -23806,7 +23840,7 @@
 	
 		updateActiveNav: function updateActiveNav() {
 			var path = window.location.pathname.slice(1),
-			    topnavi = this.queryAll('.Navigation a[href]');
+			    topnavi = this.queryAll('.Menu a[href]');
 	
 			if (CM.App._params != {} && CM.App._params.section != null) {
 				path = path + '?section=' + CM.App._params.section;
