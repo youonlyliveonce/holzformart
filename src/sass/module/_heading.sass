@@ -8,6 +8,8 @@
 			bottom: 0
 			width: +unit(10,17)
 		+bp(larger)
+			width: +unit(8.5,17)
+		+bp(huge)
 			width: +unit(7.4,17)
 		.Heading__body
 			background-color: white
@@ -18,6 +20,35 @@
 				padding: 2em $gap-aside--large
 			+bp(larger)
 				padding: 2em $gap-aside--larger
+	&--highlight
+		position: relative
+		h2
+			font-weight: 300
+			font-size: 1.5em
+			+bp(medium)
+				font-size: 2.3em
+			+bp(large)
+				font-size: 3.5em
+		&::before
+			position: relative
+			display: block
+			margin: 0 auto
+			content: ''
+			height: 50px
+			width: 1px
+			+bp(medium)
+				height: 90px
+				width: 3px
+			background-color: white
+			margin-bottom: 50px
+		span
+			display: block
+			text-transform: uppercase
+			+fontsemi
+			font-size: 0.7em
+			+bp(large)
+				font-size: 0.8em
+			letter-spacing: 0.03em
 	&--major
 		position: relative
 		span

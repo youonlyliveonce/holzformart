@@ -1,4 +1,102 @@
 .Button
+	&--inline
+		position: relative
+		cursor: pointer
+		display: block
+		margin-top: 2em
+		+bp(large)
+			margin-top: 4em
+		&:hover
+			&::before
+				margin-left: 5px
+				+bp(large)
+					margin-left: 10px
+			span
+				margin-left: -5px
+				+bp(large)
+					margin-left: -10px
+				color: $color-red
+				&::after
+					background-color: $color-red
+		&::before
+			position: relative
+			z-index: 0
+			content: ''
+			display: inline-block
+			vertical-align: middle
+			+transition(all, 0.45s)
+			background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMiIgYmFzZVByb2ZpbGU9InRpbnkiIGlkPSJFYmVuZV8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjIyLjk2NXB4IiBoZWlnaHQ9IjIyLjAwOHB4IiB2aWV3Qm94PSIwIDAgMjIuOTY1IDIyLjAwOCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHBvbHlnb24gZmlsbC1ydWxlPSJldmVub2RkIiBmaWxsPSIjREQwRTFCIiBwb2ludHM9IjIyLjk2NSwxMS4wMjEgMTEuNzgzLDAgMTAuMTM1LDEuNjIzIDE4LjU4LDkuOTE1IDAsOS45MTUgMCwxMi4xIDE4LjYwOSwxMi4xIDEwLjE4MiwyMC40MDYgMTEuODA3LDIyLjAwOCAyMi45NjUsMTEuMDIxIDIyLjk2NSwxMS4wMjEgIi8+PC9zdmc+)
+			background-repeat: no-repeat
+			background-size: 50%
+			width: 2em
+			height: 1em
+			background-position: left center
+			+bp(medium)
+				background-size: auto
+				width: 4em
+				height: 2em
+				background-position: 1.3em center
+
+		span
+			position: relative
+			z-index: 10
+			display: inline-block
+			font-weight: 700
+			font-size: 0.8em
+			text-transform: uppercase
+			line-height: 2em
+			+transition(all, 0.45s)
+			+bp(medium)
+				font-size: 1em
+			+bp(large)
+				font-size: 1.25em
+			&::after
+				content: ''
+				left: 0
+				bottom: 5px
+				position: absolute
+				height: 1px
+				background-color: white
+				width: 100%
+				+transition(all, 0.45s)
+	&--block
+		position: relative
+		cursor: pointer
+		display: block
+		background-color: grey
+		font-weight: 700
+		text-transform: uppercase
+		margin-bottom: 1em
+		color: white
+		&:hover
+			&::before
+				width: 100%
+				background-position: 2em center
+		&::before
+			position: absolute
+			z-index: 0
+			content: ''
+			display: inline-block
+			vertical-align: middle
+			+transition(all, 0.45s)
+			width: 4em
+			height: 4em
+			background-color: darken(grey, 10%)
+			background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMiIgYmFzZVByb2ZpbGU9InRpbnkiIGlkPSJFYmVuZV8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjIyLjk2NXB4IiBoZWlnaHQ9IjIyLjAwOHB4IiB2aWV3Qm94PSIwIDAgMjIuOTY1IDIyLjAwOCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHBvbHlnb24gZmlsbC1ydWxlPSJldmVub2RkIiBmaWxsPSIjRkZGRkZGIiBwb2ludHM9IjIyLjk2NSwxMS4wMjEgMTEuNzgzLDAgMTAuMTM1LDEuNjIzIDE4LjU4LDkuOTE1IDAsOS45MTUgMCwxMi4xIDE4LjYwOSwxMi4xIDEwLjE4MiwyMC40MDYgMTEuODA3LDIyLjAwOCAyMi45NjUsMTEuMDIxIDIyLjk2NSwxMS4wMjEgIi8+PC9zdmc+)
+			background-repeat: no-repeat
+			background-position: 1.3em center
+		span
+			position: relative
+			z-index: 10
+			display: inline-block
+			line-height: 4em
+			padding-left: 6em
+		.red &
+			background-color: $color-red
+			&::before
+
+				background-color: darken($color-red, 10%)
+
 	&--toggle
 		display: block
 		position: fixed

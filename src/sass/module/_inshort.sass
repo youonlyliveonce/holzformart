@@ -2,8 +2,10 @@
 	&__body
 		+clearfix
 		padding-top: $gap-size
+		padding-bottom: $gap-size
 		+bp(medium)
 			padding-top: $gap-size--large
+			padding-bottom: $gap-size--large
 	&__spacer
 		float: left
 		width: $gap-aside
@@ -36,14 +38,19 @@
 	&__buttonbar
 		margin-top: -0.4em
 		float: left
-		width: +unit(8,16)
+		width: +unit(15,16)
 		padding-left: $gap-aside
-		padding-right: +unit(2,16)
+		padding-right: 0
+		+bp(small)
+			width: +unit(9,16)
 		+bp(medium)
 			padding-left: +unit(3,16)
 		+bp(large)
 			padding-left: 0
+			padding-right: +unit(1,16)
 			width: +unit(5,16)
+		+bp(huge)
+			padding-right: +unit(2,16)
 		p
 			font-size: 0.9em
 			line-height: 1.5

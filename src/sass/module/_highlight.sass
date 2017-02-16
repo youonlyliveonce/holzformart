@@ -1,0 +1,41 @@
+.Highlight
+	position: relative
+	background-color: lighten($color-highlight, 10%)
+	&__body
+		position: relative
+		width: 90%
+		margin: 0 auto
+		text-align: center
+		color: white
+		padding-bottom: 4em
+		+bp(medium)
+			width: 50%
+	&__background
+		position: absolute
+		left: 0
+		top: 0
+		right: 0
+		bottom: 0
+	&__marginal
+		position: absolute
+		height: 100%
+		width: $gap-aside
+		left: 0
+		+bp(medium)
+			width: +unit(3,16)
+	&__content
+		position: absolute
+		background-color: $color-highlight
+		height: 100%
+		width: +unit(15,16)
+		left: $gap-aside
+		+bp(medium)
+			width: +unit(13,16)
+			left: +unit(3,16)
+	&__aside
+		+bp(medium)
+			position: absolute
+			height: 100%
+			right: 0
+			width: $gap-aside--medium
+			background-color: white
