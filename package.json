@@ -20,8 +20,8 @@
 		"production": "gulp production",
 		"media": "gulp media",
 		"dom": "gulp dom",
-		"init": "git-ftp init --syncroot public -u matteng_de_9 -P - ftp://kontentftp.matteng.de/holzformart/htdocs",
-		"push": "git-ftp push --syncroot public -u matteng_de_9 -P - ftp://kontentftp.matteng.de/holzformart/htdocs"
+		"init": "git-ftp init --syncroot public -u matteng_de_9 -P - ftp://kontentftp.matteng.de/hfm/htdocs",
+		"push": "git-ftp push --syncroot public -u matteng_de_9 -P - ftp://kontentftp.matteng.de/hfm/htdocs"
 	},
 	"devDependencies": {
     "babel-cli": "^6.7.7",
