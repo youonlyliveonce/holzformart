@@ -51,15 +51,31 @@
 	&__body
 		padding: 0
 		text-align: center
-
+		a
+			position: relative
+			&::after
+				position: absolute
+				content: ''
+				width: 100%
+				height: 0px
+				bottom: 0
+				left: 0
+				margin-bottom: -5px
+				background-color: transparent
+				+transition(all, 0.25s)
+			&:hover
+				color: $color-red
+				&::after
+					background-color: $color-red
+					margin-bottom: -2px
+					height: 3px
 		+bp('medium')
 			li
 				a
 		+bp('large')
 			li
 				display: inline-block
-				a
-					padding: 0 1rem 0 1rem
+				padding: 0 1rem 0 1rem
 		+bp('larger')
 			li
 				a

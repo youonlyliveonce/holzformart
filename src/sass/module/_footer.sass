@@ -1,24 +1,117 @@
 .Footer
-  background-color: black
-  &-body
-    @extend .Section-body
-    color: white
-    +fontcopy
-    font-size: 0.8em
-    letter-spacing: 0.1em
-    text-align: center
-    padding-bottom: $gap-size--medium
-    +bp('medium')
-      text-align: left
-      div
-        float: left
-        &:last-child
-          float: right
-    a
-      display: inline-block
-      margin: 1em 0
-      line-height: ms(1)
-      text-transform: uppercase
-      +bp(larger)
-        font-size: 1.1em
-        line-height: 1.8em
+	background-color: $color-footer
+	color: $color-text
+	&__body
+		margin: 0 $gap-aside
+		+fontcopy
+		font-size: 0.8em
+		letter-spacing: 0.1em
+		text-align: left
+		padding-bottom: $gap-size--medium
+		+clearfix
+		+bp('medium')
+			margin-left: +unit(2,16)
+			margin-right: +unit(2,16)
+			padding: $gap-size 0
+			text-align: left
+			>div
+				float: left
+	&__adress
+		+bp(medium)
+			padding-bottom: +unit(1,16)
+			float: left
+			width: +unit(8,16)
+		+bp(larger)
+			width: +unit(5,16)
+			padding-bottom: 0
+		p
+			font-size: 1.2em
+			line-height: 1.4em
+			letter-spacing: 0.025em
+	&__contact
+		+bp(medium)
+			float: left
+			width: +unit(8,16)
+		+bp(larger)
+			width: +unit(4,16)
+		a
+			font-size: 1.6em
+			+bp(huge)
+				font-size: 1.9em
+			letter-spacing: 0
+			font-weight: 800
+			color: $color-red
+			line-height: 1.2
+			display: inline-block
+			position: relative
+			&:hover
+				color: $color-text
+				&::after
+					bottom: 5px
+					height: 0px
+			&::after
+				+transition(all, 0.25s)
+				position: absolute
+				bottom: 0
+				left: 0
+				content: ''
+				height: 2px
+				width: 100%
+				background-color: $color-red
+			&.nounderline
+				&::after
+					height: 0px
+		p
+			letter-spacing: 0
+			line-height: 1.5
+
+	&__social
+		+bp(medium)
+			float: left
+			width: +unit(8,16)
+		+bp(larger)
+			width: +unit(3,16)
+			padding-left: 2em
+		margin-top: 1em
+		a
+			display: inline-block
+			padding: 0 0.25em
+			&:hover
+				svg
+					path
+						fill: $color-red
+		svg
+			width: 30px
+			+bp(huge)
+				width: 40px
+			path
+				+transition(all, 0.5s)
+	&__menu
+		display: none
+		+bp(medium)
+			display: block
+			float: left
+			width: +unit(8,16)
+		+bp(larger)
+			width: +unit(3,16)
+		.divider
+			display: inline-block
+			margin-top: 18px
+			position: relative
+			&::before
+				content: ''
+				width: 10px
+				position: absolute
+				height: 1px
+				background-color: $color-text
+				left: 2px
+				margin-top: -9px
+		p
+			font-size: 1.2em
+			line-height: 1.4em
+			letter-spacing: 0.025em
+		a
+			cursor: pointer
+			letter-spacing: 0.025em
+			&:hover
+				color: $color-red
