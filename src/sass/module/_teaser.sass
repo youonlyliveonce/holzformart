@@ -1,0 +1,21 @@
+.Teaser
+	padding-bottom: 1em
+	&--round
+		.Teaser__body
+			padding-bottom: 0
+			position: relative
+			overflow: hidden
+			+border-radius(100%)
+
+	&__body
+		line-height: 0
+		img
+			width: 100%
+			height: 100%
+	&__link
+		position: absolute
+		left: 0
+		right: 0
+		bottom: 0.98em
+		+bp(larger)
+			bottom: 1em

@@ -2,7 +2,7 @@ var config = require('../config')
 var compact = require('lodash/compact')
 
 // Grouped by what can run in parallel
-var assetTasks = ['images', 'skin', 'downloads']
+var assetTasks = ['images']
 var codeTasks = ['pug', 'html', 'css', 'js', 'htdocs']
 
 

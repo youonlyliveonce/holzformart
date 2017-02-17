@@ -23,7 +23,6 @@ var getData = function(file) {
 
 
     // console.log("fileDest:",fileDest);
-    // console.log("fileSrc:",fileSrc);
 
   	if( !fs.existsSync(fileDest) ){
   		return;

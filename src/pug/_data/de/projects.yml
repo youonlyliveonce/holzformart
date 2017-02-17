@@ -1,0 +1,147 @@
+items:
+  -
+    id: 'ingenlath'
+    ressort: 'innenausbau'
+    type: 'highlight'
+    teaser:
+      type: 'square'
+      image:
+        src: 'projects/ingenlath/teaser.jpg'
+    content:
+      title: 'Küche und Entree'
+      intro: 'Individualität für Persönlichkeiten. Es gibt keine zweite Chance für einen ersten Eindruck.'
+      copy:
+        - 'Darum haben wir bei der Konzeption und Gestaltung des Eingangsbereiches eines Privathauses in Willich dieser „Visitenkarte des Hauses“ besondere Beachtung geschenkt. Auch in der Küche zeigt sich unsere Handschrift bei Konzept, Beleuchtung, moderner Form- und Farbgebung sowie der Integration der Arbeitsplatten aus kaltgewalztem Edelstahl. Die Formgebung leitet sich aus der Funktion der Objekte her, die Linienführung ist klar und das Design ist auf das Wesentliche reduziert: auf die Funktion. Und darauf, den Stil, den Anspruch und die Individualität der Bewohner zum Ausdruck zu bringen.'
+    images:
+      -
+        src: 'projects/ingenlath/gallery-1.jpg'
+        alt: ''
+        type: 'full'
+      -
+        src: 'projects/ingenlath/gallery-2.jpg'
+        alt: ''
+        type: 'square'
+      -
+        src: 'projects/ingenlath/gallery-3.jpg'
+        alt: ''
+        type: 'square-medium'
+      -
+        src: 'projects/ingenlath/gallery-4.jpg'
+        alt: ''
+        type: 'square-medium'
+      -
+        src: 'projects/ingenlath/gallery-5.jpg'
+        alt: ''
+        type: 'square-circle'
+        glyph: true
+  -
+    id: 'rudolph'
+    ressort: 'innenausbau'
+    type: 'highlight'
+    teaser:
+      type: 'round'
+      image:
+        src: 'projects/rudolph/teaser.jpg'
+    content:
+      title: 'Food Court Recklinghausen'
+      intro: 'Guter Geschmack in vielen Facetten.'
+      copy:
+        - 'Das Auge isst mit, heißt es immer. Dass damit nicht nur das Anrichten der Speisen auf dem Teller gemeint ist, beweist das Augenmerk, das Gastronome auf die Gestaltung ihrer Räumlichkeiten legen. Die Atmosphäre trägt maßgeblich zum kulinarischen Erlebnis bei. Die Designerin Dena Rawle kennt sich mit den Feinheiten dieses Gebietes aus und entwarf den Food-Court für das Palais Vest in Recklinghausen.'
+        - 'Die Herausforderung für Design und Produktion war die Umsetzung verschiedener Themenbereiche innerhalb der Food-Area. Die Lösung: charakteristische Materialien für jeden Bereich. Von gekälkter Eiche über verwitterte Holzoberflächen bis zu Beton und verrostetem Stahl – und 16 Orangenbäumen.'
+    images:
+      -
+        src: 'projects/rudolph/gallery-1.jpg'
+        alt: ''
+        type: 'full'
+      -
+        src: 'projects/rudolph/gallery-2.jpg'
+        alt: ''
+        type: 'square'
+      -
+        src: 'projects/rudolph/gallery-3.jpg'
+        alt: ''
+        type: 'square-medium'
+      -
+        src: 'projects/rudolph/gallery-4.jpg'
+        alt: ''
+        type: 'square-medium'
+        glyph: true
+      -
+        src: 'projects/rudolph/gallery-5.jpg'
+        alt: ''
+        type: 'square-circle'
+  -
+    id: 'ruessmann'
+    ressort: 'innenausbau'
+    type: 'highlight'
+    teaser:
+      type: 'square'
+      image:
+        src: 'projects/ruessmann/teaser.jpg'
+    content:
+      title: 'HolzFormArt Coffee Lounge'
+      intro: 'Eigenpräsentation in Eigenregie.'
+      copy:
+        - 'Zeigen, was möglich ist. Projekte für das eigene Haus sind immer ein Aushängeschild der Firma. So auch die Kaffee-Lounge in unseren Räumlichkeiten. Sie wurde als Teamarbeit in Eigenregie entwickelt und komplett aus massiver Eiche gefertigt – inklusive Spülbecken. Die Flächen sind geölt und zeigen eine natürliche Oberfläche mit charakteristischer Haptik, die durch die dezent integrierte Beleuchtung zur Geltung gebracht wird.'
+        - 'Die Inspiration für das Design fand sich in unserer Schreinerei: Ein Holzstapel stand Pate für den Entwurf, der somit den Arbeitsalltag unserer Mitarbeiter aufgreift und dem Treffpunkt Aufenthaltsqualität hinzufügt.'
+    images:
+      -
+        src: 'projects/ruessmann/gallery-1.jpg'
+        alt: ''
+        type: 'full'
+      -
+        src: 'projects/ruessmann/gallery-2.jpg'
+        alt: ''
+        type: 'square'
+      -
+        src: 'projects/ruessmann/gallery-3.jpg'
+        alt: ''
+        type: 'square-medium'
+        glyph: true
+  -
+    id: 'skagen'
+    ressort: 'ladenbau'
+    type: 'highlight'
+    teaser:
+      type: 'square'
+      image:
+        src: 'projects/skagen/teaser.jpg'
+    content:
+      title: 'Skagen'
+      intro: 'Leitbild, Vorbild, Markenbild. Ein Flagship-Store in Paris, direkt auf dem Boulevard Champs-Élysées.'
+      copy:
+        - 'Die Herausforderung bei dem Auftrag des Kunden Skagen lag für uns nicht nur in der einzigartigen Location im Zentrum der Modewelt. Anforderung war auch die Adaptierbarkeit des Konzeptes auf Stores und Shop-in-Shop-Flächen in ganz Europa.'
+        - 'In enger Zusammenarbeit mit den amerikanischen Designern entwickelten und implementierten wir ein hochwertiges, skalierbares Shop-Konzept, das die Markenidentität des dänischen Modelabels erlebbar macht. Schlichtheit und Eleganz mit der Wahl der Materialien Glas, Metall und Holz, untermalt durch ein dezentes Beleuchtungskonzept. Höchste Qualität verbindet sich mit Zweckmäßigkeit – ein Spiegel der Marke.'
+    facts:
+      branche: 'Uhren / Fashion-Accessoires'
+      year: 'seit 2015'
+      region: 'europaweit'
+      effort:
+        - '150 SIS-Flächen, 3 Läden'
+        - 'Größe von 60 bis 100 m2'
+      service: 'Produktion, Montage, Logistik, Roll-outs'
+    images:
+      -
+        src: 'projects/skagen/gallery-1.jpg'
+        alt: ''
+        type: 'full'
+      -
+        src: 'projects/skagen/gallery-2.jpg'
+        alt: ''
+        type: 'square-medium'
+      -
+        src: 'projects/skagen/gallery-3.jpg'
+        alt: ''
+        type: 'square'
+      -
+        src: 'projects/skagen/gallery-4.jpg'
+        alt: ''
+        type: 'square-medium'
+      -
+        src: 'projects/skagen/gallery-5.jpg'
+        alt: ''
+        type: 'circle'
+      -
+        src: 'projects/skagen/gallery-6.jpg'
+        alt: ''
+        type: 'square'

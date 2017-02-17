@@ -1,0 +1,22 @@
+.Slider.Slider--projects(class="[ Element ]" data-view="SliderView" id="home-projects")
+	.Slider__body
+		.Columns__marginal
+			span Aktuelle Projekte
+		.Slider__spacer
+		.Slider__swiper
+			.swiper-container
+				.swiper-wrapper
+					if content
+						each el in content.projects.items
+							if el.type == content.key
+								.swiper-slide
+									.Teaser(class="Teaser--"+el.teaser.type)
+										.Teaser__body
+											img(src="/assets/images/"+el.teaser.image.src)
+										.Teaser__link(class="Teaser__link--"+el.ressort)
+											a.Button.Button--teaser(href="/de/"+el.ressort+"/"+el.id)
+												span
+													span
+														span= el.ressort
+														span= el.content.title
+			.swiper-pagination

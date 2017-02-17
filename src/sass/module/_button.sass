@@ -59,6 +59,103 @@
 				background-color: white
 				width: 100%
 				+transition(all, 0.45s)
+
+	&--teaser
+		position: relative
+		cursor: pointer
+		display: inline-block
+		background-color: white
+		font-weight: 700
+		text-transform: uppercase
+		color: white
+		&:hover
+			>span
+				margin-right: 1em
+				padding-right: 2em
+				+bp(larger)
+					margin-right: 2em
+			&::before
+				right: 0
+		&::before
+			position: absolute
+			+transition(all, 0.45s)
+			top: 0
+			left: 0
+			right: 4em
+			height: 100%
+			background-color: grey
+			z-index: 2
+			content: ''
+		&::after
+			position: absolute
+			top: 0
+			right: 0
+			z-index: 0
+			content: ''
+			display: inline-block
+			vertical-align: middle
+			z-index: 3
+			width: 4em
+			height: 3.6em
+			+bp(larger)
+				height: 4em
+			// background-color: darken(grey, 10%)
+			background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMiIgYmFzZVByb2ZpbGU9InRpbnkiIGlkPSJFYmVuZV8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjIyLjk2NXB4IiBoZWlnaHQ9IjIyLjAwOHB4IiB2aWV3Qm94PSIwIDAgMjIuOTY1IDIyLjAwOCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHBvbHlnb24gZmlsbC1ydWxlPSJldmVub2RkIiBmaWxsPSIjRkZGRkZGIiBwb2ludHM9IjIyLjk2NSwxMS4wMjEgMTEuNzgzLDAgMTAuMTM1LDEuNjIzIDE4LjU4LDkuOTE1IDAsOS45MTUgMCwxMi4xIDE4LjYwOSwxMi4xIDEwLjE4MiwyMC40MDYgMTEuODA3LDIyLjAwOCAyMi45NjUsMTEuMDIxIDIyLjk2NSwxMS4wMjEgIi8+PC9zdmc+)
+			background-repeat: no-repeat
+			background-position: 1.3em center
+		>span
+			+transition(all, 0.45s)
+			position: relative
+			z-index: 10
+			display: block
+			height: 3.6em
+			padding-right: 4.5em
+			padding-left: 1em
+			+bp(larger)
+				padding-right: 5.5em
+				height: 4em
+			>span
+				display: inline-block
+				padding-top: 0.7em
+				>span
+					display: block
+					letter-spacing: 0
+					&:first-child
+						font-size: 0.5em
+						+bp(larger)
+							font-size: 0.65em
+						line-height: 2
+					&:last-child
+						font-size: 0.8em
+						+bp(larger)
+							font-size: 1.1em
+						text-transform: none
+						line-height: 1
+
+		.Teaser--square &
+			color: $color-text
+			>span
+				padding-left: 0em
+				>span
+					+transform(translateY(40%))
+			&::before
+				background-color: white !important
+			&:hover
+
+				&::before
+					right: 6em !important
+
+
+		.Teaser__link--innenausbau &
+			background-color: $color-yellow
+			&::before
+				background-color: darken($color-yellow, 10%)
+		.Teaser__link--ladenbau &
+			background-color: $color-blue
+			&::before
+				background-color: darken($color-blue, 10%)
+
+
 	&--block
 		position: relative
 		cursor: pointer
@@ -94,7 +191,6 @@
 		.red &
 			background-color: $color-red
 			&::before
-
 				background-color: darken($color-red, 10%)
 
 	&--toggle

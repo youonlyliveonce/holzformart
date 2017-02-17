@@ -1,0 +1,42 @@
+.Slider
+	&__body
+		+clearfix
+		padding-top: $gap-size
+		padding-bottom: $gap-size
+		+bp(medium)
+			padding-top: $gap-size--large
+			padding-bottom: $gap-size--large
+		+bp(larger)
+			padding-top: 1.5*$gap-size--large
+			padding-bottom: 1.5*$gap-size--large
+	&--projects
+		.swiper-pagination
+			position: absolute
+			left: 50%
+			+transform(translateX(-50%))
+			bottom: 0
+			margin-bottom: -50px
+		.Slider__spacer
+			float: left
+			width: 0
+			+bp(medium)
+				width: +unit(2,16)
+			padding-bottom: 20%
+			position: relative
+			&::before
+				height: 3px
+				width: 50%
+				position: absolute
+				top: 0
+				left: 0
+				background-color: $color-text
+				+bp(medium)
+					content: ''
+				+bp(large)
+					width: +unit(2,4)
+		.Slider__swiper
+			position: relative
+			float: left
+			width: 100%
+			+bp(medium)
+				width: +unit(14,16)

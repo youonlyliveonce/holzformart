@@ -195,7 +195,7 @@
 	height: 8px
 	display: inline-block
 	border-radius: 100%
-	background: #000
+	background: transparent
 	opacity: 0.2
 
 
@@ -245,7 +245,7 @@ button.swiper-pagination-bullet
 .swiper-pagination
 	.swiper-pagination-bullet
 		position: relative
-		background-color: black
+		background-color: transparent
 		opacity: 1
 		width: 17px
 		height: 24px
@@ -264,16 +264,18 @@ button.swiper-pagination-bullet
 			position: absolute
 			top: 50%
 			left: 50%
-			margin: -4px 0 0 -4px
-			width: 8px
-			height: 8px
+			margin: -5px 0 0 -5px
+			width: 10px
+			height: 10px
 			display: inline-block
+			border: 2px solid $color-selection
 			border-radius: 100%
-			background: #fff
+			background: $color-selection
+			+transition(background, 0.75s)
 			opacity: 1
 		&-active
 			&:after
-				background-color: $color-selection
+				background-color: white
 				opacity: 1
 
 /* Progress */
