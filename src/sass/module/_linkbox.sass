@@ -1,0 +1,26 @@
+.Linkbox
+	color: white
+	&__body
+		@extend .Section__body--bottom
+		// margin: 0 $gap-aside
+		+bp(medium)
+			margin-left: +unit(2,16)
+			margin-right: +unit(2,16)
+		>div
+			background-color: lighten($color-highlight, 10%)
+			+clearfix
+			>div
+				padding: $gap-size
+				+bp(medium)
+					float: left
+					width: +unit(1,2)
+					padding: $gap-size--medium
+				// +bp(larger)
+				// 	padding: $gap-size--large $gap-size--medium
+				&:first-child
+					font-size: 1.5em
+					+bp(medium)
+						font-size: 2.5em
+					font-weight: 300
+					line-height: 1
+					background-color: $color-highlight

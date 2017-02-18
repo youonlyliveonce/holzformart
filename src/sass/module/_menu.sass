@@ -35,6 +35,13 @@
 			line-height: $header-height--large
 		+bp(larger)
 			line-height: $header-height--larger
+		&.active
+			.red &
+				color: $color-red
+			.yellow &
+				color: $color-yellow
+			.blue &
+				color: $color-blue
 	li
 		user-select: none
 		-webkit-tap-highlight-color: rgba(0,0,0,0)

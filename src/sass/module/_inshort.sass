@@ -1,17 +1,12 @@
 .Inshort
 	&__body
-		+clearfix
-		padding-top: $gap-size
-		padding-bottom: $gap-size
-		+bp(medium)
-			padding-top: $gap-size--large
-			padding-bottom: $gap-size--large
+		@extend .Section__body
 	&__spacer
 		float: left
 		width: $gap-aside
 		+bp(medium)
 			width: +unit(3,16)
-		padding-bottom: 20%
+		height: 200px
 		position: relative
 		&::before
 			height: 3px
@@ -29,12 +24,22 @@
 	&__intro
 		margin-top: -0.4em
 		float: left
+		margin-left: $gap-aside
 		width: +unit(13,16)
 		+bp(medium)
+			margin-left: +unit(3,16)
 			width: +unit(12,16)
 		+bp(large)
 			width: +unit(8,16)
 			padding-right: +unit(2.5,16)
+		&--wide
+			+bp(medium)
+				margin-left: +unit(3,16)
+				width: +unit(12,16)
+			+bp(large)
+				width: +unit(10,16)
+			+bp(huge)
+				width: +unit(9,16)
 	&__buttonbar
 		margin-top: -0.4em
 		float: left

@@ -1,21 +1,18 @@
 .Slider
 	&__body
-		+clearfix
-		padding-top: $gap-size
-		padding-bottom: $gap-size
-		+bp(medium)
-			padding-top: $gap-size--large
-			padding-bottom: $gap-size--large
-		+bp(larger)
-			padding-top: 1.5*$gap-size--large
-			padding-bottom: 1.5*$gap-size--large
+		@extend .Section__body
 	&--projects
 		.swiper-pagination
 			position: absolute
 			left: 50%
 			+transform(translateX(-50%))
 			bottom: 0
-			margin-bottom: -50px
+			+bp(medium)
+				bottom: $gap-size--large/2
+			+bp(larger)
+				bottom: $gap-size--large
+			+bp(huger)
+				bottom: 2.5*$gap-size--large/2
 		.Slider__spacer
 			float: left
 			width: 0

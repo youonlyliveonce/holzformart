@@ -1,15 +1,29 @@
 .Section
-  &-body
-    position: relative
-    max-width: $max-size
-    padding: 0 $gap-size--large
-    margin: 0 auto
-    +clearfix()
-  &-body--small
-    position: relative
-    max-width: $max-size - 420
-    padding: 0 $gap-size
-    margin: 0 auto
-    +clearfix()
-    +bp('large')
-      padding: 0 4*$gap-size--large
+	&__body
+		position: relative
+		+clearfix
+		padding-top: $gap-size
+		padding-bottom: $gap-size
+		+bp(medium)
+			padding-top: $gap-size--large
+			padding-bottom: $gap-size--large
+		+bp(larger)
+			padding-top: 2*$gap-size--large
+			padding-bottom: 2*$gap-size--large
+		+bp(huger)
+			padding-top: 2.5*$gap-size--large
+			padding-bottom: 2.5*$gap-size--large
+	&__body--bottom
+		position: relative
+		+clearfix
+		// padding-top: $gap-size
+		padding-bottom: $gap-size
+		+bp(medium)
+			// padding-top: $gap-size--large
+			padding-bottom: $gap-size--large
+		+bp(larger)
+			// padding-top: 2*$gap-size--large
+			padding-bottom: 2*$gap-size--large
+		+bp(huger)
+			// padding-top: 2.5*$gap-size--large
+			padding-bottom: 2.5*$gap-size--large

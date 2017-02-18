@@ -22,6 +22,9 @@
 				padding: 2em $gap-aside--larger
 	&--highlight
 		position: relative
+		margin-bottom: 2em
+		+bp(large)
+			margin-bottom: 4em
 		h2
 			font-weight: 300
 			font-size: 1.5em
@@ -59,6 +62,29 @@
 			+bp(large)
 				font-size: 0.8em
 			letter-spacing: 0.03em
+		&::after
+			content: ''
+			height: 3px
+			width: 30px
+			position: relative
+			display: inline-block
+			margin-top: 10px
+			+bp(medium)
+				width: 30px
+				margin-top: 20px
+			.red &
+				background-color: $color-red
+	&--minor
+		position: relative
+		color: $color-red
+		padding-top: $gap-size
+		padding-left: $gap-size
+		+bp(medium)
+			padding-top: $gap-size--medium
+			padding-left: $gap-size--medium
+		+bp(large)
+			padding-top: $gap-size--large
+			padding-left: $gap-size--large
 		&::after
 			content: ''
 			height: 3px
