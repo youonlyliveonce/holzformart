@@ -1,11 +1,62 @@
 .Slider
 	&__body
 		@extend .Section__body
+	&__spacer
+		float: left
+		width: 0
+		display: none
+		+bp(medium)
+			display: block
+			width: +unit(2,16)
+		padding-bottom: 20%
+		position: relative
+		&::before
+			height: 3px
+			width: 50%
+			position: absolute
+			top: 0
+			left: 0
+			background-color: $color-text
+			+bp(medium)
+				content: ''
+			+bp(large)
+				width: +unit(2,4)
+	.swiper-button-prev
+		background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMiIgYmFzZVByb2ZpbGU9InRpbnkiIGlkPSJFYmVuZV8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjIyLjk2NXB4IiBoZWlnaHQ9IjIyLjAwOHB4IiB2aWV3Qm94PSIwIDAgMjIuOTY1IDIyLjAwOCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHBvbHlnb24gZmlsbC1ydWxlPSJldmVub2RkIiBmaWxsPSIjREQwRTFCIiBwb2ludHM9IjAsMTAuOTg2IDExLjE4MiwyMi4wMDggMTIuODMsMjAuMzg1IDQuMzg1LDEyLjA5MyAyMi45NjUsMTIuMDkzIDIyLjk2NSw5LjkwOCA0LjM1NSw5LjkwOCAxMi43ODMsMS42MDIgMTEuMTU4LDAgMCwxMC45ODYgMCwxMC45ODYgIi8+PC9zdmc+)
+		display: none
+		+bp(medium)
+			display: block
+			left: +unit(0.5,16)
+		+bp(large)
+			left: +unit(1.5,16)
+	.swiper-button-next
+		background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMiIgYmFzZVByb2ZpbGU9InRpbnkiIGlkPSJFYmVuZV8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjIyLjk2NXB4IiBoZWlnaHQ9IjIyLjAwOHB4IiB2aWV3Qm94PSIwIDAgMjIuOTY1IDIyLjAwOCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHBvbHlnb24gZmlsbC1ydWxlPSJldmVub2RkIiBmaWxsPSIjREQwRTFCIiBwb2ludHM9IjIyLjk2NSwxMS4wMjEgMTEuNzgzLDAgMTAuMTM1LDEuNjIzIDE4LjU4LDkuOTE1IDAsOS45MTUgMCwxMi4xIDE4LjYwOSwxMi4xIDEwLjE4MiwyMC40MDYgMTEuODA3LDIyLjAwOCAyMi45NjUsMTEuMDIxIDIyLjk2NSwxMS4wMjEgIi8+PC9zdmc+)
+		display: none
+		+bp(medium)
+			display: block
+			right: +unit(0.5,16)
+		+bp(large)
+			right: +unit(1.5,16)
+	.swiper-pagination
+		position: absolute
+		left: 50%
+		+transform(translateX(-50%))
+		bottom: 0
+	&--fullsize
+		.swiper-pagination
+			bottom: 0
+			margin-bottom: -5px
+			+bp(medium)
+				bottom: $gap-size--large/2
+			+bp(larger)
+				bottom: $gap-size--large
+			+bp(huger)
+				bottom: 2*$gap-size--large
+		.Slider__swiper
+			+bp(medium)
+				width: +unit(14,16)
 	&--projects
 		.swiper-pagination
-			position: absolute
-			left: 50%
-			+transform(translateX(-50%))
 			bottom: 0
 			+bp(medium)
 				bottom: $gap-size--large/2
@@ -13,24 +64,6 @@
 				bottom: $gap-size--large
 			+bp(huger)
 				bottom: 2.5*$gap-size--large/2
-		.Slider__spacer
-			float: left
-			width: 0
-			+bp(medium)
-				width: +unit(2,16)
-			padding-bottom: 20%
-			position: relative
-			&::before
-				height: 3px
-				width: 50%
-				position: absolute
-				top: 0
-				left: 0
-				background-color: $color-text
-				+bp(medium)
-					content: ''
-				+bp(large)
-					width: +unit(2,4)
 		.Slider__swiper
 			position: relative
 			float: left

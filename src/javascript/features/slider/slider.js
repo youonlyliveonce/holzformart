@@ -7,7 +7,20 @@ let Slider = Base.extend({
 		,parentview: ['object', true, function(){ return {} }]
 		,swiper: ['object', true, function(){ return undefined }]
 		,activeindex: ['number', true, -1]
-		,settings: ['object', true, function(){ return {
+		,type: ['string', true, "full"]
+		,settings: ['object', true, function(){
+			return {
+					full:{
+						speed: 600,
+						loop: false,
+						slidesPerView: 1,
+						spaceBetween: 0,
+						pagination: ' .swiper-pagination',
+						prevButton: ' .swiper-button-prev',
+						nextButton: ' .swiper-button-next',
+						paginationClickable: true,
+					},
+					tiny:{
 						speed: 600,
 						loop: false,
 						slidesPerView: 3,
@@ -26,10 +39,11 @@ let Slider = Base.extend({
 							 320: {
 									 slidesPerView: 1,
 									 spaceBetween: 10
-							 }
-					 }
+							}
+						}
 					}
-		}]
+				}
+			}]
 	},
 
 	events: {
@@ -41,7 +55,12 @@ let Slider = Base.extend({
 		});
 		TweenMax.delayedCall(0.15, function(){
 				this.settings.pagination = '#'+this.id+this.settings.pagination;
-				this.swiper = new Swiper('#'+this.id+' .swiper-container', this.settings);
+				if(this.type == 'full'){
+					this.settings.prevButton = '#'+this.id+this.settings.prevButton;
+					this.settings.nextButton = '#'+this.id+this.settings.nextButton;
+				}
+
+				this.swiper = new Swiper('#'+this.id+' .swiper-container', this.settings[this.type]);
 		}, [], this);
 		return this;
 	},

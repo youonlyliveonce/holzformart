@@ -26,7 +26,7 @@ let Content = PageView.extend({
 				let view = {};
 				switch(element.dataset.view){
 					case "SliderView" :
-						view = new SliderView({el:element, id:element.getAttribute('id'), parentview:self});
+						view = new SliderView({el:element, id:element.getAttribute('id'), parentview:self, type:element.dataset.settings});
 						view.render();
 						break;
 					default:

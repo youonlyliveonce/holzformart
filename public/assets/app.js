@@ -7567,7 +7567,7 @@
 					var view = {};
 					switch (element.dataset.view) {
 						case "SliderView":
-							view = new _slider2.default({ el: element, id: element.getAttribute('id'), parentview: self });
+							view = new _slider2.default({ el: element, id: element.getAttribute('id'), parentview: self, type: element.dataset.settings });
 							view.render();
 							break;
 						default:
@@ -19419,26 +19419,39 @@
 				return undefined;
 			}],
 			activeindex: ['number', true, -1],
+			type: ['string', true, "full"],
 			settings: ['object', true, function () {
 				return {
-					speed: 600,
-					loop: false,
-					slidesPerView: 3,
-					spaceBetween: 30,
-					pagination: ' .swiper-pagination',
-					paginationClickable: true,
-					breakpoints: {
-						1024: {
-							slidesPerView: 2,
-							spaceBetween: 20
-						},
-						640: {
-							slidesPerView: 1,
-							spaceBetween: 20
-						},
-						320: {
-							slidesPerView: 1,
-							spaceBetween: 10
+					full: {
+						speed: 600,
+						loop: false,
+						slidesPerView: 1,
+						spaceBetween: 0,
+						pagination: ' .swiper-pagination',
+						prevButton: ' .swiper-button-prev',
+						nextButton: ' .swiper-button-next',
+						paginationClickable: true
+					},
+					tiny: {
+						speed: 600,
+						loop: false,
+						slidesPerView: 3,
+						spaceBetween: 30,
+						pagination: ' .swiper-pagination',
+						paginationClickable: true,
+						breakpoints: {
+							1024: {
+								slidesPerView: 2,
+								spaceBetween: 20
+							},
+							640: {
+								slidesPerView: 1,
+								spaceBetween: 20
+							},
+							320: {
+								slidesPerView: 1,
+								spaceBetween: 10
+							}
 						}
 					}
 				};
@@ -19453,7 +19466,12 @@
 			this.cacheElements({});
 			TweenMax.delayedCall(0.15, function () {
 				this.settings.pagination = '#' + this.id + this.settings.pagination;
-				this.swiper = new Swiper('#' + this.id + ' .swiper-container', this.settings);
+				if (this.type == 'full') {
+					this.settings.prevButton = '#' + this.id + this.settings.prevButton;
+					this.settings.nextButton = '#' + this.id + this.settings.nextButton;
+				}
+	
+				this.swiper = new Swiper('#' + this.id + ' .swiper-container', this.settings[this.type]);
 			}, [], this);
 			return this;
 		},
