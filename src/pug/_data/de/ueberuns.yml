@@ -11,3 +11,46 @@ content:
     -
       src: /ueberuns/slide-1.jpg
       alt: 'Das sind wir: Holzformart'
+  team:
+    -
+      title: Geschäftsführer
+      surname: Stefan
+      name: Molter
+      tel: +49 2841 887300
+      mail: stefanmolter@holzformart.de
+    -
+      title: Geschäftsführer
+      surname: Roman
+      name: Ingenlath
+      tel: +49 2841 887300
+      mail: romaningenlath@holzformart.de
+    -
+      title: Geschäftsführer/ Betriebsleiter
+      surname: Tino
+      name: Rudolph
+      tel: +49 2841 887300
+      mail: tinorudolph@holzformart.de
+    -
+      title: Projektleiter
+      surname: Wolfgang
+      name: Dumsch
+      tel: +49 2841 88730241
+      mail: wolfgangdumsch@holzformart.de
+    -
+      title: Produktionsleiter
+      surname: Dominique
+      name: Bohnsack
+      tel: +49 2841 887300
+      mail: dominiquebohnsack@holzformart.de
+    -
+      title: Projektleiter
+      surname: Simon
+      name: Kascher
+      tel: +49 2841 88730243
+      mail: s.kascher@holzformart.de
+    -
+      title: GU-Projektleiter
+      surname: Michael
+      name: Schürhörster
+      tel: +49 2841 88730237
+      mail: m.schuerhoerster@holzformart.de

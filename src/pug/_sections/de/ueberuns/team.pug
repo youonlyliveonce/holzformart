@@ -1,0 +1,23 @@
+.Team
+	.Columns__marginal.Columns__marginal--colored
+		span Team
+	.Team__body
+		.Team__heading
+			h2 Kontaktpersonen
+		.Team__listing
+			if content
+				each el in content.team
+					- var imgname = String(el.surname+el.name).toLowerCase().split('ö').join('oe').split('ä').join('ae').split('ü').join('ue');
+					.Team__listitem
+						.Team__listitem-image
+							img(src=images+"/ueberuns/"+imgname+".jpg" alt=""+el.surname+" "+el.name)
+						.Team__listitem-copy
+							span= el.title
+							h5
+								= el.surname
+								br
+								= el.name
+						.Team__listitem-contact
+							a(href="tel:"+el.tel)= el.tel
+							br
+							a(href="mailto:"+el.mail)= el.mail

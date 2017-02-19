@@ -1,0 +1,96 @@
+.Team
+	background-color: $color-red
+	&__body
+		background-color: white
+		@extend .Section__body--bottom
+		+bp(medium)
+			margin-left: +unit(2,16)
+		+bp(huger)
+			padding-right: +unit(2,16)
+	&__heading
+		text-align: center
+		padding-bottom: $gap-size
+		+bp(medium)
+			padding-bottom: $gap-size--medium
+		h2
+			@extend .Heading__overline
+	&__listing
+		+clearfix
+		overflow: hidden
+	&__listitem
+		float: left
+		text-align: center
+		position: relative
+		width: +unit(1,1)
+		margin-bottom: $gap-size
+		padding-top: $gap-size
+		padding-bottom: $gap-size
+		&:after
+			content: ''
+			position: absolute
+			top: 0
+			right: 0
+			bottom: $gap-size
+			+bp(smaller)
+				width: 1px
+				background-color: lighten($color-text, 60%)
+			+bp(medium)
+				bottom: $gap-size--medium
+		+bp(smaller)
+			width: +unit(1,2)
+		+bp(large)
+			width: +unit(1,3)
+		+bp(larger)
+			padding-top: $gap-size--medium
+			padding-bottom: $gap-size--medium
+			width: +unit(1,4)
+	&__listitem-image
+		margin-bottom: $gap-size
+		img
+			border-radius: 100%
+			overflow: hidden
+		+bp(larger)
+			margin-bottom: $gap-size--medium
+	&__listitem-copy
+		margin-bottom: $gap-size
+		>span
+			@extend .Heading__overline
+		>h5
+			font-weight: 700
+			font-size: 1.2em
+			line-height: 1.2
+			text-transform: uppercase
+			letter-spacing: 0.05em
+			+bp(medium)
+				font-size: 1.8em
+		+bp(larger)
+			margin-bottom: $gap-size--medium
+	&__listitem-contact
+		line-height: 1
+		a
+			position: relative
+			font-size: 0.6em
+			display: inline-block
+			+transition(all, 0.35s)
+			line-height: 1.7
+			padding: 0
+			letter-spacing: 0
+			+bp(huge)
+				font-size: 0.8em
+			&::after
+				content: ''
+				height: 1px
+				background-color: lighten($color-text, 30%)
+				position: absolute
+				left: 0
+				bottom: 2px
+				width: 100%
+				+transition(all, 0.45s)
+			&:hover
+				color: $color-red
+				font-weight: 600
+				&::after
+					height: 1px
+					width: 0px
+					left: 50%
+					background-color: $color-red

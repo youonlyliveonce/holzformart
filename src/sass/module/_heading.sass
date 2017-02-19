@@ -1,4 +1,14 @@
 .Heading
+	&__overline
+		display: block
+		text-transform: uppercase
+		+fontsemi
+		font-size: 0.55em
+		+bp(medium)
+			font-size: 0.7em
+		+bp(huger)
+			font-size: 0.8em
+		letter-spacing: 0.03em
 	&--box
 		text-align: left
 		position: relative
@@ -45,23 +55,11 @@
 			background-color: white
 			margin-bottom: 50px
 		span
-			display: block
-			text-transform: uppercase
-			+fontsemi
-			font-size: 0.7em
-			+bp(large)
-				font-size: 0.8em
-			letter-spacing: 0.03em
+			@extend .Heading__overline
 	&--major
 		position: relative
 		span
-			display: block
-			text-transform: uppercase
-			+fontsemi
-			font-size: 0.7em
-			+bp(large)
-				font-size: 0.8em
-			letter-spacing: 0.03em
+			@extend .Heading__overline
 		&::after
 			content: ''
 			height: 3px
