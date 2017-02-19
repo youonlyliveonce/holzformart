@@ -1,11 +1,18 @@
 .Header-sticky
 	display: none
-	background-color: $color-background
+	background-color: lighten($color-highlight, 65%)
+	// .red &
+	// 	background-color: $color-red
+	// .yellow &
+	// 	background-color: $color-yellow
+	// .blue &
+	// 	background-color: $color-blue
 	width: 100%
 	position: fixed
 	height: auto
 	z-index: 9999999
 	+transform(translateY(-100%))
+	+transition(all, 0.25s)
 	+bp('large')
 		display: block
 		visibility: hidden
@@ -27,9 +34,23 @@
 		height: 100px
 		top: $header-height--medium - 50px
 		left: $gap-aside--medium
+		+bp(medium)
+			left: $gap-aside--medium
+		+bp(large)
+			left: $gap-aside--large
+		+bp(larger)
+			left: $gap-aside--larger
 		svg
 			position: absolute
 			left: 0
 			top: 0
 			right: 0
 			bottom: 0
+			.Logo-svg--a
+				fill: $color-red
+				.red &
+					fill: $color-red
+				.yellow &
+					fill: $color-yellow
+				.blue &
+					fill: $color-blue

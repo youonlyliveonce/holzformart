@@ -36,18 +36,16 @@ var MainView = View.extend({
 						nav: '.Navigation',
 						switcher: '[data-hook=switcher]'
 				});
-
+				console.log(this.header);
 				// Init and configure our page switcher
-				this.pageSwitcher = new ViewSwitcher(this.main, {
+				this.pageSwitcher = new ViewSwitcher(this.switcher, {
 						waitForRemove: true,
 						hide: function (oldView, cb) {
-								// Set scope for callback of TweenMax
-								var inSwitcher = this;
 								// Hide oldView if oldView exits
 								if(oldView && oldView.el){
 										oldView.hookBeforeHide();
 										TweenMax.to(oldView.el, 0.4, {opacity:0, onComplete:function(){
-												cb.apply(inSwitcher);
+												cb.apply();
 										}});
 								}
 						},
@@ -126,7 +124,7 @@ var MainView = View.extend({
 				dom.addClass(document.body, view.model.pageClass);
 				dom.removeClass(document.body, this.pageSwitcher.current.model.pageClass);
 
-				// SWICTH THE VIEW
+				// SWITCH THE VIEW
 				this.pageSwitcher.set(view);
 
 				// UPDATE PAG NAV
@@ -193,15 +191,16 @@ var MainView = View.extend({
 		},
 
 		handleScroll: function(event){
-			let scrollY = event.scrollY;
-
+			console.log(this);
+			let scrollY = window.scrollY,
+					self = CM.App.mainView;
 			if(scrollY >= 0){
 				if(scrollY > self.header.offsetHeight+50 && !self.isSticky){
 					self.isSticky = true;
-					dom.addClass(document.body, 'Header--sticky-open');
+					dom.addClass(document.body, 'Header-sticky--open');
 				} else if(scrollY < self.header.offsetHeight+50 && self.isSticky){
 					self.isSticky = false;
-					dom.removeClass(document.body, 'Header--sticky-open');
+					dom.removeClass(document.body, 'Header-sticky--open');
 				}
 			}
 		},
