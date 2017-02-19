@@ -1,0 +1,30 @@
+.Clients
+	.Columns__marginal
+		span Unsere Auftraggeber
+	.Clients__body
+		.Clients__text
+			.Heading.Heading--major
+				h2 Kunden, Architekten und Planer
+			p Zu unserem Kundenkreis gehören neben Privatpersonen zahlreiche Auftraggeber aus dem Einzelhandel. Insbesondere Architekten und Planungsbüros greifen auf unsere Kompetenz zurück, maßgefertigte Einbauten termingerecht zu liefern.
+			ul
+				li
+					img(src=images+"/ueberuns/logo-bodyshop.jpg")
+				li
+					img(src=images+"/ueberuns/logo-fossil.jpg")
+				li
+					img(src=images+"/ueberuns/logo-crocs.jpg")
+				li
+					img(src=images+"/ueberuns/logo-riverwoods.jpg")
+		.Clients__box
+			div
+				h3 Kunden
+				ul
+					if content
+						each el in content.clients
+							li= el
+			div
+				h3 Architekten und Planer
+				ul
+					if content
+						each el in content.architects
+							li= el
