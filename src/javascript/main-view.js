@@ -36,7 +36,6 @@ var MainView = View.extend({
 						nav: '.Navigation',
 						switcher: '[data-hook=switcher]'
 				});
-				console.log(this.header);
 				// Init and configure our page switcher
 				this.pageSwitcher = new ViewSwitcher(this.switcher, {
 						waitForRemove: true,
@@ -54,11 +53,10 @@ var MainView = View.extend({
 								TweenMax.set(newView.el, {opacity:0});
 								// Set newView opacity to 0
 
-								self.scrollTo(0);
-								TweenMax.set(self.page, {scale:1});
+								TweenMax.to(window, 0.75, {scrollTo:{x:0, y:0}, overwrite:true, ease:Power2.easeOut});
+								dom.addClass(document.body, newView.model.pageClass);
 
 								TweenMax.to(newView.el, 0.8, {opacity:1, onComplete:function(){
-									self.page.setAttribute('class', newView.model.pageClass);
 									// Scroll to paramter 'section'
 									self.handleUpdateView();
 									newView.hookAfterShow();

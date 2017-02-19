@@ -5,8 +5,6 @@ items:
     type: 'highlight'
     teaser:
       type: 'square'
-      image:
-        src: 'projects/ingenlath/teaser.jpg'
     content:
       title: 'Küche und Entree'
       intro: 'Individualität für Persönlichkeiten. Es gibt keine zweite Chance für einen ersten Eindruck.'
@@ -71,13 +69,11 @@ items:
         alt: ''
         type: 'square-circle'
   -
-    id: 'ruessmann'
+    id: 'hofgarten_solingen'
     ressort: 'innenausbau'
     type: 'highlight'
     teaser:
       type: 'square'
-      image:
-        src: 'projects/ruessmann/teaser.jpg'
     content:
       title: 'HolzFormArt Coffee Lounge'
       intro: 'Eigenpräsentation in Eigenregie.'
@@ -104,8 +100,6 @@ items:
     type: 'highlight'
     teaser:
       type: 'square'
-      image:
-        src: 'projects/skagen/teaser.jpg'
     content:
       title: 'Skagen'
       intro: 'Leitbild, Vorbild, Markenbild. Ein Flagship-Store in Paris, direkt auf dem Boulevard Champs-Élysées.'

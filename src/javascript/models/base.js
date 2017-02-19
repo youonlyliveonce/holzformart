@@ -19,6 +19,7 @@ let Base = Model.extend({
 			 this.pageTitle = resp.split("<title>")[1].split("</title>")[0];
 			 this.pageContent = tempDom.querySelectorAll('.View')[0];
 			 this.pageClass = tempDom.querySelectorAll('meta[name="pageColor"]')[0].getAttribute('content');
+			 console.log("this.pageClass", this.pageClass);
 			 return resp;
 	 },
 		ajaxConfig: function () {

@@ -31,6 +31,13 @@
 		+bp(large)
 			width: +unit(8,16)
 			padding-right: +unit(2.5,16)
+		&--copy
+			+bp(medium)
+				margin-left: +unit(3,16)
+				width: +unit(12,16)
+			+bp(large)
+				width: +unit(6,16)
+				padding-right: +unit(1,16)
 		&--wide
 			+bp(medium)
 				margin-left: +unit(3,16)
@@ -39,6 +46,23 @@
 				width: +unit(10,16)
 			+bp(huge)
 				width: +unit(9,16)
+	&__copy
+		float: left
+		width: +unit(15,16)
+		margin-left: $gap-aside
+		// margin-left: +unit(1,16)
+		padding-right: 0
+		+bp(small)
+			width: +unit(9,16)
+		+bp(medium)
+			padding-right: +unit(1,16)
+			margin-left: +unit(3,16)
+		+bp(large)
+			padding-left: 0
+			width: +unit(7,16)
+			margin-left: 0
+		+bp(huge)
+			padding-right: +unit(2,16)
 	&__buttonbar
 		margin-top: -0.4em
 		float: left

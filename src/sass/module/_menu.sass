@@ -42,6 +42,14 @@
 				color: $color-yellow
 			.blue &
 				color: $color-blue
+			&:hover
+				&::after
+					.red &
+						background-color: $color-red
+					.yellow &
+						background-color: $color-yellow
+					.blue &
+						background-color: $color-blue
 	li
 		user-select: none
 		-webkit-tap-highlight-color: rgba(0,0,0,0)
@@ -76,6 +84,15 @@
 					background-color: $color-red
 					margin-bottom: -2px
 					height: 3px
+					.red &
+						&.active
+							background-color: $color-red
+					.yellow &
+						&.active
+							background-color: $color-yellow
+					.blue &
+						&.active
+							background-color: $color-blue
 		+bp('medium')
 			li
 				a
