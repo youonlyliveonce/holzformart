@@ -1,0 +1,45 @@
+.Circle-image
+	&__body
+		@extend .Section__body--bottom
+		+clearfix
+		+bp(medium)
+			margin-left: +unit(1,16)
+			margin-right: +unit(1,16)
+		>div
+			position: relative
+			&:first-child
+
+				padding-bottom: +unit(14,16)
+				width: +unit(14,16)
+				margin-right: +unit(1,16)
+				margin-left: +unit(1,16)
+				img
+					border-radius: 100%
+					overflow: hidden
+					position: absolute
+					width: 100%
+					left: 50%
+					top: 50%
+					+transform(translateX(-50%) translateY(-50%))
+			&:last-child
+				padding: 0 20px
+			+bp(medium)
+				float: left
+				&:first-child
+					width: +unit(6,16)
+					padding-bottom: +unit(6,16)
+					margin-right: +unit(1,16)
+					margin-left: 0
+				&:last-child
+					width: +unit(9,16)
+			+bp(large)
+				&:first-child
+					width: +unit(9,16)
+					padding-bottom: +unit(9,16)
+					margin-right: +unit(1,16)
+				&:last-child
+					width: +unit(6,16)
+			+bp(larger)
+				&:last-child
+					width: +unit(5,16)
+					padding-top: +unit(1,16)
