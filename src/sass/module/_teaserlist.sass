@@ -1,0 +1,81 @@
+.Teaserlist
+
+	&__heading
+		@extend .Section__heading
+	&__spacer
+		top: 0
+		left: 0
+		width: $gap-aside
+		+bp(medium)
+			width: +unit(1,16)
+		position: absolute
+		&::before
+			height: 3px
+			width: 100%
+			position: absolute
+			top: 0
+			background-color: $color-text
+			+bp(medium)
+				content: ''
+	&__body
+		position: relative
+		@extend .Section__body--bottom
+	&__listing
+		opacity: 1
+		+bp(medium)
+			margin-left: +unit(1,16)
+			margin-right: +unit(1,16)
+		+clearfix
+
+	.Teaser
+		margin-bottom: $gap-size
+		+bp(medium)
+			margin-bottom: $gap-size--medium
+		+bp(large)
+			margin-bottom: $gap-size--large
+
+		&--left
+			+bp(medium)
+				float: left
+		&--right
+			+bp(medium)
+				float: right
+
+		&--circle-medium,
+		&--square-medium,
+		&--square-mediumborder
+			width: +unit(6,16)
+
+		&--circle,
+		&--square
+			width: +unit(9,16)
+
+		&--square-mediumborder
+			margin-top: +unit(1,16)
+			margin-bottom: +unit(2,16)
+			margin-left: +unit(2,16)
+			& + .Teaser--right
+				clear: right
+			& + .Teaser--left
+				clear: left
+			&::after
+				width: +unit(2,6)
+				height: +unit(2.2,6)
+				position: absolute
+				right: 0
+				top: 0
+				+transform(translateX(100%))
+				background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMiIgYmFzZVByb2ZpbGU9InRpbnkiIGlkPSJFYmVuZV8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjE3NC4wNzhweCIgaGVpZ2h0PSIxOTAuNTMxcHgiIHZpZXdCb3g9IjAgMCAxNzQuMDc4IDE5MC41MzEiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxnPjxwYXRoIGZpbGw9IiNERDBFMUIiIGQ9Ik03OC41MjIsMTIwLjk1OUg0OC43ODh2NjkuNTcySDBWMGg5MC45MzZjMjMuMDk1LDAsNDAuODQ5LDUuMTk3LDUzLjI2MSwxNS41OWMxMi40MTQsMTAuMzkyLDE4LjYyMSwyNS40MDMsMTguNjIxLDQ1LjAzNGMwLDEzLjg1Ni0zLjE3NiwyNS40MDQtOS41MjcsMzQuNjQyYy02LjM1LDkuMjM4LTE1LjU4OCwxNi4wNzItMjcuNzEzLDIwLjQ5N2w0OC41LDc0Ljc2OWgtNTQuODUyTDc4LjUyMiwxMjAuOTU5eiBNNDguNzg4LDg1LjczOWgzMy43NzZjMTAuNTgyLDAsMTguMjgyLTEuOTIxLDIzLjA5NS01Ljc3M2M0LjgwOS0zLjg0OCw3LjIxNy0xMC4wMDUsNy4yMTctMTguNDc2YzAtOC4yNzMtMi40MDgtMTQuMzM1LTcuMjE3LTE4LjE4OGMtNC44MTItMy44NDgtMTIuNTEzLTUuNzc0LTIzLjA5NS01Ljc3NEg0OC43ODhWODUuNzM5eiIvPjwvZz48L3N2Zz4=);
+				background-repeat: no-repeat
+				background-size: contain
+				+bp(medium)
+					content: ''
+			&::before
+				height: 3px
+				width: +unit(1,6)
+				margin-left: +unit(2,6) *-1
+				position: absolute
+				top: 0
+				background-color: $color-text
+				+bp(medium)
+					content: ''

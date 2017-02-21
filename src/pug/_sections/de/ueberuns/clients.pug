@@ -16,15 +16,16 @@
 				li
 					img(src=images+"/ueberuns/logo-riverwoods.jpg")
 		.Clients__box
+			h3 Kunden
 			div
-				h3 Kunden
 				ul
 					if content
-						each el in content.clients
-							li= el
+						each el, index in content.clients
+							if index % 2 == 0
+								li= el
 			div
-				h3 Architekten und Planer
 				ul
 					if content
-						each el in content.architects
-							li= el
+						each el2, index2 in content.clients
+							if Math.abs(index2 % 2) == 1
+								li= el2

@@ -4,7 +4,8 @@ items:
     ressort: 'innenausbau'
     type: 'highlight'
     teaser:
-      type: 'square'
+      type: 'square-medium'
+      float: 'right'
     content:
       title: 'Küche und Entree'
       intro: 'Individualität für Persönlichkeiten. Es gibt keine zweite Chance für einen ersten Eindruck.'
@@ -37,9 +38,8 @@ items:
     ressort: 'innenausbau'
     type: 'highlight'
     teaser:
-      type: 'round'
-      image:
-        src: 'projects/rudolph/teaser.jpg'
+      type: 'circle'
+      float: 'left'
     content:
       title: 'Food Court Recklinghausen'
       intro: 'Guter Geschmack in vielen Facetten.'
@@ -73,7 +73,8 @@ items:
     ressort: 'innenausbau'
     type: 'highlight'
     teaser:
-      type: 'square'
+      type: 'circle-medium'
+      float: 'right'
     content:
       title: 'HolzFormArt Coffee Lounge'
       intro: 'Eigenpräsentation in Eigenregie.'
@@ -95,11 +96,247 @@ items:
         type: 'square-medium'
         glyph: true
   -
-    id: 'skagen'
+    id: 'bilk_arcaden_duesseldorf'
+    ressort: 'innenausbau'
+    type: 'highlight'
+    teaser:
+      type: 'square'
+      float: 'left'
+    content:
+      title: 'Bilk Arcaden Düsseldorf'
+      intro: ''
+      copy:
+        - ''
+        - ''
+    facts:
+      branche: ''
+      year: ''
+      region: ''
+      effort:
+        - ''
+        - ''
+      service: ''
+    images:
+      -
+        src: 'projects/bilk/gallery-1.jpg'
+        alt: ''
+        type: 'full'
+  -
+    id: 'hfa'
+    ressort: 'innenausbau'
+    type: 'highlight'
+    teaser:
+      type: 'square-medium'
+      float: 'right'
+    content:
+      title: 'Coffee bar / Meeting point'
+      intro: ''
+      copy:
+        - ''
+        - ''
+    facts:
+      branche: ''
+      year: ''
+      region: ''
+      effort:
+        - ''
+        - ''
+      service: ''
+    images:
+      -
+        src: 'projects/hfa/gallery-1.jpg'
+        alt: ''
+        type: 'full'
+  -
+    id: 'palais_vest_recklinghausen'
+    ressort: 'innenausbau'
+    type: 'highlight'
+    teaser:
+      type: 'square-mediumborder'
+      float: 'left'
+    content:
+      title: 'Food Court Recklinghausen'
+      intro: ''
+      copy:
+        - ''
+        - ''
+    facts:
+      branche: ''
+      year: ''
+      region: ''
+      effort:
+        - ''
+        - ''
+      service: ''
+    images:
+      -
+        src: 'projects/recklinghausen/gallery-1.jpg'
+        alt: ''
+        type: 'full'
+  -
+    id: 'rechtsanwaelte'
+    ressort: 'innenausbau'
+    type: 'highlight'
+    teaser:
+      type: 'circle'
+      float: 'right'
+    content:
+      title: 'Rechtsanwälte'
+      intro: ''
+      copy:
+        - ''
+        - ''
+    facts:
+      branche: ''
+      year: ''
+      region: ''
+      effort:
+        - ''
+        - ''
+      service: ''
+    images:
+      -
+        src: 'projects/rechtsanwaelte/gallery-1.jpg'
+        alt: ''
+        type: 'full'
+
+  -
+    id: 'adidas'
     ressort: 'ladenbau'
     type: 'highlight'
     teaser:
       type: 'square'
+      float: 'left'
+    content:
+      title: 'adidas Show room'
+      intro: ''
+      copy:
+        - ''
+        - ''
+    facts:
+      branche: ''
+      year: ''
+      region: ''
+      effort:
+        - ''
+        - ''
+      service: ''
+    images:
+      -
+        src: 'projects/skagen/gallery-1.jpg'
+        alt: ''
+        type: 'full'
+  -
+    id: 'fossil'
+    ressort: 'ladenbau'
+    type: 'standard'
+    teaser:
+      type: 'circle-medium'
+      float: 'right'
+    content:
+      title: 'Fossil Show room'
+      intro: ''
+      copy:
+        - ''
+        - ''
+    facts:
+      branche: ''
+      year: ''
+      region: ''
+      effort:
+        - ''
+        - ''
+      service: ''
+    images:
+      -
+        src: 'projects/fossil/gallery-1.jpg'
+        alt: ''
+        type: 'full'
+  -
+    id: 'ggl'
+    ressort: 'ladenbau'
+    type: 'standard'
+    teaser:
+      type: 'square-medium'
+      float: 'right'
+    content:
+      title: 'George Gina & Lucy'
+      intro: 'Shop-Design mit künstlerischer Freiheit.'
+      copy:
+        - 'Knallige Farben, unkonventionelles Design und Charakter – der Konzept-Store der beliebten Accessoire-Marke George Gina & Lucy in den Pasing Arcaden sollte zu den Produkten des Labels passen. Für die entsprechende Gestaltung des Interiors konnte die Künstlerin und Designerin Delphine Buhro gewonnen werden. Sie inszenierte den Shop als bunte, familiäre Wohnwelt mit einer Holzfassade, diversen Metallstrukturen und Formglasscheiben.'
+        - 'Die Vielfalt des Sortimentes und der Designs drückt sich in der Materialität und Haptik der teilweise bedruckten Holzoberflächen aus. Die besondere Herausforderung des Projektes war allerdings eine andere: den Anspruch des Kunden und die Ideen der Künstlerin mit den Brandschutzbestimmungen der Shopping-Mall in Einklang zu bringen.'
+    facts:
+      branche: 'Fashion-Accessoires'
+      year: '2015'
+      region: 'München-Pasing'
+      effort:
+        - 'Konzeptstore'
+      service: 'Produktion, Montage, Roll-outs'
+    images:
+      -
+        src: 'projects/ggl/gallery-1.jpg'
+        alt: ''
+        type: 'full'
+  -
+    id: 'riverwoods'
+    ressort: 'ladenbau'
+    type: 'standard'
+    teaser:
+      type: 'square-mediumborder'
+      float: 'left'
+      glyphe: 'top-right-outside'
+    content:
+      title: 'riverwoods'
+      intro: ''
+      copy:
+        - ''
+        - ''
+    facts:
+      branche: ''
+      year: ''
+      region: ''
+      effort:
+        - ''
+        - ''
+      service: ''
+    images:
+      -
+        src: 'projects/riverwoods/gallery-1.jpg'
+        alt: ''
+        type: 'full'
+  -
+    id: 'thebodyshop'
+    ressort: 'ladenbau'
+    type: 'standard'
+    teaser:
+      type: 'circle-medium'
+      float: 'left'
+    content:
+      title: 'thebodyshop'
+      intro: ''
+      copy:
+        - ''
+        - ''
+    facts:
+      branche: ''
+      year: ''
+      region: ''
+      effort:
+        - ''
+        - ''
+      service: ''
+    images:
+      -
+        src: 'projects/thebodyshop/gallery-1.jpg'
+        alt: ''
+        type: 'full'
+  -
+    id: 'skagen'
+    ressort: 'ladenbau'
+    type: 'highlight'
+    teaser:
+      type: 'circle'
+      float: 'right'
     content:
       title: 'Skagen'
       intro: 'Leitbild, Vorbild, Markenbild. Ein Flagship-Store in Paris, direkt auf dem Boulevard Champs-Élysées.'

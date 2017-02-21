@@ -1,14 +1,18 @@
 .Teaser
 	padding-bottom: 1em
+	position: relative
+	&--circle-medium,
+	&--circle,
 	&--round
 		.Teaser__body
 			padding-bottom: 0
-			position: relative
 			overflow: hidden
 			+border-radius(100%)
 
 	&__body
+		position: relative
 		line-height: 0
+		width: 100%
 		img
 			width: 100%
 			height: 100%

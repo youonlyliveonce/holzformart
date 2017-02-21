@@ -1,4 +1,11 @@
 .Section
+	&__heading
+		text-align: center
+		padding-bottom: $gap-size--medium
+		+bp(medium)
+			padding-bottom: $gap-size--large
+		h2
+			@extend .Heading__overline
 	&__body
 		position: relative
 		+clearfix
