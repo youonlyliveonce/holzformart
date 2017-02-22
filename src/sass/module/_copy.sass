@@ -2,3 +2,44 @@
 	p
 		text-align: left
 		font-size: 1em
+	&--large
+		p
+			font-weight: 300
+			text-align: left
+			font-size: 1.6em
+			+bp(medium)
+				font-size: 2.2em
+			line-height: 1.2
+		table
+			font-size: 1.6em
+			+bp(medium)
+				font-size: 2.2em
+			font-weight: 300
+			line-height: 1.3
+			tr
+				td
+					display: table-row
+					+bp(medium)
+						display: table-cell
+					a
+						display: inline-block
+						color: $color-red
+						letter-spacing: 0
+						position: relative
+						&::after
+							+transition(all, 0.25s)
+							display: block
+							content: ''
+							position: absolute
+							bottom: 0
+							left: 0
+							width: 100%
+							height: 2px
+							background-color: $color-red
+						&:hover
+							color: $color-text
+							&::after
+								bottom: 2px
+								height: 0px
+					&:first-child
+						width: 30%

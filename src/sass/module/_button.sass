@@ -33,7 +33,6 @@
 				width: 4em
 				height: 2em
 				background-position: 1.3em center
-
 		span
 			position: relative
 			z-index: 10
@@ -187,6 +186,43 @@
 			display: inline-block
 			line-height: 4em
 			padding-left: 6em
+		.red &
+			background-color: $color-red
+			&::before
+				background-color: darken($color-red, 10%)
+	&--smallblock
+		position: relative
+		cursor: pointer
+		display: inline-block
+		background-color: grey
+		font-weight: 700
+		text-transform: uppercase
+		margin-bottom: 1em
+		color: white
+		&:hover
+			&::before
+				width: 100%
+				background-position: 2em center
+		&::before
+			position: absolute
+			z-index: 0
+			content: ''
+			display: inline-block
+			vertical-align: middle
+			+transition(all, 0.45s)
+			width: 4em
+			height: 4em
+			background-color: darken(grey, 10%)
+			background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMiIgYmFzZVByb2ZpbGU9InRpbnkiIGlkPSJFYmVuZV8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjIyLjk2NXB4IiBoZWlnaHQ9IjIyLjAwOHB4IiB2aWV3Qm94PSIwIDAgMjIuOTY1IDIyLjAwOCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHBvbHlnb24gZmlsbC1ydWxlPSJldmVub2RkIiBmaWxsPSIjRkZGRkZGIiBwb2ludHM9IjIyLjk2NSwxMS4wMjEgMTEuNzgzLDAgMTAuMTM1LDEuNjIzIDE4LjU4LDkuOTE1IDAsOS45MTUgMCwxMi4xIDE4LjYwOSwxMi4xIDEwLjE4MiwyMC40MDYgMTEuODA3LDIyLjAwOCAyMi45NjUsMTEuMDIxIDIyLjk2NSwxMS4wMjEgIi8+PC9zdmc+)
+			background-repeat: no-repeat
+			background-position: 1.3em center
+		span
+			position: relative
+			z-index: 10
+			display: inline-block
+			line-height: 4em
+			padding-left: 6em
+			padding-right: 2em
 		.red &
 			background-color: $color-red
 			&::before
