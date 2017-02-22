@@ -22,6 +22,8 @@
 		@extend .Section__body--bottom
 	&__listing
 		opacity: 1
+		margin-left: $gap-aside
+		margin-right: $gap-aside
 		+bp(medium)
 			margin-left: +unit(1,16)
 			margin-right: +unit(1,16)
@@ -44,16 +46,21 @@
 		&--circle-medium,
 		&--square-medium,
 		&--square-mediumborder
-			width: +unit(6,16)
+			width: +unit(16,16)
+			+bp(medium)
+				width: +unit(6,16)
 
 		&--circle,
 		&--square
-			width: +unit(9,16)
+			width: +unit(16,16)
+			+bp(medium)
+				width: +unit(9,16)
 
 		&--square-mediumborder
-			margin-top: +unit(1,16)
-			margin-bottom: +unit(2,16)
-			margin-left: +unit(2,16)
+			+bp(medium)
+				margin-top: +unit(1,16)
+				margin-bottom: +unit(2,16)
+				margin-left: +unit(2,16)
 			& + .Teaser--right
 				clear: right
 			& + .Teaser--left
