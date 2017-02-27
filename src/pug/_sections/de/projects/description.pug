@@ -1,0 +1,18 @@
+if content
+	each el in content.projects.items
+		if el.id == content.key
+			.Inshort(class="[ Element ]")
+				.Inshort__body
+					.Columns__marginal
+						span= "Projekt " + el.ressort
+					.Inshort__spacer
+					.Inshort__intro.Inshort__intro--copy
+						.Heading.Heading--major.Heading--large
+							span= el.content.subititle
+							h2= el.content.title
+						.Copy.Copy--colored
+							p= el.content.intro
+					.Inshort__copy
+						.Copy
+							each item in el.content.copy
+								p= item

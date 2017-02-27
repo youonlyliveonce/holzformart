@@ -1,0 +1,33 @@
+.Gallery
+	.Gallery__body
+		.Gallery__listing
+			if content
+				each el in content.projects.items
+					if el.id == content.key
+						each item in el.images
+							if item.src
+								.Gallery__item(class="Gallery__item--"+item.type+" Gallery__item--"+item.float)
+									.Gallery__item-body
+										img(src="/assets/images/"+item.src alt=""+item.alt)
+							else
+								.Gallery__item(class="Gallery__item--"+item.type+" Gallery__item--"+item.float)
+									.Gallery__item-facts
+										h4 Fakten
+										table
+											tr
+												td Branche
+												td= el.facts.branche
+											tr
+												td Jahr
+												td= el.facts.year
+											tr
+												td Region
+												td= el.facts.region
+											tr
+												td Umfang
+												td
+													each effort in el.facts.effort
+														span= effort
+											tr
+												td Leistungen
+												td= el.facts.service

@@ -3,13 +3,25 @@
 content:
   impressions:
     -
-      src: /ueberuns/slide-1.jpg
+      src: /ueberuns/impressionen_1.jpg
       alt: 'Das sind wir: Holzformart'
     -
-      src: /ueberuns/slide-1.jpg
+      src: /ueberuns/impressionen_2.jpg
       alt: 'Das sind wir: Holzformart'
     -
-      src: /ueberuns/slide-1.jpg
+      src: /ueberuns/impressionen_3.jpg
+      alt: 'Das sind wir: Holzformart'
+    -
+      src: /ueberuns/impressionen_4.jpg
+      alt: 'Das sind wir: Holzformart'
+    -
+      src: /ueberuns/impressionen_5.jpg
+      alt: 'Das sind wir: Holzformart'
+    -
+      src: /ueberuns/impressionen_6.jpg
+      alt: 'Das sind wir: Holzformart'
+    -
+      src: /ueberuns/impressionen_7.jpg
       alt: 'Das sind wir: Holzformart'
   team:
     -

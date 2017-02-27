@@ -1,0 +1,69 @@
+.Gallery
+	&__body
+		position: relative
+		@extend .Section__body--bottom
+	&__listing
+		opacity: 1
+		margin-left: $gap-aside
+		margin-right: $gap-aside
+		+bp(medium)
+			margin-left: +unit(1,16)
+			margin-right: +unit(1,16)
+		+clearfix
+	&__item
+		padding-bottom: 1em
+		position: relative
+		margin-bottom: $gap-size
+		+bp(medium)
+			margin-bottom: $gap-size--medium
+		+bp(large)
+			margin-bottom: $gap-size--large
+		&--facts
+			width: +unit(16,16)
+			padding-bottom: +unit(15,16)
+			border: 2px solid $color-blue
+			border-radius: 100%
+			+bp(medium)
+				width: +unit(6,16)
+				padding-bottom: +unit(6,16)
+		&--circle-medium,
+		&--circle,
+		&--round
+			.Gallery__item-body
+				padding-bottom: 0
+				overflow: hidden
+				+border-radius(100%)
+		&--left
+			+bp(medium)
+				float: left
+		&--right
+			+bp(medium)
+				float: right
+		&--circle-medium,
+		&--square-medium
+			width: +unit(16,16)
+			+bp(medium)
+				width: +unit(6,16)
+		&--full
+			+bp(medium)
+				margin-left: +unit(1,16)
+				margin-right: +unit(1,16)
+		&--circle,
+		&--square
+			width: +unit(16,16)
+			+bp(medium)
+				width: +unit(9,16)
+		&-facts
+			position: absolute
+			top: 50%
+			left: 50%
+			width: 80%
+			+transform(translateY(-50%) translateX(-50%))
+
+		&-body
+			position: relative
+			line-height: 0
+			width: 100%
+			img
+				width: 100%
+				height: 100%

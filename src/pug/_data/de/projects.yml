@@ -1,343 +1,13 @@
 items:
   -
-    id: 'ingenlath'
-    ressort: 'innenausbau'
-    type: 'highlight'
-    teaser:
-      type: 'square-medium'
-      float: 'right'
-    content:
-      title: 'Küche und Entree'
-      intro: 'Individualität für Persönlichkeiten. Es gibt keine zweite Chance für einen ersten Eindruck.'
-      copy:
-        - 'Darum haben wir bei der Konzeption und Gestaltung des Eingangsbereiches eines Privathauses in Willich dieser „Visitenkarte des Hauses“ besondere Beachtung geschenkt. Auch in der Küche zeigt sich unsere Handschrift bei Konzept, Beleuchtung, moderner Form- und Farbgebung sowie der Integration der Arbeitsplatten aus kaltgewalztem Edelstahl. Die Formgebung leitet sich aus der Funktion der Objekte her, die Linienführung ist klar und das Design ist auf das Wesentliche reduziert: auf die Funktion. Und darauf, den Stil, den Anspruch und die Individualität der Bewohner zum Ausdruck zu bringen.'
-    images:
-      -
-        src: 'projects/ingenlath/gallery-1.jpg'
-        alt: ''
-        type: 'full'
-      -
-        src: 'projects/ingenlath/gallery-2.jpg'
-        alt: ''
-        type: 'square'
-      -
-        src: 'projects/ingenlath/gallery-3.jpg'
-        alt: ''
-        type: 'square-medium'
-      -
-        src: 'projects/ingenlath/gallery-4.jpg'
-        alt: ''
-        type: 'square-medium'
-      -
-        src: 'projects/ingenlath/gallery-5.jpg'
-        alt: ''
-        type: 'square-circle'
-        glyph: true
-  -
-    id: 'rudolph'
-    ressort: 'innenausbau'
-    type: 'highlight'
-    teaser:
-      type: 'circle'
-      float: 'left'
-    content:
-      title: 'Food Court Recklinghausen'
-      intro: 'Guter Geschmack in vielen Facetten.'
-      copy:
-        - 'Das Auge isst mit, heißt es immer. Dass damit nicht nur das Anrichten der Speisen auf dem Teller gemeint ist, beweist das Augenmerk, das Gastronome auf die Gestaltung ihrer Räumlichkeiten legen. Die Atmosphäre trägt maßgeblich zum kulinarischen Erlebnis bei. Die Designerin Dena Rawle kennt sich mit den Feinheiten dieses Gebietes aus und entwarf den Food-Court für das Palais Vest in Recklinghausen.'
-        - 'Die Herausforderung für Design und Produktion war die Umsetzung verschiedener Themenbereiche innerhalb der Food-Area. Die Lösung: charakteristische Materialien für jeden Bereich. Von gekälkter Eiche über verwitterte Holzoberflächen bis zu Beton und verrostetem Stahl – und 16 Orangenbäumen.'
-    images:
-      -
-        src: 'projects/rudolph/gallery-1.jpg'
-        alt: ''
-        type: 'full'
-      -
-        src: 'projects/rudolph/gallery-2.jpg'
-        alt: ''
-        type: 'square'
-      -
-        src: 'projects/rudolph/gallery-3.jpg'
-        alt: ''
-        type: 'square-medium'
-      -
-        src: 'projects/rudolph/gallery-4.jpg'
-        alt: ''
-        type: 'square-medium'
-        glyph: true
-      -
-        src: 'projects/rudolph/gallery-5.jpg'
-        alt: ''
-        type: 'square-circle'
-  -
-    id: 'hofgarten_solingen'
-    ressort: 'innenausbau'
-    type: 'highlight'
-    teaser:
-      type: 'circle-medium'
-      float: 'right'
-    content:
-      title: 'HolzFormArt Coffee Lounge'
-      intro: 'Eigenpräsentation in Eigenregie.'
-      copy:
-        - 'Zeigen, was möglich ist. Projekte für das eigene Haus sind immer ein Aushängeschild der Firma. So auch die Kaffee-Lounge in unseren Räumlichkeiten. Sie wurde als Teamarbeit in Eigenregie entwickelt und komplett aus massiver Eiche gefertigt – inklusive Spülbecken. Die Flächen sind geölt und zeigen eine natürliche Oberfläche mit charakteristischer Haptik, die durch die dezent integrierte Beleuchtung zur Geltung gebracht wird.'
-        - 'Die Inspiration für das Design fand sich in unserer Schreinerei: Ein Holzstapel stand Pate für den Entwurf, der somit den Arbeitsalltag unserer Mitarbeiter aufgreift und dem Treffpunkt Aufenthaltsqualität hinzufügt.'
-    images:
-      -
-        src: 'projects/ruessmann/gallery-1.jpg'
-        alt: ''
-        type: 'full'
-      -
-        src: 'projects/ruessmann/gallery-2.jpg'
-        alt: ''
-        type: 'square'
-      -
-        src: 'projects/ruessmann/gallery-3.jpg'
-        alt: ''
-        type: 'square-medium'
-        glyph: true
-  -
-    id: 'bilk_arcaden_duesseldorf'
-    ressort: 'innenausbau'
-    type: 'highlight'
-    teaser:
-      type: 'square'
-      float: 'left'
-    content:
-      title: 'Bilk Arcaden Düsseldorf'
-      intro: ''
-      copy:
-        - ''
-        - ''
-    facts:
-      branche: ''
-      year: ''
-      region: ''
-      effort:
-        - ''
-        - ''
-      service: ''
-    images:
-      -
-        src: 'projects/bilk/gallery-1.jpg'
-        alt: ''
-        type: 'full'
-  -
-    id: 'hfa'
-    ressort: 'innenausbau'
-    type: 'highlight'
-    teaser:
-      type: 'square-medium'
-      float: 'right'
-    content:
-      title: 'Coffee bar / Meeting point'
-      intro: ''
-      copy:
-        - ''
-        - ''
-    facts:
-      branche: ''
-      year: ''
-      region: ''
-      effort:
-        - ''
-        - ''
-      service: ''
-    images:
-      -
-        src: 'projects/hfa/gallery-1.jpg'
-        alt: ''
-        type: 'full'
-  -
-    id: 'palais_vest_recklinghausen'
-    ressort: 'innenausbau'
-    type: 'highlight'
-    teaser:
-      type: 'square-mediumborder'
-      float: 'left'
-    content:
-      title: 'Food Court Recklinghausen'
-      intro: ''
-      copy:
-        - ''
-        - ''
-    facts:
-      branche: ''
-      year: ''
-      region: ''
-      effort:
-        - ''
-        - ''
-      service: ''
-    images:
-      -
-        src: 'projects/recklinghausen/gallery-1.jpg'
-        alt: ''
-        type: 'full'
-  -
-    id: 'rechtsanwaelte'
-    ressort: 'innenausbau'
-    type: 'highlight'
-    teaser:
-      type: 'circle'
-      float: 'right'
-    content:
-      title: 'Rechtsanwälte'
-      intro: ''
-      copy:
-        - ''
-        - ''
-    facts:
-      branche: ''
-      year: ''
-      region: ''
-      effort:
-        - ''
-        - ''
-      service: ''
-    images:
-      -
-        src: 'projects/rechtsanwaelte/gallery-1.jpg'
-        alt: ''
-        type: 'full'
-
-  -
-    id: 'adidas'
-    ressort: 'ladenbau'
-    type: 'highlight'
-    teaser:
-      type: 'square'
-      float: 'left'
-    content:
-      title: 'adidas Show room'
-      intro: ''
-      copy:
-        - ''
-        - ''
-    facts:
-      branche: ''
-      year: ''
-      region: ''
-      effort:
-        - ''
-        - ''
-      service: ''
-    images:
-      -
-        src: 'projects/skagen/gallery-1.jpg'
-        alt: ''
-        type: 'full'
-  -
-    id: 'fossil'
-    ressort: 'ladenbau'
-    type: 'standard'
-    teaser:
-      type: 'circle-medium'
-      float: 'right'
-    content:
-      title: 'Fossil Show room'
-      intro: ''
-      copy:
-        - ''
-        - ''
-    facts:
-      branche: ''
-      year: ''
-      region: ''
-      effort:
-        - ''
-        - ''
-      service: ''
-    images:
-      -
-        src: 'projects/fossil/gallery-1.jpg'
-        alt: ''
-        type: 'full'
-  -
-    id: 'ggl'
-    ressort: 'ladenbau'
-    type: 'standard'
-    teaser:
-      type: 'square-medium'
-      float: 'right'
-    content:
-      title: 'George Gina & Lucy'
-      intro: 'Shop-Design mit künstlerischer Freiheit.'
-      copy:
-        - 'Knallige Farben, unkonventionelles Design und Charakter – der Konzept-Store der beliebten Accessoire-Marke George Gina & Lucy in den Pasing Arcaden sollte zu den Produkten des Labels passen. Für die entsprechende Gestaltung des Interiors konnte die Künstlerin und Designerin Delphine Buhro gewonnen werden. Sie inszenierte den Shop als bunte, familiäre Wohnwelt mit einer Holzfassade, diversen Metallstrukturen und Formglasscheiben.'
-        - 'Die Vielfalt des Sortimentes und der Designs drückt sich in der Materialität und Haptik der teilweise bedruckten Holzoberflächen aus. Die besondere Herausforderung des Projektes war allerdings eine andere: den Anspruch des Kunden und die Ideen der Künstlerin mit den Brandschutzbestimmungen der Shopping-Mall in Einklang zu bringen.'
-    facts:
-      branche: 'Fashion-Accessoires'
-      year: '2015'
-      region: 'München-Pasing'
-      effort:
-        - 'Konzeptstore'
-      service: 'Produktion, Montage, Roll-outs'
-    images:
-      -
-        src: 'projects/ggl/gallery-1.jpg'
-        alt: ''
-        type: 'full'
-  -
-    id: 'riverwoods'
-    ressort: 'ladenbau'
-    type: 'standard'
-    teaser:
-      type: 'square-mediumborder'
-      float: 'left'
-      glyphe: 'top-right-outside'
-    content:
-      title: 'riverwoods'
-      intro: ''
-      copy:
-        - ''
-        - ''
-    facts:
-      branche: ''
-      year: ''
-      region: ''
-      effort:
-        - ''
-        - ''
-      service: ''
-    images:
-      -
-        src: 'projects/riverwoods/gallery-1.jpg'
-        alt: ''
-        type: 'full'
-  -
-    id: 'thebodyshop'
-    ressort: 'ladenbau'
-    type: 'standard'
-    teaser:
-      type: 'circle-medium'
-      float: 'left'
-    content:
-      title: 'thebodyshop'
-      intro: ''
-      copy:
-        - ''
-        - ''
-    facts:
-      branche: ''
-      year: ''
-      region: ''
-      effort:
-        - ''
-        - ''
-      service: ''
-    images:
-      -
-        src: 'projects/thebodyshop/gallery-1.jpg'
-        alt: ''
-        type: 'full'
-  -
     id: 'skagen'
     ressort: 'ladenbau'
     type: 'highlight'
     teaser:
-      type: 'circle'
-      float: 'right'
+      type: 'square'
+      float: 'left'
     content:
+      subititle: 'Flag ship Store & Show room'
       title: 'Skagen'
       intro: 'Leitbild, Vorbild, Markenbild. Ein Flagship-Store in Paris, direkt auf dem Boulevard Champs-Élysées.'
       copy:
@@ -349,30 +19,437 @@ items:
       region: 'europaweit'
       effort:
         - '150 SIS-Flächen, 3 Läden'
-        - 'Größe von 60 bis 100 m2'
+        - 'Größe von 60 bis 100 m²'
       service: 'Produktion, Montage, Logistik, Roll-outs'
     images:
       -
-        src: 'projects/skagen/gallery-1.jpg'
+        src: 'projects/skagen/skagen-01.jpg'
         alt: ''
         type: 'full'
       -
-        src: 'projects/skagen/gallery-2.jpg'
+        src: 'projects/skagen/skagen-02.jpg'
         alt: ''
         type: 'square-medium'
+        float: 'left'
       -
-        src: 'projects/skagen/gallery-3.jpg'
+        src: 'projects/skagen/skagen-03.jpg'
         alt: ''
         type: 'square'
+        float: 'right'
       -
-        src: 'projects/skagen/gallery-4.jpg'
+        src: ''
         alt: ''
-        type: 'square-medium'
+        type: 'facts'
+        float: 'left'
       -
-        src: 'projects/skagen/gallery-5.jpg'
+        src: 'projects/skagen/skagen-04.jpg'
         alt: ''
         type: 'circle'
+        float: 'right'
       -
-        src: 'projects/skagen/gallery-6.jpg'
+        src: 'projects/skagen/skagen-05.jpg'
+        alt: ''
+        type: 'square-medium'
+        float: 'left'
+        glyphe: 'topright'
+      -
+        src: 'projects/skagen/skagen-06.jpg'
         alt: ''
         type: 'square'
+        float: 'left'
+  -
+    id: 'adidas'
+    ressort: 'ladenbau'
+    type: 'highlight'
+    teaser:
+      type: 'circle-medium'
+      float: 'right'
+    content:
+      subtitle: 'Show room'
+      title: 'adidas'
+      intro: 'Die Essenz der Markenwelt in einem Raum.'
+      copy:
+        - 'Die Basel World ist eine internationale Messe für edle Uhren und Schmuck. Zusammen mit den Markenwächtern des Unternehmens Adidas entwickelten wir das Konzept für den Showroom des Sportartikelherstellers in einem exklusiven Umfeld. Der Kerngedanke war, das Sortiment hochwertiger Chronographen mit einem ungewöhnlichen Materialkontrast in Szene zu setzen. Das Ergebnis: eine hochwertige Bühne zur Produktpräsentation, auf der Glas und Metall die technische Perfektion der Sportuhren transportieren. Kontrastiert werden die kühlen Materialien durch natürlich anmutende, raue Holzoberflächen. Als Ausdruck von Robustheit und Sportlichkeit – und damit der Identität der Marke Adidas.'
+    facts:
+      branche: 'Uhren'
+      year: '2016'
+      region: 'Basel'
+      effort:
+        - 'Showroom Basel World, ca. 70 m²'
+      service: 'Produktion, Montage'
+    images:
+      -
+        src: 'projects/adidas/adidas-01.jpg'
+        alt: ''
+        type: 'full'
+      -
+        src: 'projects/adidas/adidas-02.jpg'
+        alt: ''
+        type: 'square-medium'
+        float: 'left'
+      -
+        src: 'projects/adidas/adidas-03.jpg'
+        alt: ''
+        type: 'square'
+        float: 'right'
+      -
+        src: ''
+        alt: ''
+        type: 'facts'
+        float: 'left'
+      -
+        src: 'projects/adidas/adidas-04.jpg'
+        alt: ''
+        type: 'circle'
+        float: 'right'
+      -
+        src: 'projects/adidas/adidas-05.jpg'
+        alt: ''
+        type: 'square-medium'
+        float: 'left'
+        glyphe: 'topright'
+  -
+    id: 'ingenlath'
+    ressort: 'innenausbau'
+    type: 'highlight'
+    teaser:
+      type: 'square-medium'
+      float: 'right'
+    content:
+      subtitle: 'Innenausbau'
+      title: 'Küche und Entree'
+      intro: 'Individualität für Persönlichkeiten. Es gibt keine zweite Chance für einen ersten Eindruck.'
+      copy:
+        - 'Darum haben wir bei der Konzeption und Gestaltung des Eingangsbereiches eines Privathauses in Willich dieser „Visitenkarte des Hauses“ besondere Beachtung geschenkt. Auch in der Küche zeigt sich unsere Handschrift bei Konzept, Beleuchtung, moderner Form- und Farbgebung sowie der Integration der Arbeitsplatten aus kaltgewalztem Edelstahl. Die Formgebung leitet sich aus der Funktion der Objekte her, die Linienführung ist klar und das Design ist auf das Wesentliche reduziert: auf die Funktion. Und darauf, den Stil, den Anspruch und die Individualität der Bewohner zum Ausdruck zu bringen.'
+    images:
+      -
+        src: 'projects/ingenlath/ingenlath-01.jpg'
+        alt: ''
+        type: 'full'
+      -
+        src: 'projects/ingenlath/ingenlath-02.jpg'
+        alt: ''
+        type: 'square'
+        float: 'left'
+      -
+        src: 'projects/ingenlath/ingenlath-03.jpg'
+        alt: ''
+        type: 'square-medium'
+        float: 'right'
+      -
+        src: 'projects/ingenlath/ingenlath-04.jpg'
+        alt: ''
+        type: 'square-medium'
+        float: 'right'
+      -
+        src: 'projects/ingenlath/ingenlath-05.jpg'
+        alt: ''
+        type: 'circle'
+        float: 'left'
+        glyphe: 'right-bottom'
+  -
+    id: 'riverwoods'
+    ressort: 'ladenbau'
+    type: 'highlight'
+    teaser:
+      type: 'square-medium'
+      float: 'right'
+    content:
+      subtitle: '40 Shops and show room'
+      title: 'River Woods'
+      intro: 'Individualität als Konzept. Bereits seit 2012 ist der belgische Lifestyle- und Bekleidungsspezialist River Woods unser Kunde.'
+      copy:
+        - 'In dieser Zeit haben wir bereits mehr als 40 Shops in ganz Europa entwickelt und im unverkennbaren Interior-Stil der Marke ausgestaltet. Das Wohnambiente der Shops, das den populären belgischen Landhausstil aufgreift und in die Shopflächen überträgt, ist durch individuelle Einzelanfertigungen gekennzeichnet. Sie geben jedem Shop eine eigene Persönlichkeit.'
+        - 'Dieser Anspruch galt auch für einen Messeauftritt in Shanghai – eine besondere Herausforderung für uns und die Designer der Marke, die durch zahlreiche maßgeschneiderte Einzelanfertigungen und mit viel Handarbeit gelöst wurde.'
+    facts:
+      branche: 'Fashion'
+      year: 'seit 2012'
+      region: 'europaweit'
+      effort:
+        - '20 SIS-Flächen, 40 Läden'
+        - 'mit einer Größe von 60 bis 100 m²'
+      service: 'Produktion, Montage, Logistik, Roll-outs'
+    images:
+      -
+        src: 'projects/riverwoods/riverwoods-01.jpg'
+        alt: ''
+        type: 'full'
+      -
+        src: 'projects/riverwoods/riverwoods-02.jpg'
+        alt: ''
+        type: 'square-medium'
+        float: 'left'
+      -
+        src: 'projects/riverwoods/riverwoods-03.jpg'
+        alt: ''
+        type: 'square'
+        float: 'right'
+      -
+        src: ''
+        alt: ''
+        type: 'facts'
+        float: 'left'
+      -
+        src: 'projects/riverwoods/riverwoods-04.jpg'
+        alt: ''
+        type: 'circle'
+        float: 'right'
+      -
+        src: 'projects/riverwoods/riverwoods-05.jpg'
+        alt: ''
+        type: 'square-medium'
+        float: 'left'
+        glyphe: 'topright'
+      -
+        src: 'projects/riverwoods/riverwoods-06.jpg'
+        alt: ''
+        type: 'square'
+        float: 'left'
+  -
+    id: 'rudolph'
+    ressort: 'innenausbau'
+    type: 'highlight'
+    teaser:
+      type: 'circle'
+      float: 'left'
+    content:
+      subtitle: 'innenausbau'
+      title: 'Food Court Recklinghausen'
+      intro: 'Guter Geschmack in vielen Facetten.'
+      copy:
+        - 'Das Auge isst mit, heißt es immer. Dass damit nicht nur das Anrichten der Speisen auf dem Teller gemeint ist, beweist das Augenmerk, das Gastronome auf die Gestaltung ihrer Räumlichkeiten legen. Die Atmosphäre trägt maßgeblich zum kulinarischen Erlebnis bei. Die Designerin Dena Rawle kennt sich mit den Feinheiten dieses Gebietes aus und entwarf den Food-Court für das Palais Vest in Recklinghausen.'
+        - 'Die Herausforderung für Design und Produktion war die Umsetzung verschiedener Themenbereiche innerhalb der Food-Area. Die Lösung: charakteristische Materialien für jeden Bereich. Von gekälkter Eiche über verwitterte Holzoberflächen bis zu Beton und verrostetem Stahl – und 16 Orangenbäumen.'
+    images:
+      -
+        src: 'projects/rudolph/rudolph-01.jpg'
+        alt: ''
+        type: 'full'
+      -
+        src: 'projects/rudolph/rudolph-02.jpg'
+        alt: ''
+        type: 'square'
+        float: 'left'
+      -
+        src: 'projects/rudolph/rudolph-03.jpg'
+        alt: ''
+        type: 'square-medium'
+        float: 'right'
+      -
+        src: 'projects/rudolph/rudolph-04.jpg'
+        alt: ''
+        type: 'square-medium'
+        float: 'right'
+        glyphe: 'right-bottom'
+      -
+        src: 'projects/rudolph/rudolph-05.jpg'
+        alt: ''
+        type: 'circle'
+        float: 'left'
+  -
+    id: 'hofgarten_solingen'
+    ressort: 'innenausbau'
+    type: 'highlight'
+    teaser:
+      type: 'circle-medium'
+      float: 'right'
+    content:
+      subtitle: 'Innenausbau'
+      title: 'HolzFormArt Coffee Lounge'
+      intro: 'Eigenpräsentation in Eigenregie.'
+      copy:
+        - 'Zeigen, was möglich ist. Projekte für das eigene Haus sind immer ein Aushängeschild der Firma. So auch die Kaffee-Lounge in unseren Räumlichkeiten. Sie wurde als Teamarbeit in Eigenregie entwickelt und komplett aus massiver Eiche gefertigt – inklusive Spülbecken. Die Flächen sind geölt und zeigen eine natürliche Oberfläche mit charakteristischer Haptik, die durch die dezent integrierte Beleuchtung zur Geltung gebracht wird.'
+        - 'Die Inspiration für das Design fand sich in unserer Schreinerei: Ein Holzstapel stand Pate für den Entwurf, der somit den Arbeitsalltag unserer Mitarbeiter aufgreift und dem Treffpunkt Aufenthaltsqualität hinzufügt.'
+    images:
+      -
+        src: 'projects/hofgarten_solingen/hofgarten_solingen-01.jpg'
+        alt: ''
+        type: 'full'
+      -
+        src: 'projects/hofgarten_solingen/hofgarten_solingen-02.jpg'
+        alt: ''
+        type: 'square'
+        float: 'left'
+      -
+        src: 'projects/hofgarten_solingen/hofgarten_solingen-03.jpg'
+        alt: ''
+        type: 'square-medium'
+        float: 'right'
+        glyphe: 'right-bottom'
+  -
+    id: 'ggl'
+    ressort: 'ladenbau'
+    type: 'highlight'
+    teaser:
+      type: 'square-mediumborder'
+      float: 'left'
+      glyphe: 'top-right-outside'
+    content:
+      subtitle: 'Concept store'
+      title: 'George Gina & Lucy'
+      intro: 'Shop-Design mit künstlerischer Freiheit.'
+      copy:
+        - 'Knallige Farben, unkonventionelles Design und Charakter – der Konzept-Store der beliebten Accessoire-Marke George Gina & Lucy in den Pasing Arcaden sollte zu den Produkten des Labels passen. Für die entsprechende Gestaltung des Interiors konnte die Künstlerin und Designerin Delphine Buhro gewonnen werden. Sie inszenierte den Shop als bunte, familiäre Wohnwelt mit einer Holzfassade, diversen Metallstrukturen und Formglasscheiben.'
+        - 'Die Vielfalt des Sortimentes und der Designs drückt sich in der Materialität und Haptik der teilweise bedruckten Holzoberflächen aus. Die besondere Herausforderung des Projektes war allerdings eine andere: den Anspruch des Kunden und die Ideen der Künstlerin mit den Brandschutzbestimmungen der Shopping-Mall in Einklang zu bringen.'
+    facts:
+      branche: 'Fashion-Accessoires'
+      year: '2015'
+      region: 'Deutschland, Österreich'
+      effort:
+        - 'Konzeptstore, Rollouts'
+      service: 'Produktion, Montage'
+    images:
+      -
+        src: 'projects/ggl/ggl-01.jpg'
+        alt: ''
+        type: 'full'
+      -
+        src: 'projects/ggl/ggl-02.jpg'
+        alt: ''
+        type: 'square-medium'
+        float: 'left'
+      -
+        src: 'projects/ggl/ggl-03.jpg'
+        alt: ''
+        type: 'square'
+        float: 'right'
+      -
+        src: ''
+        alt: ''
+        type: 'facts'
+        float: 'left'
+      -
+        src: 'projects/ggl/ggl-04.jpg'
+        alt: ''
+        type: 'circle'
+        float: 'right'
+      -
+        src: 'projects/ggl/ggl-05.jpg'
+        alt: ''
+        type: 'square-medium'
+        float: 'left'
+        glyphe: 'topright'
+      -
+        src: 'projects/ggl/ggl-06.jpg'
+        alt: ''
+        type: 'square'
+        float: 'left'
+  -
+    id: 'fossil'
+    ressort: 'ladenbau'
+    type: 'standard'
+    teaser:
+      type: 'circle-medium'
+      float: 'right'
+    content:
+      subtitle: 'Ladenbau'
+      title: 'Fossil'
+      intro: ''
+      copy:
+        - ''
+        - ''
+    facts:
+      branche: 'Uhren; Fashion-Accessoires'
+      year: '2006'
+      region: 'europaweit'
+      effort:
+        - '170 Stores und SIS Flächen'
+      service: 'Produktion, Montage, Rollouts'
+    images:
+      -
+        src: 'projects/fossil/fossil-01.jpg'
+        alt: ''
+        type: 'full'
+      -
+        src: 'projects/fossil/fossil-02.jpg'
+        alt: ''
+        type: 'square-medium'
+        float: 'left'
+      -
+        src: 'projects/fossil/fossil-03.jpg'
+        alt: ''
+        type: 'square'
+        float: 'right'
+      -
+        src: ''
+        alt: ''
+        type: 'facts'
+        float: 'left'
+      -
+        src: 'projects/fossil/fossil-04.jpg'
+        alt: ''
+        type: 'circle'
+        float: 'right'
+      -
+        src: 'projects/fossil/fossil-05.jpg'
+        alt: ''
+        type: 'square-medium'
+        float: 'left'
+        glyphe: 'topright'
+
+  -
+    id: 'palais_vest_recklinghausen'
+    ressort: 'innenausbau'
+    type: 'standard'
+    teaser:
+      type: 'square-mediumborder'
+      float: 'left'
+    content:
+      subtitle: 'Innenausbau'
+      title: 'Küche und Wohnzimmer'
+      intro: 'Ein Kontrast aus Land und Lifestyle.'
+      copy:
+        - 'Ob während der Bauphase oder im Zuge einer Renovierung – wir übernehmen Design und Innenausbau von Geschäftsräumen ebenso wie von Privathäusern. Dabei setzen wir die Vorstellungen unserer Kunden mit Leidenschaft und Sachverstand um. Gutes Beispiel: Küche und Wohnzimmer eines Hauses, in dem modernes Design auf Landhausstil trifft. '
+        - 'Unser Auftraggeber wollte eine helle Wohnung, Anklänge des Landhausstils sollten eine moderne Atmosphäre ergänzen und spannend kontrastieren. Unsere Lösung war das Entfernen einer Wand, um größere, helle Räume zu schaffen, in denen eine zeitgemäße Farben- und Formensprache mit Merkmalen des Landhausstils kombiniert wurde. Und hinter dieser „Fassade“: State-of-the-Art-Technik und LED-Beleuchtung.'
+    images:
+      -
+        src: 'projects/palais_vest_recklinghausen/palais_vest_recklinghausen-01.jpg'
+        alt: ''
+        type: 'full'
+      -
+        src: 'projects/palais_vest_recklinghausen/palais_vest_recklinghausen-02.jpg'
+        alt: ''
+        type: 'square'
+        float: 'left'
+      -
+        src: 'projects/palais_vest_recklinghausen/palais_vest_recklinghausen-03.jpg'
+        alt: ''
+        type: 'square-medium'
+        float: 'right'
+      -
+        src: 'projects/palais_vest_recklinghausen/palais_vest_recklinghausen-04.jpg'
+        alt: ''
+        type: 'circle'
+        float: 'left'
+        glyphe: 'right-bottom'
+
+  -
+    id: 'bilk_arcaden_duesseldorf'
+    ressort: 'innenausbau'
+    type: 'standard'
+    teaser:
+      type: 'square-medium'
+      float: 'right'
+    content:
+      subtitle: 'Innenausbau'
+      title: 'Foodcourt Bilker Arcaden Düsseldorf'
+    images:
+      -
+        src: 'projects/bilk_arcaden_duesseldorf/bilk_arcaden_duesseldorf-01.jpg'
+        alt: ''
+        type: 'full'
+      -
+        src: 'projects/bilk_arcaden_duesseldorf/bilk_arcaden_duesseldorf-02.jpg'
+        alt: ''
+        type: 'square'
+        float: 'left'
+      -
+        src: 'projects/bilk_arcaden_duesseldorf/bilk_arcaden_duesseldorf-03.jpg'
+        alt: ''
+        type: 'square-medium'
+        float: 'right'
+      -
+        src: 'projects/bilk_arcaden_duesseldorf/bilk_arcaden_duesseldorf-04.jpg'
+        alt: ''
+        type: 'circle'
+        float: 'left'
+        glyphe: 'right-bottom'

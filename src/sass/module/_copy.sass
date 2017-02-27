@@ -2,6 +2,19 @@
 	p
 		text-align: left
 		font-size: 1em
+	&--colored
+		p
+			font-weight: 600
+			text-align: left
+			font-size: 1.6em
+			+bp(medium)
+				font-size: 1.8em
+			line-height: 1.2
+			color: $color-red
+			.blue &
+				color: $color-blue
+			.yellow &
+				color: $color-blue
 	&--large
 		p
 			font-weight: 300
