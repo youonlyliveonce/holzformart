@@ -5,14 +5,18 @@ if content
 				.Inshort__body
 					.Columns__marginal
 						span= "Projekt " + el.ressort
+					.Columns__back
+						a.Button.Button--back(href="/de/"+el.ressort+"/")
+							span Zurück zur<br/>Übersicht
 					.Inshort__spacer
 					.Inshort__intro.Inshort__intro--copy
 						.Heading.Heading--major.Heading--large
-							span= el.content.subititle
+							span= el.content.subtitle
 							h2= el.content.title
 						.Copy.Copy--colored
 							p= el.content.intro
 					.Inshort__copy
-						.Copy
-							each item in el.content.copy
-								p= item
+						if el.content.copy
+							.Copy
+								each item in el.content.copy
+									p= item

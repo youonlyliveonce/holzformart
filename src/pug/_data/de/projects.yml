@@ -7,7 +7,7 @@ items:
       type: 'square'
       float: 'left'
     content:
-      subititle: 'Flag ship Store & Show room'
+      subtitle: 'Flag ship Store & Show room'
       title: 'Skagen'
       intro: 'Leitbild, Vorbild, Markenbild. Ein Flagship-Store in Paris, direkt auf dem Boulevard Champs-Élysées.'
       copy:
@@ -56,7 +56,7 @@ items:
         src: 'projects/skagen/skagen-06.jpg'
         alt: ''
         type: 'square'
-        float: 'left'
+        float: 'right'
   -
     id: 'adidas'
     ressort: 'ladenbau'
@@ -155,7 +155,7 @@ items:
       type: 'square-medium'
       float: 'right'
     content:
-      subtitle: '40 Shops and show room'
+      subtitle: '40 Shops and Show room'
       title: 'River Woods'
       intro: 'Individualität als Konzept. Bereits seit 2012 ist der belgische Lifestyle- und Bekleidungsspezialist River Woods unser Kunde.'
       copy:

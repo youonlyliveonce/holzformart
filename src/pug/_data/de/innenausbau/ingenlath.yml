@@ -1,0 +1,5 @@
+---
+
+content:
+  projects: !!inc/file src/pug/_data/de/projects.yml
+  key: 'ingenlath'

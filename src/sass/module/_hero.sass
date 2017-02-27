@@ -2,7 +2,10 @@
 	position: relative
 	&--noimage
 		.Hero__body
-			padding-bottom: +unit(0,16)
+			background-color: white
+			padding-bottom: +unit(2,16)
+			+bp(medium, larger)
+				padding-bottom: +unit(1,16)
 	&__video
 		position: absolute
 		left: 50%

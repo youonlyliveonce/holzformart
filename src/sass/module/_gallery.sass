@@ -21,8 +21,27 @@
 		&--facts
 			width: +unit(16,16)
 			padding-bottom: +unit(15,16)
-			border: 2px solid $color-blue
-			border-radius: 100%
+			+bp(null, medium)
+				border: 6px solid $color-blue
+			+bp(large)
+				border: 6px solid $color-blue
+				border-radius: 100%
+			h4
+				position: relative
+				font-weight: bold
+				text-transform: uppercase
+				color: $color-highlight
+				font-size: 0.8em
+				line-height: 2.2
+				display: block
+				&::after
+					position: relative
+					content: ''
+					display: block
+					width: 15px
+					height: 2px
+					background-color: $color-highlight
+					margin-bottom: 12px
 			+bp(medium)
 				width: +unit(6,16)
 				padding-bottom: +unit(6,16)
@@ -58,8 +77,16 @@
 			top: 50%
 			left: 50%
 			width: 80%
+			+bp(larger)
+				width: 60%
 			+transform(translateY(-50%) translateX(-50%))
-
+			tr
+				td
+					vertical-align: top
+				td:first-child
+					font-weight: bold
+					color: black
+					padding-right: 10px
 		&-body
 			position: relative
 			line-height: 0

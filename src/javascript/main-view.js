@@ -189,7 +189,6 @@ var MainView = View.extend({
 		},
 
 		handleScroll: function(event){
-			console.log(this);
 			let scrollY = window.scrollY,
 					self = CM.App.mainView;
 			if(scrollY >= 0){
