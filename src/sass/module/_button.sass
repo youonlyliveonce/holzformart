@@ -57,6 +57,15 @@
 				+transition(all, 0.45s)
 
 	&--teaser
+		.Teaser:hover &
+			&:before
+				right: 0
+			>span
+				margin-right: 1em
+				padding-right: 2em
+				+bp(larger)
+					margin-right: 2em
+
 		position: relative
 		cursor: pointer
 		display: inline-block
@@ -139,9 +148,13 @@
 			&::before
 				background-color: white !important
 			&:hover
-
 				&::before
 					right: 6em !important
+		.Teaser--square:hover &,
+		.Teaser--square-medium:hover &,
+		.Teaser--square-mediumborder:hover &
+			&::before
+				right: 6em !important
 
 
 		.Teaser__link--innenausbau &

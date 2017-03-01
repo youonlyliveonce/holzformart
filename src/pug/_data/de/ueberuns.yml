@@ -29,31 +29,31 @@ content:
       surname: Stefan
       name: Molter
       tel: +49 2841 887300
-      mail: stefanmolter@holzformart.de
+      mail: s.molter@holzformart.de
     -
       title: Geschäftsführer
       surname: Roman
       name: Ingenlath
       tel: +49 2841 887300
-      mail: romaningenlath@holzformart.de
+      mail: r.ingenlath@holzformart.de
     -
       title: Geschäftsführer/ Betriebsleiter
       surname: Tino
       name: Rudolph
       tel: +49 2841 887300
-      mail: tinorudolph@holzformart.de
-    -
-      title: Projektleiter
-      surname: Wolfgang
-      name: Dumsch
-      tel: +49 2841 88730241
-      mail: wolfgangdumsch@holzformart.de
+      mail: t.rudolph@holzformart.de
     -
       title: Produktionsleiter
       surname: Dominique
       name: Bohnsack
       tel: +49 2841 887300
-      mail: dominiquebohnsack@holzformart.de
+      mail: d.bohnsack@holzformart.de
+    -
+      title: Projektleiter
+      surname: Wolfgang
+      name: Dumsch
+      tel: +49 2841 88730241
+      mail: w.dumsch@holzformart.de
     -
       title: Projektleiter
       surname: Simon

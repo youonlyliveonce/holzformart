@@ -1,6 +1,16 @@
 .Teaser
+	display: block
 	padding-bottom: 1em
 	position: relative
+	&:hover
+		.Button--teaser
+			&:before
+				right: 0
+			>span
+				margin-right: 1em
+				padding-right: 2em
+				+bp(larger)
+					margin-right: 2em
 	&--circle-medium,
 	&--circle,
 	&--round

@@ -10,11 +10,11 @@
 						each el in content.projects.items
 							if el.type == content.key
 								.swiper-slide
-									.Teaser(class="Teaser--"+el.teaser.type)
+									a.Teaser(class="Teaser--"+el.teaser.type+"" href="/de/"+el.ressort+"/"+el.id+".html")
 										.Teaser__body
 											img(src="/assets/images/projects/teaser_projekt_"+el.ressort+"_"+el.id+".jpg")
 										.Teaser__link(class="Teaser__link--"+el.ressort)
-											a.Button.Button--teaser(href="/de/"+el.ressort+"/"+el.id+".html")
+											.Button.Button--teaser
 												span
 													span
 														span= el.ressort
