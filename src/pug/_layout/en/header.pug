@@ -1,13 +1,15 @@
 block header
 
-header.Header--sticky
-	.Header-body
+header.Header-sticky
+	a.Header-sticky__logo(href="/en/")
 		include ../../_svg/logo.svg
+	.Header-sticky__body
 		include ./navigation.pug
 
 header.Header
-	include ../../_svg/logo.svg
-	div.Header-body
+	.Button.Button--toggle
+		span
+	a.Header__logo(href="/en/")
+		include ../../_svg/logo.svg
+	.Header__body
 		include ./navigation.pug
-		span.Header-toggle
-			span
