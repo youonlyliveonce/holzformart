@@ -1,9 +1,10 @@
 items:
   -
     id: 'skagen'
-    ressort: 'ladenbau'
+    ressort: 'shopfitting'
     type: 'highlight'
     teaser:
+      ressort: 'shopfitting'
       type: 'square'
       float: 'left'
     content:
@@ -59,9 +60,10 @@ items:
         float: 'right'
   -
     id: 'adidas'
-    ressort: 'ladenbau'
+    ressort: 'shopfitting'
     type: 'highlight'
     teaser:
+      ressort: 'shopfitting'
       type: 'circle-medium'
       float: 'right'
     content:
@@ -110,9 +112,10 @@ items:
         glyphe: 'topright'
   -
     id: 'ingenlath'
-    ressort: 'innenausbau'
+    ressort: 'interiorfitout'
     type: 'highlight'
     teaser:
+      ressort: 'interior fit out'
       type: 'square-medium'
       float: 'right'
     content:
@@ -149,7 +152,7 @@ items:
         glyphe: 'right-bottom'
   -
     id: 'riverwoods'
-    ressort: 'ladenbau'
+    ressort: 'shopfitting'
     type: 'highlight'
     teaser:
       type: 'square-medium'
@@ -207,13 +210,14 @@ items:
         float: 'left'
   -
     id: 'palais_vest_recklinghausen'
-    ressort: 'innenausbau'
+    ressort: 'interiorfitout'
     type: 'highlight'
     teaser:
+      ressort: 'interior fit out'
       type: 'circle'
       float: 'left'
     content:
-      subtitle: 'innenausbau'
+      subtitle: 'interiorfitout'
       title: 'Food Court Recklinghausen'
       intro: 'Guter Geschmack in vielen Facetten.'
       copy:
@@ -247,9 +251,10 @@ items:
         float: 'left'
   -
     id: 'hofgarten_solingen'
-    ressort: 'innenausbau'
+    ressort: 'interiorfitout'
     type: 'highlight'
     teaser:
+      ressort: 'interior fit out'
       type: 'circle-medium'
       float: 'right'
     content:
@@ -277,9 +282,10 @@ items:
         glyphe: 'right-bottom'
   -
     id: 'ggl'
-    ressort: 'ladenbau'
+    ressort: 'shopfitting'
     type: 'highlight'
     teaser:
+      ressort: 'shopfitting'
       type: 'square-mediumborder'
       float: 'left'
       glyphe: 'top-right-outside'
@@ -335,9 +341,10 @@ items:
         float: 'left'
   -
     id: 'fossil'
-    ressort: 'ladenbau'
+    ressort: 'shopfitting'
     type: 'standard'
     teaser:
+      ressort: 'shopfitting'
       type: 'circle-medium'
       float: 'right'
     content:
@@ -388,9 +395,10 @@ items:
 
   -
     id: 'rudolph'
-    ressort: 'innenausbau'
+    ressort: 'interiorfitout'
     type: 'standard'
     teaser:
+      ressort: 'interior fit out'
       type: 'square-mediumborder'
       float: 'left'
     content:
@@ -424,9 +432,10 @@ items:
 
   -
     id: 'bilk_arcaden_duesseldorf'
-    ressort: 'innenausbau'
+    ressort: 'interiorfitout'
     type: 'standard'
     teaser:
+      ressort: 'interior fit out'
       type: 'square-medium'
       float: 'right'
     content:

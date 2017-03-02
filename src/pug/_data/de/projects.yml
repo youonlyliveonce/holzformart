@@ -4,6 +4,7 @@ items:
     ressort: 'ladenbau'
     type: 'highlight'
     teaser:
+      ressort: 'ladenbau'
       type: 'square'
       float: 'left'
     content:
@@ -62,6 +63,7 @@ items:
     ressort: 'ladenbau'
     type: 'highlight'
     teaser:
+      ressort: 'ladenbau'
       type: 'circle-medium'
       float: 'right'
     content:
@@ -113,6 +115,7 @@ items:
     ressort: 'innenausbau'
     type: 'highlight'
     teaser:
+      ressort: 'innenausbau'
       type: 'square-medium'
       float: 'right'
     content:
@@ -152,6 +155,7 @@ items:
     ressort: 'ladenbau'
     type: 'highlight'
     teaser:
+      ressort: 'ladenbau'
       type: 'square-medium'
       float: 'right'
     content:
@@ -210,6 +214,7 @@ items:
     ressort: 'innenausbau'
     type: 'highlight'
     teaser:
+      ressort: 'innenausbau'
       type: 'circle'
       float: 'left'
     content:
@@ -250,6 +255,7 @@ items:
     ressort: 'innenausbau'
     type: 'highlight'
     teaser:
+      ressort: 'innenausbau'
       type: 'circle-medium'
       float: 'right'
     content:
@@ -280,6 +286,7 @@ items:
     ressort: 'ladenbau'
     type: 'highlight'
     teaser:
+      ressort: 'ladenbau'
       type: 'square-mediumborder'
       float: 'left'
       glyphe: 'top-right-outside'
@@ -391,6 +398,7 @@ items:
     ressort: 'innenausbau'
     type: 'standard'
     teaser:
+      ressort: 'innenausbau'
       type: 'square-mediumborder'
       float: 'left'
     content:

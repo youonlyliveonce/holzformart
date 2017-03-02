@@ -1,5 +1,0 @@
----
-
-content:
-  projects: !!inc/file src/pug/_data/en/projects.yml
-  key: 'innenausbau'
