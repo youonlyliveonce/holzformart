@@ -1,0 +1,20 @@
+.Teaserlist
+	.Columns__marginal
+		span Projects
+	.Teaserlist__body
+		.Teaserlist__heading
+			h2 Shopfitting references
+		.Teaserlist__spacer
+		.Teaserlist__listing
+			if content
+				each el in content.projects.items
+					if el.ressort == content.key
+						a.Teaser(class="Teaser--"+el.teaser.type+" Teaser--"+el.teaser.float+"" href="/de/"+el.ressort+"/"+el.id+".html")
+							.Teaser__body
+								img(src="/assets/images/projects/teaser_projekt_"+el.ressort+"_"+el.id+".jpg")
+							.Teaser__link(class="Teaser__link--"+el.ressort)
+								.Button.Button--teaser
+									span
+										span
+											span= el.ressort
+											span= el.content.title

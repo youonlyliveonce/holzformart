@@ -1,0 +1,31 @@
+.Clients
+	.Columns__marginal
+		span Our Commissioners
+	.Clients__body
+		.Clients__text
+			.Heading.Heading--major
+				h2 Clients, architects and planners
+			p In addition to private customers, our clients include a large number of retailers. In particular, architects and planning offices are calling on our competence to promptly deliver customised fit-outs.
+			ul
+				li
+					img(src=images+"/ueberuns/logo-bodyshop.jpg")
+				li
+					img(src=images+"/ueberuns/logo-fossil.jpg")
+				li
+					img(src=images+"/ueberuns/logo-crocs.jpg")
+				li
+					img(src=images+"/ueberuns/logo-riverwoods.jpg")
+		.Clients__box
+			h3 Clients
+			div
+				ul
+					if content
+						each el, index in content.clients
+							if index % 2 == 0
+								li= el
+			div
+				ul
+					if content
+						each el2, index2 in content.clients
+							if Math.abs(index2 % 2) == 1
+								li= el2

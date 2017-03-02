@@ -21,7 +21,10 @@
 		"media": "gulp media",
 		"dom": "gulp dom",
 		"init": "git-ftp init --syncroot public -u matteng_de_9 -P - ftp://kontentftp.matteng.de/hfm/htdocs",
-		"push": "git-ftp push --syncroot public -u matteng_de_9 -P - ftp://kontentftp.matteng.de/hfm/htdocs"
+		"push": "git-ftp push --syncroot public -u matteng_de_9 -P - ftp://kontentftp.matteng.de/hfm/htdocs",
+		"initlive": "git-ftp init --syncroot public -u u88377514 -P - sftp://home670407910.1and1-data.host",
+		"pushlive": "git-ftp push --syncroot public -u u88377514 -P - sftp://home670407910.1and1-data.host"
+
 	},
 	"devDependencies": {
     "babel-cli": "^6.7.7",
