@@ -25,8 +25,14 @@ $gap-size: 20px
 $gap-size--medium: 40px
 $gap-size--large: 70px
 
+
+
 // Mixins
 @import mixins/all
+
+.onlymobile
+	+bp(medium)
+		display: none
 
 // Vendor
 @import vendor/normalize

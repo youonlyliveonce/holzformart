@@ -10,18 +10,18 @@ items:
     content:
       subtitle: 'Flag ship Store & Show room'
       title: 'Skagen'
-      intro: 'Leitbild, Vorbild, Markenbild. Ein Flagship-Store in Paris, direkt auf dem Boulevard Champs-Élysées.'
+      intro: 'Mission, model, mandate. A flagship store in Paris, directly on the Boulevard Champs-Elysées.'
       copy:
-        - 'Die Herausforderung bei dem Auftrag des Kunden Skagen lag für uns nicht nur in der einzigartigen Location im Zentrum der Modewelt. Anforderung war auch die Adaptierbarkeit des Konzeptes auf Stores und Shop-in-Shop-Flächen in ganz Europa.'
-        - 'In enger Zusammenarbeit mit den amerikanischen Designern entwickelten und implementierten wir ein hochwertiges, skalierbares Shop-Konzept, das die Markenidentität des dänischen Modelabels erlebbar macht. Schlichtheit und Eleganz mit der Wahl der Materialien Glas, Metall und Holz, untermalt durch ein dezentes Beleuchtungskonzept. Höchste Qualität verbindet sich mit Zweckmäßigkeit – ein Spiegel der Marke.'
+        - 'The challenge of the project we were commissioned with by our client Skagen didn’t just lie in its unique location at the heart of the fashion world. The requirement was also to make the concept adaptable to all their stores and shop-in-shop spaces throughout Europe.'
+        - 'Working closely with the American designers, we developed and implemented a sophisticated, scalable shop concept that presented the brand identity of the Danish fashion label in a tangible form. Simplicity and elegance in the choice of the materials glass, metal and wood were underlined by a subtle lighting concept. Excellent quality married with practicality – a reflection of the brand.'
     facts:
-      branche: 'Uhren / Fashion-Accessoires'
-      year: 'seit 2015'
-      region: 'europaweit'
+      branche: 'Watches / Fashion Accessoires'
+      year: 'since 2015'
+      region: 'across Europe'
       effort:
-        - '150 SIS-Flächen, 3 Läden'
-        - 'Größe von 60 bis 100 m²'
-      service: 'Produktion, Montage, Logistik, Roll-outs'
+        - '150 SIS areas, 3 shops'
+        - '60 to 100 m² in size'
+      service: 'Production, installation, logistics, roll-outs'
     images:
       -
         src: 'projects/skagen/skagen-01.jpg'
@@ -67,18 +67,19 @@ items:
       type: 'circle-medium'
       float: 'right'
     content:
-      subtitle: 'Show room'
+      subtitle: 'Showroom'
       title: 'adidas'
-      intro: 'Die Essenz der Markenwelt in einem Raum.'
+      intro: 'The essence of the brand values in one single space.'
       copy:
-        - 'Die Basel World ist eine internationale Messe für edle Uhren und Schmuck. Zusammen mit den Markenwächtern des Unternehmens Adidas entwickelten wir das Konzept für den Showroom des Sportartikelherstellers in einem exklusiven Umfeld. Der Kerngedanke war, das Sortiment hochwertiger Chronographen mit einem ungewöhnlichen Materialkontrast in Szene zu setzen. Das Ergebnis: eine hochwertige Bühne zur Produktpräsentation, auf der Glas und Metall die technische Perfektion der Sportuhren transportieren. Kontrastiert werden die kühlen Materialien durch natürlich anmutende, raue Holzoberflächen. Als Ausdruck von Robustheit und Sportlichkeit – und damit der Identität der Marke Adidas.'
+        - 'Baselworld is an international trade show for quality watches and jewellery. In collaboration with the brand custodians of the Adidas company, we developed the concept for the showroom of the sport article manufacturer in an exclusive environment. The key concept was to stage their range of quality-crafted chronograph watches using an unusual contrast in materials.'
+        - 'The result was an excellently crafted product presentation stage on which glass and metal conveyed the technical perfection of the sports watches. The cool materials were offset by the natural appeal of rough wooden surfaces. As an expression of durability and sports performance – and thus of the identity of the Adidas brand.'
     facts:
-      branche: 'Uhren'
+      branche: 'Watches'
       year: '2016'
       region: 'Basel'
       effort:
         - 'Showroom Basel World, ca. 70 m²'
-      service: 'Produktion, Montage'
+      service: 'Production, installation'
     images:
       -
         src: 'projects/adidas/adidas-01.jpg'
@@ -119,11 +120,12 @@ items:
       type: 'square-medium'
       float: 'right'
     content:
-      subtitle: 'Innenausbau'
-      title: 'Küche und Entree'
-      intro: 'Individualität für Persönlichkeiten. Es gibt keine zweite Chance für einen ersten Eindruck.'
+      subtitle: 'Interior fit out'
+      title: 'Kitchen and Entrance'
+      intro: 'Individuality for strong characters. First impressions don’t get a second chance.'
       copy:
-        - 'Darum haben wir bei der Konzeption und Gestaltung des Eingangsbereiches eines Privathauses in Willich dieser „Visitenkarte des Hauses“ besondere Beachtung geschenkt. Auch in der Küche zeigt sich unsere Handschrift bei Konzept, Beleuchtung, moderner Form- und Farbgebung sowie der Integration der Arbeitsplatten aus kaltgewalztem Edelstahl. Die Formgebung leitet sich aus der Funktion der Objekte her, die Linienführung ist klar und das Design ist auf das Wesentliche reduziert: auf die Funktion. Und darauf, den Stil, den Anspruch und die Individualität der Bewohner zum Ausdruck zu bringen.'
+        - 'That’s why we paid particular attention to the concept and design of the “visiting card” of a private home in Willich – the entrance area. The kitchen, too, bears our signature in its concept, lighting, modern styling and colours, and the integration of the worktops made of cold-rolled stainless steel.'
+        - 'The styling emerges from the function of the objects, the lines are clear, and the design is reduced to the minimum: to the function. And to expressing the style, aspirations and individuality of the residents.'
     images:
       -
         src: 'projects/ingenlath/ingenlath-01.jpg'
@@ -160,18 +162,18 @@ items:
     content:
       subtitle: '40 Shops and Show room'
       title: 'River Woods'
-      intro: 'Individualität als Konzept. Bereits seit 2012 ist der belgische Lifestyle- und Bekleidungsspezialist River Woods unser Kunde.'
+      intro: 'Individuality as a concept. The Belgian lifestyle and clothing specialist River Woods has been our customer since 2012.'
       copy:
-        - 'In dieser Zeit haben wir bereits mehr als 40 Shops in ganz Europa entwickelt und im unverkennbaren Interior-Stil der Marke ausgestaltet. Das Wohnambiente der Shops, das den populären belgischen Landhausstil aufgreift und in die Shopflächen überträgt, ist durch individuelle Einzelanfertigungen gekennzeichnet. Sie geben jedem Shop eine eigene Persönlichkeit.'
-        - 'Dieser Anspruch galt auch für einen Messeauftritt in Shanghai – eine besondere Herausforderung für uns und die Designer der Marke, die durch zahlreiche maßgeschneiderte Einzelanfertigungen und mit viel Handarbeit gelöst wurde.'
+        - 'In this period, we have already developed over 40 shops for them throughout Europe, fitting them out in the unmistakable interior style of the brand. The home-living ambience of the shop, which picks up the popular belgian country-house style and transfers it to the shop spaces, is characterised by individual custom-made fabrications. They give each shop its own character.'
+        - 'The situation was similar for their presence at a trade show in Shanghai – a particular challenge for us and the designers of the brand, which we resolved with numerous specially made individual fabrications and a great deal of craftsmanship.'
     facts:
       branche: 'Fashion'
-      year: 'seit 2012'
-      region: 'europaweit'
+      year: 'since 2012'
+      region: 'across Europe'
       effort:
-        - '20 SIS-Flächen, 40 Läden'
-        - 'mit einer Größe von 60 bis 100 m²'
-      service: 'Produktion, Montage, Logistik, Roll-outs'
+        - '20 SIS areas, 40 shops'
+        - '60 to 100 m² in size'
+      service: 'Production, installation, logistics, roll-outs'
     images:
       -
         src: 'projects/riverwoods/riverwoods-01.jpg'
@@ -219,10 +221,10 @@ items:
     content:
       subtitle: 'interiorfitout'
       title: 'Food Court Recklinghausen'
-      intro: 'Guter Geschmack in vielen Facetten.'
+      intro: 'The many facets of good taste.'
       copy:
-        - 'Das Auge isst mit, heißt es immer. Dass damit nicht nur das Anrichten der Speisen auf dem Teller gemeint ist, beweist das Augenmerk, das Gastronome auf die Gestaltung ihrer Räumlichkeiten legen. Die Atmosphäre trägt maßgeblich zum kulinarischen Erlebnis bei. Die Designerin Dena Rawle kennt sich mit den Feinheiten dieses Gebietes aus und entwarf den Food-Court für das Palais Vest in Recklinghausen.'
-        - 'Die Herausforderung für Design und Produktion war die Umsetzung verschiedener Themenbereiche innerhalb der Food-Area. Die Lösung: charakteristische Materialien für jeden Bereich. Von gekälkter Eiche über verwitterte Holzoberflächen bis zu Beton und verrostetem Stahl – und 16 Orangenbäumen.'
+        - 'A feast for the eyes, so the saying goes. This isn’t just limited to arranging food on a plate, as is proven by the great deal of attention that restaurateurs give to the styling of their premises. The atmosphere plays a crucial role in the culinary experience. The designer Dena Rawle is intimately acquainted with the nuances of this field and designed the food court for the Palais Vest in Recklinghausen. The challenge for design and production was creating the differently themed spaces within the food area.'
+        - 'The solution was to employ characteristic materials in each area. Ranging from limed oak and weathered wooden surfaces to concrete and rusted steel – along with 16 orange trees.'
     images:
       -
         src: 'projects/palais_vest_recklinghausen/palais_vest_recklinghausen-01.jpg'
@@ -258,12 +260,12 @@ items:
       type: 'circle-medium'
       float: 'right'
     content:
-      subtitle: 'Innenausbau'
+      subtitle: 'Interior fit out'
       title: 'HolzFormArt Coffee Lounge'
-      intro: 'Eigenpräsentation in Eigenregie.'
+      intro: 'Presenting ourselves on our own behalf.'
       copy:
-        - 'Zeigen, was möglich ist. Projekte für das eigene Haus sind immer ein Aushängeschild der Firma. So auch die Kaffee-Lounge in unseren Räumlichkeiten. Sie wurde als Teamarbeit in Eigenregie entwickelt und komplett aus massiver Eiche gefertigt – inklusive Spülbecken. Die Flächen sind geölt und zeigen eine natürliche Oberfläche mit charakteristischer Haptik, die durch die dezent integrierte Beleuchtung zur Geltung gebracht wird.'
-        - 'Die Inspiration für das Design fand sich in unserer Schreinerei: Ein Holzstapel stand Pate für den Entwurf, der somit den Arbeitsalltag unserer Mitarbeiter aufgreift und dem Treffpunkt Aufenthaltsqualität hinzufügt.'
+        - 'Showing what is possible. In-house projects are always a company’s own best advertisement. Just like the coffee lounge on our own premises. The team had a free hand in developing it themselves and produced it entirely out of solid oak – including the sink. The wood has been oiled, revealing its natural surface with its characteristic feel, which is highlighted through the subtle, built-in lighting.'
+        - 'The inspiration for the design came from our joinery: a pile of wood was the model for the concept, picking up the everyday life of our employees and providing them a quality space to spend time.'
     images:
       -
         src: 'projects/hofgarten_solingen/hofgarten_solingen-01.jpg'
@@ -292,17 +294,17 @@ items:
     content:
       subtitle: 'Concept store'
       title: 'George Gina & Lucy'
-      intro: 'Shop-Design mit künstlerischer Freiheit.'
+      intro: 'Shop design with artistic freedom.'
       copy:
-        - 'Knallige Farben, unkonventionelles Design und Charakter – der Konzept-Store der beliebten Accessoire-Marke George Gina & Lucy in den Pasing Arcaden sollte zu den Produkten des Labels passen. Für die entsprechende Gestaltung des Interiors konnte die Künstlerin und Designerin Delphine Buhro gewonnen werden. Sie inszenierte den Shop als bunte, familiäre Wohnwelt mit einer Holzfassade, diversen Metallstrukturen und Formglasscheiben.'
-        - 'Die Vielfalt des Sortimentes und der Designs drückt sich in der Materialität und Haptik der teilweise bedruckten Holzoberflächen aus. Die besondere Herausforderung des Projektes war allerdings eine andere: den Anspruch des Kunden und die Ideen der Künstlerin mit den Brandschutzbestimmungen der Shopping-Mall in Einklang zu bringen.'
+        - 'Dazzling colours, unconventional design and character – the concept store for the popular accessories brand Georg Gina & Lucy, located in the Pasing Arcades, had to match the products of the label. We were able to gain the services of artist and designer Delphine Buhro for the appropriate styling of the interior. She staged the shop as a brightly coloured, family home-life world with a wooden façade, various metal structures and contoured glass panes.'
+        - 'The variety of the range and design is expressed in the materiality and tactility of the partially imprinted wooden surfaces. The particular challenge of the project, however, was something entirely different: reconciling the expectations of our client and the ideas of the artist with the fire safety regulations of the shopping mall.'
     facts:
       branche: 'Fashion-Accessoires'
       year: '2015'
-      region: 'Deutschland, Österreich'
+      region: 'Germany, Austria'
       effort:
-        - 'Konzeptstore, Rollouts'
-      service: 'Produktion, Montage'
+        - 'Concept store, Rollouts'
+      service: 'Production, installation'
     images:
       -
         src: 'projects/ggl/ggl-01.jpg'
@@ -348,19 +350,19 @@ items:
       type: 'circle-medium'
       float: 'right'
     content:
-      subtitle: 'Ladenbau'
+      subtitle: 'Shopfitting'
       title: 'Fossil'
       intro: ''
       copy:
         - ''
         - ''
     facts:
-      branche: 'Uhren; Fashion-Accessoires'
+      branche: 'Watches, Fashion-Accessoires'
       year: '2006'
-      region: 'europaweit'
+      region: 'across Europe'
       effort:
-        - '170 Stores und SIS Flächen'
-      service: 'Produktion, Montage, Rollouts'
+        - '170 Stores and SIS areas'
+      service: 'Production, installation, roll-outs'
     images:
       -
         src: 'projects/fossil/fossil-01.jpg'
@@ -402,12 +404,12 @@ items:
       type: 'square-mediumborder'
       float: 'left'
     content:
-      subtitle: 'Innenausbau'
-      title: 'Küche und Wohnzimmer'
-      intro: 'Ein Kontrast aus Land und Lifestyle.'
+      subtitle: 'Interior fit out'
+      title: 'Kitchen and Livingroom'
+      intro: 'A contrast between country-house living and lifestyle.'
       copy:
-        - 'Ob während der Bauphase oder im Zuge einer Renovierung – wir übernehmen Design und Innenausbau von Geschäftsräumen ebenso wie von Privathäusern. Dabei setzen wir die Vorstellungen unserer Kunden mit Leidenschaft und Sachverstand um. Gutes Beispiel: Küche und Wohnzimmer eines Hauses, in dem modernes Design auf Landhausstil trifft. '
-        - 'Unser Auftraggeber wollte eine helle Wohnung, Anklänge des Landhausstils sollten eine moderne Atmosphäre ergänzen und spannend kontrastieren. Unsere Lösung war das Entfernen einer Wand, um größere, helle Räume zu schaffen, in denen eine zeitgemäße Farben- und Formensprache mit Merkmalen des Landhausstils kombiniert wurde. Und hinter dieser „Fassade“: State-of-the-Art-Technik und LED-Beleuchtung.'
+        - 'Whether during the construction phase or as part of a renovation – we undertake the design and interior fit-out of business premises as well as private homes. In this process, we translate our clients’ ideas with passion and technical expertise. One good example: the kitchen and living room of a home in which modern design meets country-house style.'
+        - 'Our client wanted a light, bright living space, with a modern atmosphere complemented by echoes of country-house style to provide an exciting contrast. Our solution was to remove a wall to create larger, brighter rooms in which contemporary colours and styling could be combined with features of the country-house style. And behind this “façade” lies state-of-the-art technology and LED lighting.'
     images:
       -
         src: 'projects/rudolph/rudolph-01.jpg'
@@ -439,8 +441,8 @@ items:
       type: 'square-medium'
       float: 'right'
     content:
-      subtitle: 'Innenausbau'
-      title: 'Foodcourt Bilker Arcaden Düsseldorf'
+      subtitle: 'Interior fit out'
+      title: 'Foodcourt Bilker Arcaden Dusseldorf'
     images:
       -
         src: 'projects/bilk_arcaden_duesseldorf/bilk_arcaden_duesseldorf-01.jpg'

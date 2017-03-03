@@ -1,8 +1,13 @@
 extends ../../_layout/en/_layout
 
 block title
-		title Das sind wir: HOLZFORMART
+		title That is us: HOLZFORMART
 
+block hreflang
+		- var pagelinkDe = 'ueberuns.html'
+		- var pagelinkEn = 'aboutus.html'
+		include ../../_layout/hreflang.pug
+		
 block meta
 		meta(name="description", content="Die Kompetenzen liegen in der Konzeption und Produktion von Möbeln aller Art für die Bereiche Ladenbau, Innenausbau, Küchen, Bäder und Fertigung von Einzelmöbeln. ")
 		meta(name="pageColor", content="red")

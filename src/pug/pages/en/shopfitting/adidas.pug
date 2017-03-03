@@ -1,10 +1,16 @@
 extends ../../../_layout/en/_layout
 
 block title
-		title Die Essenz der Markenwelt in einem Raum.: adidas by HOLZFORMART
+		title Shopfitting: adidas by HOLZFORMART
+
+block hreflang
+		- var pagelinkDe = 'landenbau/adidas.html'
+		- var pagelinkEn = 'shopfitting/adidas.html'
+		include ../../../_layout/hreflang.pug
+
 
 block meta
-		meta(name="description", content="Die Essenz der Markenwelt in einem Raum.: adidas by HOLZFORMART")
+		meta(name="description", content="Shopfitting: adidas by HOLZFORMART")
 		meta(name="pageColor", content="blue")
 
 block content

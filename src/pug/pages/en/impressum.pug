@@ -3,6 +3,11 @@ extends ../../_layout/en/_layout
 block title
 		title Legals of HOLZFORMART
 
+block hreflang
+		- var pagelinkDe = 'impressum.html'
+		- var pagelinkEn = 'impressum.html'
+		include ../../_layout/hreflang.pug
+
 block meta
 		meta(name="description", content="Legals: HOLZFORMART ")
 		meta(name="pageColor", content="red")

@@ -3,6 +3,11 @@ extends ../../_layout/de/_layout
 block title
 		title Kontakt zum HOLZFORMART
 
+block hreflang
+		- var pagelinkDe = 'kontakt.html'
+		- var pagelinkEn = 'contact.html'
+		include ../../_layout/hreflang.pug
+
 block meta
 		meta(name="description", content="Telefon, Fax, E-Mail oder einfach vorbei kommen. Viele Wege zum HOLZFORMART ")
 		meta(name="pageColor", content="red")

@@ -12,22 +12,22 @@
 							else
 								.Gallery__item(class="Gallery__item--"+item.type+" Gallery__item--"+item.float)
 									.Gallery__item-facts
-										h4 Fakten
+										h4 Facts
 										table
 											tr
-												td Branche:
+												td Sector:
 												td= el.facts.branche
 											tr
-												td Jahr:
+												td Year:
 												td= el.facts.year
 											tr
 												td Region:
 												td= el.facts.region
 											tr
-												td Umfang:
+												td Scope:
 												td
 													each effort in el.facts.effort
 														span= effort
 											tr
-												td Leistungen:
+												td Services:
 												td= el.facts.service

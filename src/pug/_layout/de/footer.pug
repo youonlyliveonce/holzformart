@@ -2,17 +2,17 @@
 	.Footer__body
 		.Footer__menu
 			p
-				a(href="/de/") Startseite
+				a(href="/"+lang+"/") Startseite
 				br
-				a(href="/de/ladenbau") Ladenbau
+				a(href="/"+lang+"/ladenbau") Ladenbau
 				br
-				a(href="/de/innenausbau") Innenausbau
+				a(href="/"+lang+"/innenausbau") Innenausbau
 				br
-				a(href="/de/ueberuns") Über uns
+				a(href="/"+lang+"/ueberuns") Über uns
 				br
-				a.divider(href="/de/kontakt.html") Kontakt
+				a.divider(href="/"+lang+"/kontakt.html") Kontakt
 				br
-				a(href="/de/impressum.html") Impressum
+				a(href="/"+lang+"/impressum.html") Impressum
 		.Footer__adress
 			p.
 				HolzFormArt GmbH & Co. KG<br/>
@@ -27,6 +27,9 @@
 				a(href="mailto:mail@holzformart.de") mail@holzformart.de
 				br
 				a(href="http://maps.google.com/?q=HolzFormArt GmbH & Co KG, Endstraße 104, 47506 Neukirchen-Vluyn" target="_blank") Anfahrt google Maps
+				span(class="onlymobile")
+					br
+					a(href="/"+lang+"/impressum.html") Impressum
 			p.
 				Sie erreichen uns Montags bis Freitags in der Zeit von 7.30 Uhr bis 16.00 Uhr - oder natürlich jederzeit per E-Mail.
 		.Footer__social

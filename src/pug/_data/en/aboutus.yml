@@ -1,67 +1,66 @@
 ---
-
 content:
   impressions:
     -
       src: /ueberuns/impressionen_1.jpg
-      alt: 'Das sind wir: Holzformart'
+      alt: 'This is us: Holzformart'
     -
       src: /ueberuns/impressionen_2.jpg
-      alt: 'Das sind wir: Holzformart'
+      alt: 'This is us: Holzformart'
     -
       src: /ueberuns/impressionen_3.jpg
-      alt: 'Das sind wir: Holzformart'
+      alt: 'This is us: Holzformart'
     -
       src: /ueberuns/impressionen_4.jpg
-      alt: 'Das sind wir: Holzformart'
+      alt: 'This is us: Holzformart'
     -
       src: /ueberuns/impressionen_5.jpg
-      alt: 'Das sind wir: Holzformart'
+      alt: 'This is us: Holzformart'
     -
       src: /ueberuns/impressionen_6.jpg
-      alt: 'Das sind wir: Holzformart'
+      alt: 'This is us: Holzformart'
     -
       src: /ueberuns/impressionen_7.jpg
-      alt: 'Das sind wir: Holzformart'
+      alt: 'This is us: Holzformart'
   team:
     -
-      title: Geschäftsführer
+      title: Managing Director
       surname: Stefan
       name: Molter
       tel: +49 2841 887300
       mail: s.molter@holzformart.de
     -
-      title: Geschäftsführer
+      title: Managing Director
       surname: Roman
       name: Ingenlath
       tel: +49 2841 887300
       mail: r.ingenlath@holzformart.de
     -
-      title: Geschäftsführer/ Betriebsleiter
+      title: Managing Director / Operations manager
       surname: Tino
       name: Rudolph
       tel: +49 2841 887300
       mail: t.rudolph@holzformart.de
     -
-      title: Produktionsleiter
+      title: Production manager
       surname: Dominique
       name: Bohnsack
       tel: +49 2841 887300
       mail: d.bohnsack@holzformart.de
     -
-      title: Projektleiter
+      title: Production manager
       surname: Wolfgang
       name: Dumsch
       tel: +49 2841 88730241
       mail: w.dumsch@holzformart.de
     -
-      title: Projektleiter
+      title: Production manager
       surname: Simon
       name: Kascher
       tel: +49 2841 88730243
       mail: s.kascher@holzformart.de
     -
-      title: GU-Projektleiter
+      title: GU-Production manager
       surname: Michael
       name: Schürhörster
       tel: +49 2841 88730237

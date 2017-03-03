@@ -9,7 +9,11 @@ let Base = Model.extend({
 		props: {
 				id: ['string', true, ''],
 				pageContent: ['object', true, function(){ return []; }],
+				pageLinks: ['object', true, function(){ return {'de':'', 'en':''}; }],
 				pageTitle: ['string', true, ''],
+				pageNavigation: ['object', true, function(){ return []; }],
+				pageStickyNavigation: ['object', true, function(){ return []; }],
+				pageFooter: ['object', true, function(){ return []; }],
 				pageClass: ['string', true, ''],
 				lang: ['string', true, 'de']
 		},
@@ -18,8 +22,12 @@ let Base = Model.extend({
 			 tempDom.insertAdjacentHTML('afterbegin', resp);
 			 this.pageTitle = resp.split("<title>")[1].split("</title>")[0];
 			 this.pageContent = tempDom.querySelectorAll('.View')[0];
+			 this.pageNavigation = tempDom.querySelectorAll('.Header__body')[0];
+			 this.pageStickyNavigation = tempDom.querySelectorAll('.Header-sticky__body')[0];
+			 this.pageFooter = tempDom.querySelectorAll('.Footer')[0];
+			 this.pageLinks.de = tempDom.querySelectorAll('link[hreflang="de"]')[0].href;
+			 this.pageLinks.en = tempDom.querySelectorAll('link[hreflang="en"]')[0].href;
 			 this.pageClass = tempDom.querySelectorAll('meta[name="pageColor"]')[0].getAttribute('content');
-			 console.log("this.pageClass", this.pageClass);
 			 return resp;
 	 },
 		ajaxConfig: function () {

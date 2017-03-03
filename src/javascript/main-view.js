@@ -13,6 +13,9 @@ var MainView = View.extend({
 		props: {
 			isSticky: ['boolean', true, false]
 			,navOpenClass: ['string', true, 'Header--open']
+			,lang: ['string', true, 'de']
+			,denav: ['object', true, function(){ return []; }]
+			,ennav: ['object', true, function(){ return []; }]
 		},
 
 		/* Bind basic Events, all link clicks, toggle Navigation, etc. */
@@ -33,9 +36,15 @@ var MainView = View.extend({
 						main: '[role="main"]',
 						header: '.Header',
 						headerlogo: '.Header__logo',
-						nav: '.Navigation',
+						headerbody: '.Header__body',
+						headerstickybody: '.Header-sticky__body',
+						nav: '.Menu',
+						footer: '.Footer',
 						switcher: '[data-hook=switcher]'
 				});
+
+				this.denav = this.queryAll('[data-hook=de]');
+				this.ennav = this.queryAll('[data-hook=en]');
 				// Init and configure our page switcher
 				this.pageSwitcher = new ViewSwitcher(this.switcher, {
 						waitForRemove: true,
@@ -78,6 +87,8 @@ var MainView = View.extend({
 				var self = this;
 
 				dom.addClass(document.body, view.model.pageClass);
+
+				this.lang = view.model.lang;
 
 				// Set child view as initial
 				view.isInitial = true;
@@ -125,8 +136,15 @@ var MainView = View.extend({
 				// SWITCH THE VIEW
 				this.pageSwitcher.set(view);
 
+				if(view.model.lang != this.lang){
+					this.changeLanguage(view);
+				} else {
+					this.updateActiveNav();
+				}
+
+				this.updateLanguageNav(view);
 				// UPDATE PAG NAV
-				this.updateActiveNav();
+
 
 		},
 
@@ -135,6 +153,25 @@ var MainView = View.extend({
 		*/
 		handleUpdateView: function(){
 			this.scrollTo();
+		},
+
+		changeLanguage: function(view){
+			this.lang = view.model.lang;
+			this.footer.innerHTML = view.model.pageFooter.innerHTML;
+			this.headerbody.innerHTML = view.model.pageNavigation.innerHTML;
+			this.headerstickybody.innerHTML = view.model.pageStickyNavigation.innerHTML;
+		},
+
+		updateLanguageNav: function(view){
+			console.log("updateLanguageNav", this.denav);
+			console.log("updateLanguageNav", this.ennav);
+			this.denav.forEach(function(item){
+				item.setAttribute('href', view.model.pageLinks.de);
+			})
+			this.ennav.forEach(function(item){
+				item.setAttribute('href', view.model.pageLinks.en);
+			})
+
 		},
 
 		/*
@@ -211,7 +248,8 @@ var MainView = View.extend({
 
 		updateActiveNav: function () {
 				let path = window.location.pathname.slice(1),
-						topnavi = this.queryAll('.Menu a[href]');
+						topnavi = this.queryAll('.Menu a[href]'),
+						self = this;
 
 				if (CM.App._params != {} && CM.App._params.section != null){
 					path = `${path}?section=${CM.App._params.section}`;
@@ -221,13 +259,29 @@ var MainView = View.extend({
 					topnavi.forEach(function (aTag) {
 						dom.removeClass(aTag, 'active')
 					});
-					dom.addClass(topnavi[0], 'active')
+					topnavi.forEach(function (aTag) {
+						if(aTag.getAttribute('data-hook') == 'de' || aTag.getAttribute('data-hook') == 'en'){
+							if(aTag.getAttribute('data-hook') == self.lang){
+								dom.addClass(aTag, 'active');
+							} else {
+								dom.removeClass(aTag, 'active');
+							}
+						}
+					});
+					// dom.addClass(topnavi[0], 'active')
 				} else {
 					topnavi.forEach(function (aTag) {
 						if(aTag.href.indexOf(path) != -1){
 							dom.addClass(aTag, 'active')
 						}else {
 							dom.removeClass(aTag, 'active')
+						}
+						if(aTag.getAttribute('data-hook') == 'de' || aTag.getAttribute('data-hook') == 'en'){
+							if(aTag.getAttribute('data-hook') == self.lang){
+								dom.addClass(aTag, 'active');
+							} else {
+								dom.removeClass(aTag, 'active');
+							}
 						}
 					});
 				}

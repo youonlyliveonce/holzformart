@@ -3,6 +3,11 @@ extends ../../_layout/de/_layout
 block title
 		title Impressum vom HOLZFORMART
 
+block hreflang
+		- var pagelinkDe = 'impressum.html'
+		- var pagelinkEn = 'impressum.html'
+		include ../../_layout/hreflang.pug
+
 block meta
 		meta(name="description", content="Impressum: HOLZFORMART ")
 		meta(name="pageColor", content="red")

@@ -1,10 +1,15 @@
 extends ../../../_layout/en/_layout
 
 block title
-		title Ladenbau: Fossil by HOLZFORMART
+		title Shopfitting: Fossil by HOLZFORMART
+
+block hreflang
+		- var pagelinkDe = 'landenbau/fossil.html'
+		- var pagelinkEn = 'shopfitting/fossil.html'
+		include ../../../_layout/hreflang.pug
 
 block meta
-		meta(name="description", content="Ladenbau: Fossil by HOLZFORMART")
+		meta(name="description", content="Shopfitting: Fossil by HOLZFORMART")
 		meta(name="pageColor", content="blue")
 
 block content
