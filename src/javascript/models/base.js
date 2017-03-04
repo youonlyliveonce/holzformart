@@ -8,6 +8,7 @@ let Base = Model.extend({
 		urlRoot: '/',
 		props: {
 				id: ['string', true, ''],
+				root: ['string', true, 'http://www.holzformart.de'],
 				pageContent: ['object', true, function(){ return []; }],
 				pageLinks: ['object', true, function(){ return {'de':'', 'en':''}; }],
 				pageTitle: ['string', true, ''],
@@ -25,8 +26,8 @@ let Base = Model.extend({
 			 this.pageNavigation = tempDom.querySelectorAll('.Header__body')[0];
 			 this.pageStickyNavigation = tempDom.querySelectorAll('.Header-sticky__body')[0];
 			 this.pageFooter = tempDom.querySelectorAll('.Footer')[0];
-			 this.pageLinks.de = tempDom.querySelectorAll('link[hreflang="de"]')[0].href;
-			 this.pageLinks.en = tempDom.querySelectorAll('link[hreflang="en"]')[0].href;
+			 this.pageLinks.de = tempDom.querySelectorAll('link[hreflang="de"]')[0].href.split(this.root).join("");
+			 this.pageLinks.en = tempDom.querySelectorAll('link[hreflang="en"]')[0].href.split(this.root).join("");
 			 this.pageClass = tempDom.querySelectorAll('meta[name="pageColor"]')[0].getAttribute('content');
 			 return resp;
 	 },
