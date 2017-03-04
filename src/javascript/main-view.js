@@ -43,8 +43,8 @@ var MainView = View.extend({
 						switcher: '[data-hook=switcher]'
 				});
 
-				this.denav = this.queryAll('[data-hook=de]');
-				this.ennav = this.queryAll('[data-hook=en]');
+				this.denav = Array.from(this.queryAll('[data-hook=de]'));
+				this.ennav = Array.from(this.queryAll('[data-hook=en]'));
 				// Init and configure our page switcher
 				this.pageSwitcher = new ViewSwitcher(this.switcher, {
 						waitForRemove: true,
@@ -137,10 +137,11 @@ var MainView = View.extend({
 				this.pageSwitcher.set(view);
 
 				if(view.model.lang != this.lang){
+					this.lang = view.model.lang;
 					this.changeLanguage(view);
-				} else {
-					this.updateActiveNav();
 				}
+
+				this.updateActiveNav();
 
 				this.updateLanguageNav(view);
 				// UPDATE PAG NAV
@@ -156,22 +157,20 @@ var MainView = View.extend({
 		},
 
 		changeLanguage: function(view){
-			this.lang = view.model.lang;
 			this.footer.innerHTML = view.model.pageFooter.innerHTML;
 			this.headerbody.innerHTML = view.model.pageNavigation.innerHTML;
 			this.headerstickybody.innerHTML = view.model.pageStickyNavigation.innerHTML;
+			this.denav = Array.from(this.queryAll('[data-hook=de]'));
+			this.ennav = Array.from(this.queryAll('[data-hook=en]'));
 		},
 
 		updateLanguageNav: function(view){
-			console.log("updateLanguageNav", this.denav);
-			console.log("updateLanguageNav", this.ennav);
 			this.denav.forEach(function(item){
 				item.setAttribute('href', view.model.pageLinks.de);
-			})
+			});
 			this.ennav.forEach(function(item){
 				item.setAttribute('href', view.model.pageLinks.en);
-			})
-
+			});
 		},
 
 		/*
