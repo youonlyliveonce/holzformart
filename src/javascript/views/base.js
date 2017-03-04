@@ -17,9 +17,9 @@ let Base = View.extend({
 		},
 
 		render: function(){
-				console.log("RENDER");
+				// console.log("RENDER");
 				if(!this.isInitial){
-						console.log("RENDER WITH TEMPLATE")
+						// console.log("RENDER WITH TEMPLATE")
 						this.renderWithTemplate(this);
 				}
 				this.hookInRender();

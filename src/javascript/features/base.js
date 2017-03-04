@@ -16,7 +16,7 @@ let Base = View.extend({
 		this.el.setAttribute("style", "height:"+document.body.clientHeight+"px");
 	},
 	onActiveChange: function(value){
-		console.log(value)
+		// console.log(value)
 	},
 	handleKeyDown: function(direction){
 	},
