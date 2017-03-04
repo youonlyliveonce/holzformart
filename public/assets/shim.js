@@ -1,1 +1,379 @@
-!function(e){function t(n){if(r[n])return r[n].exports;var o=r[n]={exports:{},id:n,loaded:!1};return e[n].call(o.exports,o,o.exports,t),o.loaded=!0,o.exports}var r={};return t.m=e,t.c=r,t.p="javascript/",t(0)}({0:function(e,t,r){e.exports=r(316)},316:function(e,t){"use strict";if(Array.from||(Array.from=function(){var e=Object.prototype.toString,t=function(t){return"function"==typeof t||"[object Function]"===e.call(t)},r=function(e){var t=Number(e);return isNaN(t)?0:0!==t&&isFinite(t)?(t>0?1:-1)*Math.floor(Math.abs(t)):t},n=Math.pow(2,53)-1,o=function(e){var t=r(e);return Math.min(Math.max(t,0),n)};return function(e){var r=this,n=Object(e);if(null==e)throw new TypeError("Array.from requires an array-like object - not null or undefined");var i,a=arguments.length>1?arguments[1]:void 0;if("undefined"!=typeof a){if(!t(a))throw new TypeError("Array.from: when provided, the second argument must be a function");arguments.length>2&&(i=arguments[2])}for(var c,l=o(n.length),u=t(r)?Object(new r(l)):new Array(l),p=0;p<l;)c=n[p],a?u[p]="undefined"==typeof i?a(c,p):a.call(i,c,p):u[p]=c,p+=1;return u.length=l,u}}()),Function.prototype.bind||(Function.prototype.bind=function(e){if("function"!=typeof this)throw new TypeError("Function.prototype.bind - what is trying to be bound is not callable");var t=Array.prototype.slice.call(arguments,1),r=this,n=function(){},o=function(){return r.apply(this instanceof n&&e?this:e,t.concat(Array.prototype.slice.call(arguments)))};return n.prototype=this.prototype,o.prototype=new n,o}),function(){var e=Object.prototype,t=e.__defineGetter__,r=e.__defineSetter__,n=e.__lookupGetter__,o=e.__lookupSetter__,i=e.hasOwnProperty;t&&r&&n&&o&&(Object.defineProperty||(Object.defineProperty=function(e,a,c){if(arguments.length<3)throw new TypeError("Arguments not optional");if(a+="",i.call(c,"value")&&(n.call(e,a)||o.call(e,a)||(e[a]=c.value),i.call(c,"get")||i.call(c,"set")))throw new TypeError("Cannot specify an accessor and a value");if(!(c.writable&&c.enumerable&&c.configurable))throw new TypeError("This implementation of Object.defineProperty does not support false for configurable, enumerable, or writable.");return c.get&&t.call(e,a,c.get),c.set&&r.call(e,a,c.set),e}),Object.getOwnPropertyDescriptor||(Object.getOwnPropertyDescriptor=function(e,t){if(arguments.length<2)throw new TypeError("Arguments not optional.");t+="";var r={configurable:!0,enumerable:!0,writable:!0},a=n.call(e,t),c=o.call(e,t);return i.call(e,t)?a||c?(delete r.writable,r.get=r.set=void 0,a&&(r.get=a),c&&(r.set=c),r):(r.value=e[t],r):r}),Object.defineProperties||(Object.defineProperties=function(e,t){var r;for(r in t)i.call(t,r)&&Object.defineProperty(e,r,t[r])}))}(),!(document.documentElement.dataset||Object.getOwnPropertyDescriptor(Element.prototype,"dataset")&&Object.getOwnPropertyDescriptor(Element.prototype,"dataset").get)){var r={enumerable:!0,get:function(){var e,t,r,n,o,i,a=this,c=this.attributes,l=c.length,u=function(e){return e.charAt(1).toUpperCase()},p=function(){return this},f=function(e,t){return"undefined"!=typeof t?this.setAttribute(e,t):this.removeAttribute(e)};try{({}).__defineGetter__("test",function(){}),t={}}catch(e){t=document.createElement("div")}for(e=0;e<l;e++)if(i=c[e],i&&i.name&&/^data-\w[\w\-]*$/.test(i.name)){r=i.value,n=i.name,o=n.substr(5).replace(/-./g,u);try{Object.defineProperty(t,o,{enumerable:this.enumerable,get:p.bind(r||""),set:f.bind(a,n)})}catch(e){t[o]=r}}return t}};try{Object.defineProperty(Element.prototype,"dataset",r)}catch(e){r.enumerable=!1,Object.defineProperty(Element.prototype,"dataset",r)}}}});
+/******/ (function(modules) { // webpackBootstrap
+/******/ 	// The module cache
+/******/ 	var installedModules = {};
+/******/
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/
+/******/ 		// Check if module is in cache
+/******/ 		if(installedModules[moduleId])
+/******/ 			return installedModules[moduleId].exports;
+/******/
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = installedModules[moduleId] = {
+/******/ 			exports: {},
+/******/ 			id: moduleId,
+/******/ 			loaded: false
+/******/ 		};
+/******/
+/******/ 		// Execute the module function
+/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+/******/
+/******/ 		// Flag the module as loaded
+/******/ 		module.loaded = true;
+/******/
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/
+/******/
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = modules;
+/******/
+/******/ 	// expose the module cache
+/******/ 	__webpack_require__.c = installedModules;
+/******/
+/******/ 	// __webpack_public_path__
+/******/ 	__webpack_require__.p = "javascript/";
+/******/
+/******/ 	// Load entry module and return exports
+/******/ 	return __webpack_require__(0);
+/******/ })
+/************************************************************************/
+/******/ ({
+
+/***/ 0:
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__(316);
+
+
+/***/ },
+
+/***/ 316:
+/***/ function(module, exports) {
+
+	'use strict';
+	
+	// Production steps of ECMA-262, Edition 6, 22.1.2.1
+	// Reference: https://people.mozilla.org/~jorendorff/es6-draft.html#sec-array.from
+	if (!Array.from) {
+	    Array.from = function () {
+	        var toStr = Object.prototype.toString;
+	        var isCallable = function isCallable(fn) {
+	            return typeof fn === 'function' || toStr.call(fn) === '[object Function]';
+	        };
+	        var toInteger = function toInteger(value) {
+	            var number = Number(value);
+	            if (isNaN(number)) {
+	                return 0;
+	            }
+	            if (number === 0 || !isFinite(number)) {
+	                return number;
+	            }
+	            return (number > 0 ? 1 : -1) * Math.floor(Math.abs(number));
+	        };
+	        var maxSafeInteger = Math.pow(2, 53) - 1;
+	        var toLength = function toLength(value) {
+	            var len = toInteger(value);
+	            return Math.min(Math.max(len, 0), maxSafeInteger);
+	        };
+	
+	        // The length property of the from method is 1.
+	        return function from(arrayLike /*, mapFn, thisArg */) {
+	            // 1. Let C be the this value.
+	            var C = this;
+	
+	            // 2. Let items be ToObject(arrayLike).
+	            var items = Object(arrayLike);
+	
+	            // 3. ReturnIfAbrupt(items).
+	            if (arrayLike == null) {
+	                throw new TypeError("Array.from requires an array-like object - not null or undefined");
+	            }
+	
+	            // 4. If mapfn is undefined, then let mapping be false.
+	            var mapFn = arguments.length > 1 ? arguments[1] : void undefined;
+	            var T;
+	            if (typeof mapFn !== 'undefined') {
+	                // 5. else
+	                // 5. a If IsCallable(mapfn) is false, throw a TypeError exception.
+	                if (!isCallable(mapFn)) {
+	                    throw new TypeError('Array.from: when provided, the second argument must be a function');
+	                }
+	
+	                // 5. b. If thisArg was supplied, let T be thisArg; else let T be undefined.
+	                if (arguments.length > 2) {
+	                    T = arguments[2];
+	                }
+	            }
+	
+	            // 10. Let lenValue be Get(items, "length").
+	            // 11. Let len be ToLength(lenValue).
+	            var len = toLength(items.length);
+	
+	            // 13. If IsConstructor(C) is true, then
+	            // 13. a. Let A be the result of calling the [[Construct]] internal method of C with an argument list containing the single item len.
+	            // 14. a. Else, Let A be ArrayCreate(len).
+	            var A = isCallable(C) ? Object(new C(len)) : new Array(len);
+	
+	            // 16. Let k be 0.
+	            var k = 0;
+	            // 17. Repeat, while k < len… (also steps a - h)
+	            var kValue;
+	            while (k < len) {
+	                kValue = items[k];
+	                if (mapFn) {
+	                    A[k] = typeof T === 'undefined' ? mapFn(kValue, k) : mapFn.call(T, kValue, k);
+	                } else {
+	                    A[k] = kValue;
+	                }
+	                k += 1;
+	            }
+	            // 18. Let putStatus be Put(A, "length", len, true).
+	            A.length = len;
+	            // 20. Return A.
+	            return A;
+	        };
+	    }();
+	}
+	/**
+	 * Add dataset support to elements
+	 * No globals, no overriding prototype with non-standard methods,
+	 *   handles CamelCase properly, attempts to use standard
+	 *   Object.defineProperty() (and Function bind()) methods,
+	 *   falls back to native implementation when existing
+	 * Inspired by http://code.eligrey.com/html5/dataset/
+	 *   (via https://github.com/adalgiso/html5-dataset/blob/master/html5-dataset.js )
+	 * Depends on Function.bind and Object.defineProperty/Object.getOwnPropertyDescriptor (polyfills below)
+	 * All code below is Licensed under the X11/MIT License
+	*/
+	
+	// Inspired by https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/Function/bind#Compatibility
+	if (!Function.prototype.bind) {
+	    Function.prototype.bind = function (oThis) {
+	        'use strict';
+	
+	        if (typeof this !== "function") {
+	            // closest thing possible to the ECMAScript 5 internal IsCallable function
+	            throw new TypeError("Function.prototype.bind - what is trying to be bound is not callable");
+	        }
+	
+	        var aArgs = Array.prototype.slice.call(arguments, 1),
+	            fToBind = this,
+	            FNOP = function FNOP() {},
+	            fBound = function fBound() {
+	            return fToBind.apply(this instanceof FNOP && oThis ? this : oThis, aArgs.concat(Array.prototype.slice.call(arguments)));
+	        };
+	
+	        FNOP.prototype = this.prototype;
+	        fBound.prototype = new FNOP();
+	
+	        return fBound;
+	    };
+	}
+	
+	/*
+	 * Xccessors Standard: Cross-browser ECMAScript 5 accessors
+	 * http://purl.eligrey.com/github/Xccessors
+	 *
+	 * 2010-06-21
+	 *
+	 * By Eli Grey, http://eligrey.com
+	 *
+	 * A shim that partially implements Object.defineProperty,
+	 * Object.getOwnPropertyDescriptor, and Object.defineProperties in browsers that have
+	 * legacy __(define|lookup)[GS]etter__ support.
+	 *
+	 * Licensed under the X11/MIT License
+	 *   See LICENSE.md
+	*/
+	
+	// Removed a few JSLint options as Notepad++ JSLint validator complaining and
+	//   made comply with JSLint; also moved 'use strict' inside function
+	/*jslint white: true, undef: true, plusplus: true,
+	  bitwise: true, regexp: true, newcap: true, maxlen: 90 */
+	
+	/*! @source http://purl.eligrey.com/github/Xccessors/blob/master/xccessors-standard.js*/
+	
+	(function () {
+	    'use strict';
+	
+	    var ObjectProto = Object.prototype,
+	        defineGetter = ObjectProto.__defineGetter__,
+	        defineSetter = ObjectProto.__defineSetter__,
+	        lookupGetter = ObjectProto.__lookupGetter__,
+	        lookupSetter = ObjectProto.__lookupSetter__,
+	        hasOwnProp = ObjectProto.hasOwnProperty;
+	
+	    if (defineGetter && defineSetter && lookupGetter && lookupSetter) {
+	
+	        if (!Object.defineProperty) {
+	            Object.defineProperty = function (obj, prop, descriptor) {
+	                if (arguments.length < 3) {
+	                    // all arguments required
+	                    throw new TypeError("Arguments not optional");
+	                }
+	
+	                prop += ""; // convert prop to string
+	
+	                if (hasOwnProp.call(descriptor, "value")) {
+	                    if (!lookupGetter.call(obj, prop) && !lookupSetter.call(obj, prop)) {
+	                        // data property defined and no pre-existing accessors
+	                        obj[prop] = descriptor.value;
+	                    }
+	
+	                    if (hasOwnProp.call(descriptor, "get") || hasOwnProp.call(descriptor, "set")) {
+	                        // descriptor has a value prop but accessor already exists
+	                        throw new TypeError("Cannot specify an accessor and a value");
+	                    }
+	                }
+	
+	                // can't switch off these features in ECMAScript 3
+	                // so throw a TypeError if any are false
+	                if (!(descriptor.writable && descriptor.enumerable && descriptor.configurable)) {
+	                    throw new TypeError("This implementation of Object.defineProperty does not support" + " false for configurable, enumerable, or writable.");
+	                }
+	
+	                if (descriptor.get) {
+	                    defineGetter.call(obj, prop, descriptor.get);
+	                }
+	                if (descriptor.set) {
+	                    defineSetter.call(obj, prop, descriptor.set);
+	                }
+	
+	                return obj;
+	            };
+	        }
+	
+	        if (!Object.getOwnPropertyDescriptor) {
+	            Object.getOwnPropertyDescriptor = function (obj, prop) {
+	                if (arguments.length < 2) {
+	                    // all arguments required
+	                    throw new TypeError("Arguments not optional.");
+	                }
+	
+	                prop += ""; // convert prop to string
+	
+	                var descriptor = {
+	                    configurable: true,
+	                    enumerable: true,
+	                    writable: true
+	                },
+	                    getter = lookupGetter.call(obj, prop),
+	                    setter = lookupSetter.call(obj, prop);
+	
+	                if (!hasOwnProp.call(obj, prop)) {
+	                    // property doesn't exist or is inherited
+	                    return descriptor;
+	                }
+	                if (!getter && !setter) {
+	                    // not an accessor so return prop
+	                    descriptor.value = obj[prop];
+	                    return descriptor;
+	                }
+	
+	                // there is an accessor, remove descriptor.writable;
+	                // populate descriptor.get and descriptor.set (IE's behavior)
+	                delete descriptor.writable;
+	                descriptor.get = descriptor.set = undefined;
+	
+	                if (getter) {
+	                    descriptor.get = getter;
+	                }
+	                if (setter) {
+	                    descriptor.set = setter;
+	                }
+	
+	                return descriptor;
+	            };
+	        }
+	
+	        if (!Object.defineProperties) {
+	            Object.defineProperties = function (obj, props) {
+	                var prop;
+	                for (prop in props) {
+	                    if (hasOwnProp.call(props, prop)) {
+	                        Object.defineProperty(obj, prop, props[prop]);
+	                    }
+	                }
+	            };
+	        }
+	    }
+	})();
+	
+	// Begin dataset code
+	
+	if (!document.documentElement.dataset && (
+	// FF is empty while IE gives empty object
+	!Object.getOwnPropertyDescriptor(Element.prototype, 'dataset') || !Object.getOwnPropertyDescriptor(Element.prototype, 'dataset').get)) {
+	    var propDescriptor = {
+	        enumerable: true,
+	        get: function get() {
+	            'use strict';
+	
+	            var i,
+	                that = this,
+	                HTML5_DOMStringMap,
+	                attrVal,
+	                attrName,
+	                propName,
+	                attribute,
+	                attributes = this.attributes,
+	                attsLength = attributes.length,
+	                toUpperCase = function toUpperCase(n0) {
+	                return n0.charAt(1).toUpperCase();
+	            },
+	                getter = function getter() {
+	                return this;
+	            },
+	                setter = function setter(attrName, value) {
+	                return typeof value !== 'undefined' ? this.setAttribute(attrName, value) : this.removeAttribute(attrName);
+	            };
+	            try {
+	                // Simulate DOMStringMap w/accessor support
+	                // Test setting accessor on normal object
+	                ({}).__defineGetter__('test', function () {});
+	                HTML5_DOMStringMap = {};
+	            } catch (e1) {
+	                // Use a DOM object for IE8
+	                HTML5_DOMStringMap = document.createElement('div');
+	            }
+	            for (i = 0; i < attsLength; i++) {
+	                attribute = attributes[i];
+	                // Fix: This test really should allow any XML Name without
+	                //         colons (and non-uppercase for XHTML)
+	                if (attribute && attribute.name && /^data-\w[\w\-]*$/.test(attribute.name)) {
+	                    attrVal = attribute.value;
+	                    attrName = attribute.name;
+	                    // Change to CamelCase
+	                    propName = attrName.substr(5).replace(/-./g, toUpperCase);
+	                    try {
+	                        Object.defineProperty(HTML5_DOMStringMap, propName, {
+	                            enumerable: this.enumerable,
+	                            get: getter.bind(attrVal || ''),
+	                            set: setter.bind(that, attrName)
+	                        });
+	                    } catch (e2) {
+	                        // if accessors are not working
+	                        HTML5_DOMStringMap[propName] = attrVal;
+	                    }
+	                }
+	            }
+	            return HTML5_DOMStringMap;
+	        }
+	    };
+	    try {
+	        // FF enumerates over element's dataset, but not
+	        //   Element.prototype.dataset; IE9 iterates over both
+	        Object.defineProperty(Element.prototype, 'dataset', propDescriptor);
+	    } catch (e) {
+	        propDescriptor.enumerable = false; // IE8 does not allow setting to true
+	        Object.defineProperty(Element.prototype, 'dataset', propDescriptor);
+	    }
+	}
+
+/***/ }
+
+/******/ });
+//# sourceMappingURL=shim.js.map
