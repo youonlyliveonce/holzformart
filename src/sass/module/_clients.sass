@@ -32,21 +32,26 @@
 	&__box
 		border: 5px solid $color-blue
 		padding: +unit(1,16)
-
 		+clearfix
 		+bp(medium)
 			width: +unit(14,16)
 		+bp(large)
+			padding: +unit(1,24)
 			float: left
 			width: +unit(7,14)
 			margin-top: +unit(1,16)*-1
+		+bp(larger)
+			padding: +unit(1,16)
 		h3
 			font-weight: 700
 			margin-bottom: $gap-size
 		ul
 			li
+				padding: $gap-size/4 $gap-size $gap-size/4 0
 				font-size: 0.85em
 				letter-spacing: 0
+				line-height: 1.5
+
 		>div
 			float: left
 			width: +unit(1,2)

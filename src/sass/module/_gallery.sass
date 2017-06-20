@@ -21,9 +21,10 @@
 		&--facts
 			width: +unit(16,16)
 			padding-bottom: +unit(15,16)
-			+bp(null, medium)
-				border: 6px solid $color-blue
-			+bp(large)
+			border: 6px solid $color-blue
+			+bp(small, large)
+				border: 0px solid $color-blue
+			+bp(larger)
 				border: 6px solid $color-blue
 				border-radius: 100%
 			h4
