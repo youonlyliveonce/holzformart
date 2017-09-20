@@ -1,0 +1,21 @@
+extends ../../_layout/de/_layout
+
+block title
+		title Ausbildung mit Holformart: HOLZFORMART
+
+block hreflang
+		- var pagelinkDe = 'ausbildung.html'
+		- var pagelinkEn = 'ausbildung.html'
+		include ../../_layout/hreflang.pug
+
+block meta
+		meta(name="description", content="Ausbildung mit Holformart: HOLZFORMART ")
+		meta(name="pageColor", content="red")
+
+block content
+		include ../../_sections/de/ausbildung/hero.pug
+		include ../../_sections/de/ausbildung/inshort.pug
+		include ../../_sections/de/ausbildung/description.pug
+		include ../../_sections/de/ausbildung/linkbox.pug
+		include ../../_sections/de/ausbildung/reasons.pug
+		include ../../_sections/de/ausbildung/professions.pug
