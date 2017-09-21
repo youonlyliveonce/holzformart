@@ -1,6 +1,7 @@
 import PageView from './base';
 import View from 'ampersand-view';
 import SliderView from '../features/slider/slider';
+import TabView from '../features/tabbar/tabbar';
 import dom from 'ampersand-dom';
 
 let Content = PageView.extend({
@@ -27,6 +28,10 @@ let Content = PageView.extend({
 				switch(element.dataset.view){
 					case "SliderView" :
 						view = new SliderView({el:element, id:element.getAttribute('id'), parentview:self, type:element.dataset.settings});
+						view.render();
+						break;
+					case "TabView" :
+						view = new TabView({el:element, id:element.getAttribute('id'), parentview:self});
 						view.render();
 						break;
 					default:

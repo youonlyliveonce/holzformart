@@ -1,0 +1,21 @@
+.Azubis(class="[ Element ]" data-view="TabView" id="azubis-descriptions")
+	.Columns__marginal.Columns__marginal--colored
+		span Azubistimmen
+	if content
+		.Azubis__body
+			.Tabbar(class=""+String(content.azubis[0].surname).toLowerCase())
+				.Azubis__listing
+					each el in content.azubis
+						- var imgname = String(el.surname).toLowerCase().split('ö').join('oe').split('ä').join('ae').split('ü').join('ue');
+						.Azubis__listitem.Tabbar__item(class=""+String(el.surname).toLowerCase() data-tab=""+String(el.surname).toLowerCase())
+							.Azubis__listitem-image
+								img(src=images+"/ausbildung/"+imgname+".jpg" alt="Azubi "+el.surname)
+							.Azubis__listitem-copy
+								span= el.title
+								h5= el.surname
+				.Azubis__description
+					each el in content.azubis
+						.Azubis__description-item(class=""+String(el.surname).toLowerCase())
+							h5= el.surname
+							p= el.description
+					

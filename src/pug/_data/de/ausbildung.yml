@@ -1,19 +1,27 @@
 ---
 
 content:
-  team:
+  azubis:
     -
-      title: Geschäftsführer
-      surname: Stefan
-      name: Molter
-      tel: +49 2841 887300
-      mail: s.molter@holzformart.de
+      title: 3. Gesellenjahr
+      surname: Jakob
+      description: Hase
     -
-      title: Geschäftsführer
-      surname: Roman
-      name: Ingenlath
-      tel: +49 2841 887300
-      mail: r.ingenlath@holzformart.de
+      title: 3. Lehrjahr
+      surname: Wiebke
+      description: Hase Wiebke
+    -
+      title: 3. Lehrjahr
+      surname: Lars
+      description: Hase Lars
+    -
+      title: 3. Gesellenjahr
+      surname: Vincent
+      description: Hase Vinnie
+    -
+      title: 3. Gesellenjahr
+      surname: Wiebke
+      description: Hase Wiebke-2
   reasons:
     - Individueller Ausbildungsplan für jeden Azubi
     - Mitarbeit an echten, internationalen Aufträgen

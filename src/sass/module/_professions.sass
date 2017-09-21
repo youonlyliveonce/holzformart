@@ -1,6 +1,7 @@
 .Professions
 	&__body
 		@extend .Section__body
+		padding-top: 0
 		+bp(medium)
 			margin-left: +unit(2,16)
 			+clearfix
@@ -52,7 +53,7 @@
 				margin-left: 0px
 				width: 150px
 				height: 150px
-				border: 25px solid lighten($color-red, 20%)
+				border: 50px solid lighten($color-red, 15%)
 		+bp(large)
 			padding-bottom: +unit(7,16)
 			&:nth-child(2)
@@ -60,7 +61,7 @@
 			&::before
 				width: 100%
 				height: 100%
-				border: 60px solid lighten($color-red, 15%)
+				border: 60 px solid lighten($color-red, 15%)
 			>div
 				position: absolute
 				top: 50%

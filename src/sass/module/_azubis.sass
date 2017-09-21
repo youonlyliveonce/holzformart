@@ -1,0 +1,131 @@
+
+
+.Azubis
+	background-color: $color-highlight
+	&__body
+		background-color: white
+		@extend .Section__body--bottom
+		+bp(medium)
+			margin-left: +unit(1,16)
+			padding-left: +unit(1,16)
+			padding-right: +unit(2,16)
+		+bp(huger)
+
+	&__listitem
+		float: left
+		cursor: pointer
+		text-align: center
+		position: relative
+		width: +unit(1,1)
+		margin-bottom: $gap-size
+		padding-left: $gap-size
+		padding-right: $gap-size
+		padding-bottom: $gap-size
+		&.jakob
+			.jakob &
+				.Azubis__listitem-copy
+					&::before
+						top: 0%
+						height: 100%
+		&.wiebke
+			.wiebke &
+				.Azubis__listitem-copy
+					&::before
+						top: 0%
+						height: 100%
+		&.lars
+			.lars &
+				.Azubis__listitem-copy
+					&::before
+						top: 0%
+						height: 100%
+		&.vincent
+			.vincent &
+				.Azubis__listitem-copy
+					&::before
+						top: 0%
+						height: 100%
+		&.wiebke-2
+			.wiebke-2 &
+				.Azubis__listitem-copy
+					&::before
+						top: 0%
+						height: 100%
+		+bp(smaller)
+			width: +unit(1,2)
+		+bp(large)
+			width: +unit(1,4)
+			&:nth-child(4)
+				clear: both
+		+bp(larger)
+			padding-bottom: $gap-size--medium
+			width: +unit(1,5)
+			&:nth-child(4)
+				clear: inherit
+			&:nth-child(6)
+				clear: both
+	&__listitem-image
+		margin: 0
+		line-height: 0
+		img
+			width: 100%
+				// border-radius: 100%
+			overflow: hidden
+	&__listitem-copy
+		position: relative
+		color: white
+		background-color: lighten($color-highlight, 10%)
+		padding-bottom: $gap-size
+		padding-top: $gap-size
+		padding-left: $gap-size
+		margin-top: -2px
+		text-align: left
+		&::before
+			+transition(all, 0.25s)
+			z-index: 0
+			position: absolute
+			left: 0
+			top: 100%
+			right: 100%
+			width: 100%
+			height: 0%
+			background-color: $color-selection
+			content: ''
+		>span
+			z-index: 1
+			position: relative
+			@extend .Heading__overline
+		>h5
+			z-index: 2
+			position: relative
+			font-weight: 700
+			font-size: 1.2em
+			line-height: 1.2
+			// text-transform: uppercase
+			letter-spacing: 0.025em
+			+bp(medium)
+				font-size: 1.4em
+		// +bp(larger)
+		// 	padding-bottom: $gap-size--medium
+	&__listing
+		+clearfix()
+		overflow: hidden
+	&__description
+		&-item
+			position: absolute
+			opacity: 0
+			&.jakob
+				.jakob &
+					opacity: 1
+			&.wiebke
+				.wiebke &
+					opacity: 1
+			&.lars
+				.lars &
+					opacity: 1
+			&.vincent
+				.vincent &
+					opacity: 1
+			&.wiebke-2
+				.wiebke-2 &
+					opacity: 1

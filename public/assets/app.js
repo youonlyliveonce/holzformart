@@ -72,15 +72,15 @@
 	
 	var _router2 = _interopRequireDefault(_router);
 	
-	var _mainView = __webpack_require__(307);
+	var _mainView = __webpack_require__(308);
 	
 	var _mainView2 = _interopRequireDefault(_mainView);
 	
-	var _lsRiasMin = __webpack_require__(312);
+	var _lsRiasMin = __webpack_require__(313);
 	
 	var _lsRiasMin2 = _interopRequireDefault(_lsRiasMin);
 	
-	var _lazysizesMin = __webpack_require__(313);
+	var _lazysizesMin = __webpack_require__(314);
 	
 	var _lazysizesMin2 = _interopRequireDefault(_lazysizesMin);
 	
@@ -1799,11 +1799,11 @@
 	
 	var _content2 = _interopRequireDefault(_content);
 	
-	var _content3 = __webpack_require__(281);
+	var _content3 = __webpack_require__(282);
 	
 	var _content4 = _interopRequireDefault(_content3);
 	
-	var _formModel = __webpack_require__(303);
+	var _formModel = __webpack_require__(304);
 	
 	var _formModel2 = _interopRequireDefault(_formModel);
 	
@@ -7539,6 +7539,10 @@
 	
 	var _slider2 = _interopRequireDefault(_slider);
 	
+	var _tabbar = __webpack_require__(281);
+	
+	var _tabbar2 = _interopRequireDefault(_tabbar);
+	
 	var _ampersandDom = __webpack_require__(276);
 	
 	var _ampersandDom2 = _interopRequireDefault(_ampersandDom);
@@ -7568,6 +7572,10 @@
 					switch (element.dataset.view) {
 						case "SliderView":
 							view = new _slider2.default({ el: element, id: element.getAttribute('id'), parentview: self, type: element.dataset.settings });
+							view.render();
+							break;
+						case "TabView":
+							view = new _tabbar2.default({ el: element, id: element.getAttribute('id'), parentview: self });
 							view.render();
 							break;
 						default:
@@ -19559,10 +19567,59 @@
 	'use strict';
 	
 	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+	
+	var _base = __webpack_require__(280);
+	
+	var _base2 = _interopRequireDefault(_base);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var Tabbar = _base2.default.extend({
+		props: {
+			id: ['string', true, ''],
+			active: ['boolean', true, false],
+			parentview: ['object', true, function () {
+				return {};
+			}],
+			swiper: ['object', true, function () {
+				return undefined;
+			}],
+			activeindex: ['number', true, -1],
+			type: ['string', true, "full"]
+		},
+	
+		events: {
+			'click .Tabbar__item': 'handleItemClick'
+		},
+	
+		render: function render() {
+			console.log("render Tabbar");
+			return this;
+		},
+	
+		handleItemClick: function handleItemClick(event) {
+			var classname = event.delegateTarget.getAttribute("data-tab");
+			this.query('.Tabbar').setAttribute('class', 'Tabbar ' + classname);
+			console.log(classname);
+		}
+	
+	});
+	
+	exports.default = Tabbar;
+
+/***/ },
+/* 282 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
 	    value: true
 	});
 	
-	var _base = __webpack_require__(282);
+	var _base = __webpack_require__(283);
 	
 	var _base2 = _interopRequireDefault(_base);
 	
@@ -19574,7 +19631,7 @@
 	exports.default = Content;
 
 /***/ },
-/* 282 */
+/* 283 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -19583,7 +19640,7 @@
 			value: true
 	});
 	
-	var _ampersandModel = __webpack_require__(283);
+	var _ampersandModel = __webpack_require__(284);
 	
 	var _ampersandModel2 = _interopRequireDefault(_ampersandModel);
 	
@@ -19654,15 +19711,15 @@
 	exports.default = Base;
 
 /***/ },
-/* 283 */
+/* 284 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/*$AMPERSAND_VERSION*/
 	var State = __webpack_require__(159);
-	var sync = __webpack_require__(284);
+	var sync = __webpack_require__(285);
 	var assign = __webpack_require__(7);
 	var isObject = __webpack_require__(20);
-	var clone = __webpack_require__(302);
+	var clone = __webpack_require__(303);
 	var result = __webpack_require__(87);
 	
 	// Throw an error when a URL is needed, and none is supplied.
@@ -19802,22 +19859,22 @@
 
 
 /***/ },
-/* 284 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var xhr = __webpack_require__(285);
-	module.exports = __webpack_require__(292)(xhr);
-
-
-/***/ },
 /* 285 */
 /***/ function(module, exports, __webpack_require__) {
 
+	var xhr = __webpack_require__(286);
+	module.exports = __webpack_require__(293)(xhr);
+
+
+/***/ },
+/* 286 */
+/***/ function(module, exports, __webpack_require__) {
+
 	"use strict";
-	var window = __webpack_require__(286)
-	var isFunction = __webpack_require__(287)
-	var parseHeaders = __webpack_require__(288)
-	var xtend = __webpack_require__(291)
+	var window = __webpack_require__(287)
+	var isFunction = __webpack_require__(288)
+	var parseHeaders = __webpack_require__(289)
+	var xtend = __webpack_require__(292)
 	
 	module.exports = createXHR
 	createXHR.XMLHttpRequest = window.XMLHttpRequest || noop
@@ -20057,7 +20114,7 @@
 
 
 /***/ },
-/* 286 */
+/* 287 */
 /***/ function(module, exports) {
 
 	/* WEBPACK VAR INJECTION */(function(global) {if (typeof window !== "undefined") {
@@ -20073,7 +20130,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 287 */
+/* 288 */
 /***/ function(module, exports) {
 
 	module.exports = isFunction
@@ -20094,11 +20151,11 @@
 
 
 /***/ },
-/* 288 */
+/* 289 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var trim = __webpack_require__(289)
-	  , forEach = __webpack_require__(290)
+	var trim = __webpack_require__(290)
+	  , forEach = __webpack_require__(291)
 	  , isArray = function(arg) {
 	      return Object.prototype.toString.call(arg) === '[object Array]';
 	    }
@@ -20130,7 +20187,7 @@
 	}
 
 /***/ },
-/* 289 */
+/* 290 */
 /***/ function(module, exports) {
 
 	
@@ -20150,10 +20207,10 @@
 
 
 /***/ },
-/* 290 */
+/* 291 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var isFunction = __webpack_require__(287)
+	var isFunction = __webpack_require__(288)
 	
 	module.exports = forEach
 	
@@ -20202,7 +20259,7 @@
 
 
 /***/ },
-/* 291 */
+/* 292 */
 /***/ function(module, exports) {
 
 	module.exports = extend
@@ -20227,16 +20284,16 @@
 
 
 /***/ },
-/* 292 */
+/* 293 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/*$AMPERSAND_VERSION*/
 	var result = __webpack_require__(87);
-	var defaults = __webpack_require__(293);
+	var defaults = __webpack_require__(294);
 	var includes = __webpack_require__(216);
 	var assign = __webpack_require__(7);
-	var qs = __webpack_require__(296);
-	var mediaType = __webpack_require__(301);
+	var qs = __webpack_require__(297);
+	var mediaType = __webpack_require__(302);
 	
 	
 	module.exports = function (xhr) {
@@ -20383,13 +20440,13 @@
 
 
 /***/ },
-/* 293 */
+/* 294 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var apply = __webpack_require__(31),
-	    assignInWith = __webpack_require__(294),
+	    assignInWith = __webpack_require__(295),
 	    baseRest = __webpack_require__(28),
-	    customDefaultsAssignIn = __webpack_require__(295);
+	    customDefaultsAssignIn = __webpack_require__(296);
 	
 	/**
 	 * Assigns own and inherited enumerable string keyed properties of source
@@ -20421,7 +20478,7 @@
 
 
 /***/ },
-/* 294 */
+/* 295 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var copyObject = __webpack_require__(26),
@@ -20465,7 +20522,7 @@
 
 
 /***/ },
-/* 295 */
+/* 296 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var eq = __webpack_require__(25);
@@ -20500,14 +20557,14 @@
 
 
 /***/ },
-/* 296 */
+/* 297 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var stringify = __webpack_require__(297);
-	var parse = __webpack_require__(300);
-	var formats = __webpack_require__(299);
+	var stringify = __webpack_require__(298);
+	var parse = __webpack_require__(301);
+	var formats = __webpack_require__(300);
 	
 	module.exports = {
 	    formats: formats,
@@ -20517,13 +20574,13 @@
 
 
 /***/ },
-/* 297 */
+/* 298 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var utils = __webpack_require__(298);
-	var formats = __webpack_require__(299);
+	var utils = __webpack_require__(299);
+	var formats = __webpack_require__(300);
 	
 	var arrayPrefixGenerators = {
 	    brackets: function brackets(prefix) {
@@ -20710,7 +20767,7 @@
 
 
 /***/ },
-/* 298 */
+/* 299 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -20896,7 +20953,7 @@
 
 
 /***/ },
-/* 299 */
+/* 300 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -20920,12 +20977,12 @@
 
 
 /***/ },
-/* 300 */
+/* 301 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var utils = __webpack_require__(298);
+	var utils = __webpack_require__(299);
 	
 	var has = Object.prototype.hasOwnProperty;
 	
@@ -21092,7 +21149,7 @@
 
 
 /***/ },
-/* 301 */
+/* 302 */
 /***/ function(module, exports) {
 
 	/**
@@ -21205,7 +21262,7 @@
 
 
 /***/ },
-/* 302 */
+/* 303 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var baseClone = __webpack_require__(161);
@@ -21247,7 +21304,7 @@
 
 
 /***/ },
-/* 303 */
+/* 304 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -21256,15 +21313,15 @@
 	
 	var _ampersandState2 = _interopRequireDefault(_ampersandState);
 	
-	var _ampersandSync = __webpack_require__(284);
+	var _ampersandSync = __webpack_require__(285);
 	
 	var _ampersandSync2 = _interopRequireDefault(_ampersandSync);
 	
-	var _qs = __webpack_require__(296);
+	var _qs = __webpack_require__(297);
 	
 	var _qs2 = _interopRequireDefault(_qs);
 	
-	var _es6Promise = __webpack_require__(304);
+	var _es6Promise = __webpack_require__(305);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -21341,7 +21398,7 @@
 	module.exports = Form;
 
 /***/ },
-/* 304 */
+/* 305 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var require;/* WEBPACK VAR INJECTION */(function(process, global) {/*!
@@ -21480,7 +21537,7 @@
 	function attemptVertx() {
 	  try {
 	    var r = require;
-	    var vertx = __webpack_require__(306);
+	    var vertx = __webpack_require__(307);
 	    vertxNext = vertx.runOnLoop || vertx.runOnContext;
 	    return useVertxTimer();
 	  } catch (e) {
@@ -22501,10 +22558,10 @@
 	
 	})));
 	//# sourceMappingURL=es6-promise.map
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(305), (function() { return this; }())))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(306), (function() { return this; }())))
 
 /***/ },
-/* 305 */
+/* 306 */
 /***/ function(module, exports) {
 
 	// shim for using process in browser
@@ -22690,13 +22747,13 @@
 
 
 /***/ },
-/* 306 */
+/* 307 */
 /***/ function(module, exports) {
 
 	/* (ignored) */
 
 /***/ },
-/* 307 */
+/* 308 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -22717,13 +22774,13 @@
 	
 	var _ampersandDom2 = _interopRequireDefault(_ampersandDom);
 	
-	var _ampersandViewSwitcher = __webpack_require__(308);
+	var _ampersandViewSwitcher = __webpack_require__(309);
 	
 	var _ampersandViewSwitcher2 = _interopRequireDefault(_ampersandViewSwitcher);
 	
-	__webpack_require__(309);
-	
 	__webpack_require__(310);
+	
+	__webpack_require__(311);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -23009,7 +23066,7 @@
 	exports.default = MainView;
 
 /***/ },
-/* 308 */
+/* 309 */
 /***/ function(module, exports) {
 
 	/*$AMPERSAND_VERSION*/
@@ -23135,7 +23192,7 @@
 
 
 /***/ },
-/* 309 */
+/* 310 */
 /***/ function(module, exports) {
 
 	/* WEBPACK VAR INJECTION */(function(global) {"use strict";
@@ -23265,7 +23322,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 310 */
+/* 311 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/* WEBPACK VAR INJECTION */(function(global) {"use strict";
@@ -29355,7 +29412,7 @@
 					if (global) {
 						_globals[n] = cl; //provides a way to avoid global namespace pollution. By default, the main classes like TweenLite, Power1, Strong, etc. are added to window unless a GreenSockGlobals is defined. So if you want to have things added to a custom object instead, just do something like window.GreenSockGlobals = {} before loading any GreenSock files. You can even set up an alias like window.GreenSockGlobals = windows.gs = {} so that you can access everything like gs.TweenLite. Also remember that ALL classes are added to the window.com.greensock object (in their respective packages, like com.greensock.easing.Power1, com.greensock.TweenLite, etc.)
 						hasModule = typeof module !== "undefined" && module.exports;
-						if (!hasModule && "function" === "function" && __webpack_require__(311)) {
+						if (!hasModule && "function" === "function" && __webpack_require__(312)) {
 							//AMD
 							!(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_RESULT__ = function () {
 								return cl;
@@ -31223,7 +31280,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 311 */
+/* 312 */
 /***/ function(module, exports) {
 
 	/* WEBPACK VAR INJECTION */(function(__webpack_amd_options__) {module.exports = __webpack_amd_options__;
@@ -31231,7 +31288,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, {}))
 
 /***/ },
-/* 312 */
+/* 313 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -31347,7 +31404,7 @@
 	}(window, document);
 
 /***/ },
-/* 313 */
+/* 314 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(module) {"use strict";
