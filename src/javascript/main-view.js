@@ -245,6 +245,11 @@ var MainView = View.extend({
 			}
 		},
 
+		scrollToValue: function(value){
+			TweenMax.to(window, 1.2, {scrollTo:{x:0, y:value}, overwrite:true, ease:Power2.easeOut});
+
+		},
+
 		updateActiveNav: function () {
 				let path = window.location.pathname.slice(1),
 						topnavi = this.queryAll('.Menu a[href]'),

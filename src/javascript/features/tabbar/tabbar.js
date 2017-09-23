@@ -22,7 +22,11 @@ let Tabbar = Base.extend({
 	handleItemClick: function(event){
 		let classname = event.delegateTarget.getAttribute("data-tab");
 		this.query('.Tabbar').setAttribute('class', 'Tabbar ' + classname);
-		console.log(classname);
+		console.log(CM.App._mobile.mobile());
+		if(CM.App._mobile.mobile() != undefined){
+			CM.App.mainView.scrollToValue(this.el.offsetTop + this.query('#Tabbar').offsetTop - 20);
+		}
+		// CM.App.mainView.scrollToValue(this.el.offsetTop + this.query('#Tabbar').offsetTop);
 	}
 
 })

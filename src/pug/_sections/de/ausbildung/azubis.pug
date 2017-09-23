@@ -13,9 +13,10 @@
 							.Azubis__listitem-copy
 								span= el.title
 								h5= el.surname
-				.Azubis__description
+				.Azubis__description(id="Tabbar")
 					each el in content.azubis
 						.Azubis__description-item(class=""+String(el.surname).toLowerCase())
-							h5= el.surname
-							p= el.description
-					
+							div
+								div
+									h5= el.surname
+									p= el.description

@@ -43,6 +43,7 @@ class App {
 		blastoff (options) {
 				let self = this;
 				this._mobile = options.mobile;
+				console.log("this._mobile", this._mobile);
 				// Render Main View
 				this.mainView.render();
 

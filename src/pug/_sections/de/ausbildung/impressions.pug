@@ -1,0 +1,16 @@
+.Slider.Slider--fullsize(class="[ Element ]" data-view="SliderView" data-settings="full" id="ausbildung-impressions")
+	.Slider__body
+		.Columns__marginal
+			span Impressionen
+		.Slider__spacer
+		.Slider__swiper
+			.swiper-container
+				.swiper-wrapper
+					if content
+						each el in content.impressions
+							.swiper-slide
+								.Figure.Figure--responsive
+									img(src=images+el.src alt=""+el.alt)
+		.swiper-button-prev
+		.swiper-button-next
+		.swiper-pagination

@@ -5,11 +5,13 @@
 	&__body
 		background-color: white
 		@extend .Section__body--bottom
+		overflow: hidden
 		+bp(medium)
 			margin-left: +unit(1,16)
 			padding-left: +unit(1,16)
 			padding-right: +unit(2,16)
-		+bp(huger)
+		+bp(large)
+			padding: 0
 
 	&__listitem
 		float: left
@@ -17,10 +19,15 @@
 		text-align: center
 		position: relative
 		width: +unit(1,1)
-		margin-bottom: $gap-size
-		padding-left: $gap-size
-		padding-right: $gap-size
-		padding-bottom: $gap-size
+		margin-bottom: $gap-size/2
+		padding-bottom: $gap-size/2
+		padding-left: $gap-size/2
+		padding-right: $gap-size/2
+		+bp(larger)
+			margin-bottom: $gap-size
+			padding-bottom: $gap-size
+			padding-left: $gap-size
+			padding-right: $gap-size
 		&.jakob
 			.jakob &
 				.Azubis__listitem-copy
@@ -54,9 +61,7 @@
 		+bp(smaller)
 			width: +unit(1,2)
 		+bp(large)
-			width: +unit(1,4)
-			&:nth-child(4)
-				clear: both
+			width: +unit(1,5)
 		+bp(larger)
 			padding-bottom: $gap-size--medium
 			width: +unit(1,5)
@@ -105,27 +110,100 @@
 			letter-spacing: 0.025em
 			+bp(medium)
 				font-size: 1.4em
-		// +bp(larger)
-		// 	padding-bottom: $gap-size--medium
 	&__listing
 		+clearfix()
 		overflow: hidden
+		position: relative
+		z-index: 1
 	&__description
+		position: relative
+		z-index: 0
+		padding-bottom: unit(1,1)
+		+bp(large)
+			padding-bottom: unit(1,1.8)
+		+bp(larger)
+			padding-bottom: unit(1,2)
 		&-item
 			position: absolute
+			left: 50%
+			text-align: center
 			opacity: 0
+			+bp(larger)
+				margin-left: +unit(1,32)*-1
+			+transform(translateX(-50%) scale(1.1))
+			+transition(all, 0.45s)
+			h5
+				font-weight: 700
+				font-size: 2em
+				&::after
+					position: absolute
+					left: 50%
+					top: 70px
+					+transform(translateX(-50%))
+					content: ''
+					width: 50px
+					height: 3px
+					background-color: black
+			>div
+				position: relative
+				width: 340px
+				height: 340px
+				&::before
+					position: absolute
+					left: -16%
+					top: -16%
+					width: 132%
+					height: 132%
+					content: ''
+					border: 30px solid $color-selection
+					border-radius: 100%
+					z-index: 0
+				+bp(medium)
+					width: 500px
+					height: 500px
+					&::before
+						left: 0
+						top: 0
+						width: 100%
+						height: 100%
+						border: 50px solid $color-selection
+				+bp(large)
+					width: 500px
+					height: 500px
+
+				+bp(huge)
+					width: 600px
+					height: 600px
+
+				>div
+					p
+						padding-top: 25px
+					left: 0%
+					width: 100%
+					+bp(large)
+						left: 10%
+						width: 80%
+					top: 50%
+					+transform(translateY(-50%))
+					position: absolute
+					text-align: center
 			&.jakob
 				.jakob &
 					opacity: 1
+					+transform(translateX(-50%) scale(1))
 			&.wiebke
 				.wiebke &
 					opacity: 1
+					+transform(translateX(-50%) scale(1))
 			&.lars
 				.lars &
 					opacity: 1
+					+transform(translateX(-50%) scale(1))
 			&.vincent
 				.vincent &
 					opacity: 1
+					+transform(translateX(-50%) scale(1))
 			&.wiebke-2
 				.wiebke-2 &
 					opacity: 1
+					+transform(translateX(-200px) scale(1))

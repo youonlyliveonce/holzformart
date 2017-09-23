@@ -5,7 +5,7 @@ content:
     -
       title: 3. Gesellenjahr
       surname: Jakob
-      description: Hase
+      description: Holz gibt einem die Möglichkeit, seine Kreativität auszudrücken und Ideen zu verwirklichen. Bei HolzFormArt wird dies in besonderer Weise gefördert. In der Zeit meiner Gesellenprüfung habe ich nicht nur in finanzieller Hinsicht große Unterstützung erfahren, sondern auch menschlich und fachlich.
     -
       title: 3. Lehrjahr
       surname: Wiebke
@@ -30,3 +30,25 @@ content:
     - Möglichkeit der Übernahme nach bestandener Prüfung
     - Aufstiegsmöglichkeiten innerhalb des Betriebes
     - Durchführung eigener Projekte von A bis Z
+  impressions:
+    -
+      src: /ueberuns/impressionen_1.jpg
+      alt: 'Das sind wir: Holzformart'
+    -
+      src: /ueberuns/impressionen_2.jpg
+      alt: 'Das sind wir: Holzformart'
+    -
+      src: /ueberuns/impressionen_3.jpg
+      alt: 'Das sind wir: Holzformart'
+    -
+      src: /ueberuns/impressionen_4.jpg
+      alt: 'Das sind wir: Holzformart'
+    -
+      src: /ueberuns/impressionen_5.jpg
+      alt: 'Das sind wir: Holzformart'
+    -
+      src: /ueberuns/impressionen_6.jpg
+      alt: 'Das sind wir: Holzformart'
+    -
+      src: /ueberuns/impressionen_7.jpg
+      alt: 'Das sind wir: Holzformart'

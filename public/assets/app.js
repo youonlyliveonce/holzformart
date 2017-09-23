@@ -130,6 +130,7 @@
 					value: function blastoff(options) {
 							var self = this;
 							this._mobile = options.mobile;
+							console.log("this._mobile", this._mobile);
 							// Render Main View
 							this.mainView.render();
 	
@@ -19602,7 +19603,11 @@
 		handleItemClick: function handleItemClick(event) {
 			var classname = event.delegateTarget.getAttribute("data-tab");
 			this.query('.Tabbar').setAttribute('class', 'Tabbar ' + classname);
-			console.log(classname);
+			console.log(CM.App._mobile.mobile());
+			if (CM.App._mobile.mobile() != undefined) {
+				CM.App.mainView.scrollToValue(this.el.offsetTop + this.query('#Tabbar').offsetTop - 20);
+			}
+			// CM.App.mainView.scrollToValue(this.el.offsetTop + this.query('#Tabbar').offsetTop);
 		}
 	
 	});
@@ -23018,6 +23023,10 @@
 				var id = this.query('#' + CM.App._params.section);
 				TweenMax.to(window, 1.2, { scrollTo: { x: 0, y: id.offsetTop }, overwrite: true, ease: Power2.easeOut });
 			}
+		},
+	
+		scrollToValue: function scrollToValue(value) {
+			TweenMax.to(window, 1.2, { scrollTo: { x: 0, y: value }, overwrite: true, ease: Power2.easeOut });
 		},
 	
 		updateActiveNav: function updateActiveNav() {

@@ -30,10 +30,11 @@
 					+bp(larger)
 						width: inherit
 	&__box
-		border: 5px solid $color-blue
+		border: 10px solid $color-blue
 		padding: +unit(1,16)
 		+clearfix
 		+bp(medium)
+			border: 5px solid $color-blue
 			width: +unit(14,16)
 		+bp(large)
 			padding: +unit(1,24)
@@ -47,7 +48,9 @@
 			margin-bottom: $gap-size
 		ul
 			li
-				padding: $gap-size/4 $gap-size $gap-size/4 0
+				padding: $gap-size/4 0 $gap-size/4 0
+				+bp(medium)
+					padding: $gap-size/4 $gap-size $gap-size/4 0
 				font-size: 0.85em
 				letter-spacing: 0
 				line-height: 1.5
@@ -56,6 +59,6 @@
 			float: left
 			width: +unit(1,2)
 		&--red
-			border: 5px solid $color-red
+			border-color: $color-red
 			>div
 				width: 100%
