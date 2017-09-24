@@ -6,6 +6,7 @@ import ViewSwitcher from 'ampersand-view-switcher';
 
 import "ScrollToPlugin";
 import "TweenMax";
+import AOS from "aos";
 
 var MainView = View.extend({
 
@@ -72,6 +73,7 @@ var MainView = View.extend({
 								}, delay:0.3});
 						}
 				});
+				AOS.init();
 				return this;
 
 		},

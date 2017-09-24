@@ -71,7 +71,7 @@ var pugTask = function() {
 				pretty: true
 			}))
 		.pipe(gulp.dest(config.root.dest + config.tasks.pug.dest))
-		.pipe(browserSync.stream())
+		
 
 }
 

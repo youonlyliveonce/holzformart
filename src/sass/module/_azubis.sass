@@ -1,17 +1,22 @@
-
-
 .Azubis
+	position: relative
 	background-color: $color-highlight
 	&__body
 		background-color: white
 		@extend .Section__body--bottom
 		overflow: hidden
 		+bp(medium)
+			overflow: visible
 			margin-left: +unit(1,16)
 			padding-left: +unit(1,16)
 			padding-right: +unit(2,16)
 		+bp(large)
 			padding: 0
+			padding-left: +unit(1,32)
+			padding-right: +unit(1,32)
+		+bp(larger)
+			padding-left: +unit(1,16)
+			padding-right: +unit(2,16)
 
 	&__listitem
 		float: left
@@ -120,9 +125,11 @@
 		z-index: 0
 		padding-bottom: unit(1,1)
 		+bp(large)
-			padding-bottom: unit(1,1.8)
+			padding-bottom: unit(1,1.7)
 		+bp(larger)
-			padding-bottom: unit(1,2)
+			padding-bottom: 55%
+		+bp(huger)
+			padding-bottom: 45%
 		&-item
 			position: absolute
 			left: 50%
@@ -148,6 +155,27 @@
 				position: relative
 				width: 340px
 				height: 340px
+				&::after
+					+bp(large)
+						width: 100px
+						height: 200px
+						bottom: 0px
+						margin-left: -40px
+					+bp(larger)
+						width: 100px
+						height: 200px
+						bottom: 40px
+					+bp(huger)
+						width: 150px
+						height: 200px
+						bottom: 70px
+						margin-left: -70px
+					position: absolute
+					left: 0
+					content: ''
+					background-repeat: no-repeat
+					background-size: contain
+					background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMiIgYmFzZVByb2ZpbGU9InRpbnkiIGlkPSJFYmVuZV8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjEyNS41cHgiIGhlaWdodD0iMTExLjVweCIgdmlld0JveD0iMCAwIDEyNS41IDExMS41IiB4bWw6c3BhY2U9InByZXNlcnZlIj48cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGZpbGw9IiNEQTBDMUQiIGQ9Ik0xMTAuMDMxLDBMMCw5My45NjhsMTIyLjQwNywxNi4xODJMMTEwLjAzMSwweiIvPjwvc3ZnPg==)
 				&::before
 					position: absolute
 					left: -16%
@@ -174,6 +202,9 @@
 				+bp(huge)
 					width: 600px
 					height: 600px
+				+bp(huger)
+					width: 700px
+					height: 700px
 
 				>div
 					p

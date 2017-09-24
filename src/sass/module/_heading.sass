@@ -83,6 +83,10 @@
 				font-size: 3em
 	&--major
 		position: relative
+		&-versal
+			text-transform: uppercase
+			&::after
+				background-color: $color-highlight
 		span
 			@extend .Heading__overline
 		&::after
@@ -95,6 +99,7 @@
 			+bp(medium)
 				width: 30px
 				margin-top: 20px
+			background-color: $color-highlight
 			.red &
 				background-color: $color-red
 			.yellow &

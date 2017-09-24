@@ -1,0 +1,121 @@
+.Formalities
+	&__body
+		@extend .Section__body
+		padding-top: $gap-size
+		+bp(medium)
+			padding-top: $gap-size--medium
+			margin-left: +unit(2,16)
+			+clearfix
+		+bp(large)
+			padding-top: $gap-size--large
+	&__text
+		margin-left: +unit(1,16)
+		margin-right: +unit(1,16)
+		+bp(medium)
+			margin: 0
+			width: +unit(14,16)
+		+bp(large)
+			float: left
+			width: +unit(6,14)
+			margin-right: +unit(1,14)
+		h3
+			font-weight: 600
+			font-size: 1.3em
+			margin-top: $gap-size
+			margin-bottom: $gap-size
+		h4
+			font-weight: 600
+			line-height: 1.8em
+		p
+			margin-top: 0
+			margin-bottom: 1em
+		ul
+			margin-bottom: 1em
+			li
+				line-height: 1.7em
+				position: relative
+				padding-left: 27px
+				&::before
+					content: "— "
+					position: absolute
+					left: 0
+					top: 0
+
+	&__box
+		border: 10px solid $color-red
+		padding: +unit(1,16)
+		margin-top: +unit(1,16)
+		+transition(all, 0.75s)
+		cursor: pointer
+		&:hover
+			background-color: $color-red
+			color: white
+			a
+				color: white
+				&::after
+					background-color: white
+
+		+bp(medium)
+			border: 5px solid $color-red
+			width: +unit(14,16)
+		+bp(large)
+			margin-top: 0
+			padding: +unit(1,32)
+			float: left
+			width: +unit(5,14)
+			margin-top: +unit(1,16)*-1
+		+bp(larger)
+			// padding: +unit(1,16)
+		h3
+			font-weight: 700
+			margin-bottom: $gap-size
+			font-size: 1.25em
+		h4
+			padding-top: $gap-size
+			margin-bottom: 0
+			padding-bottom: 0
+			font-weight: 700
+			font-size: 0.85em
+		ul
+			li
+				position: relative
+				padding-left: 20px
+				&::before
+					content: "— "
+					position: absolute
+					left: 0
+					top: 0
+				font-size: 0.85em
+				letter-spacing: 0
+				line-height: 1.7em
+				+bp(large)
+					line-height: 1.8em
+		p
+			font-size: 0.85em
+			margin: 0
+		a
+			letter-spacing: 0
+			color: $color-red
+			display: inline-block
+			margin-bottom: $gap-size
+			position: relative
+			&::after
+				content: ''
+				position: absolute
+				left: 0
+				bottom: 0
+				height: 1px
+				width: 100%
+				background-color: $color-red
+				+transition(all, 0.25s)
+			&:hover
+				color: $color-highlight
+				&::after
+					background-color: $color-highlight
+					bottom: 5px
+					height: 0px
+					opacity: 0
+
+
+		>div
+			with: 100%

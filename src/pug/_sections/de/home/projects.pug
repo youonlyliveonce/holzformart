@@ -7,10 +7,12 @@
 			.swiper-container
 				.swiper-wrapper
 					if content
+						- i = 0;
 						each el in content.projects.items
 							if el.type == content.key
+								- i++;
 								.swiper-slide
-									a.Teaser(class="Teaser--"+el.teaser.type+"" href="/"+lang+"/"+el.ressort+"/"+el.id+".html")
+									a.Teaser(class="Teaser--"+el.teaser.type+"" data-aos="fade-up" data-aos-duration=""+(i*100+400) href="/"+lang+"/"+el.ressort+"/"+el.id+".html")
 										.Teaser__body
 											img(src="/assets/images/projects/teaser_projekt_"+el.ressort+"_"+el.id+".jpg")
 										.Teaser__link(class="Teaser__link--"+el.ressort)

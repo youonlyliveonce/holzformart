@@ -6,9 +6,11 @@
 			h2 Ihre Ansprechpartner
 		.Team__listing
 			if content
+				- i=0;
 				each el in content.team
+					- i++
 					- var imgname = String(el.surname+el.name).toLowerCase().split('ö').join('oe').split('ä').join('ae').split('ü').join('ue');
-					.Team__listitem
+					.Team__listitem(data-aos="fade" data-aos-duration=""+(i*200+500))
 						.Team__listitem-image
 							img(src=images+"/ueberuns/"+imgname+".jpg" alt=""+el.surname+" "+el.name)
 						.Team__listitem-copy
