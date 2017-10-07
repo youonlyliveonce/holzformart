@@ -1,0 +1,52 @@
+---
+
+content:
+  azubis:
+    -
+      title: first-year journeymen
+      surname: Jakob
+      description: “With my journeyman’s piece for my final exam, I was able to garner first place at guild organisation level in the competition ‘Die Gute Form’.”
+    # -
+    #   title: 1. Gesellenjahr
+    #   surname: Sven
+    #   description: Holz gibt einem die Möglichkeit, seine Kreativität auszudrücken und Ideen zu verwirklichen. Bei HolzFormArt wird dies in besonderer Weise gefördert. In der Zeit meiner Gesellenprüfung habe ich nicht nur in finanzieller Hinsicht große Unterstützung erfahren, sondern auch menschlich und fachlich.
+    -
+      title: third-year apprentice
+      surname: Wiebke
+      description: The apprenticeship projects at HolzFormArt offer us the opportunity to work autonomously and solve any problems that may occur on our own. Be it a dining table or a piece of solid wood furniture that we’ve designed ourselves – experienced journeymen are always at the ready to help us with questions or problems. So every project is initially a challenge and at the end it has become a huge step forward on my career path.
+    -
+      title: third-year journeyman
+      surname: Lars
+      description: 'Since completing my apprenticeship at HolzFormArt, I have been working towards my qualification as a master joiner and was very quickly entrusted with a lot of responsibility. I am now assembly supervisor, doing exactly what I am best at: I head large projects all over Europe and bring them to a successful conclusion, but at the same time I am still busy in the workshop and involved in the production process. At HolzFormArt, I have every opportunity to shape my career path in keeping with my own ideas.'
+    -
+      title: third-year apprentice
+      surname: Vincent
+      description: As an apprentice at HolzFormArt, your development is really nurtured. I was even able to work in a joinery in Ethiopia for a month in the second year of my apprenticeship. That was a truly valuable time for me. I learnt so much from the people there and was able to transfer this experience to my day-to-day work here in Germany.
+    -
+      title: second-year journeyman
+      surname: Julia
+      description: After my apprenticeship at HolzFormArt, the project management team took me on. I supervise projects from the initial customer consultation and the first designs through to the finished result. It’s a lot of responsibility but the perfect job for me, because I can unite creative thinking with practical knowledge. A fantastic opportunity to continue on my path after completing my apprenticeship.
+  reasons:
+    - Individual training plan for every trainee and apprentice
+    - Opportunity to work on genuine international orders
+    - Personal supervision from the training manager
+    - Targeted preparation for the practical exam
+    - Possibility of being retained on staff after successfully completing the exam
+    - Opportunities for promotion within the business
+    - Implementation of your own projects from start to finish
+  impressions:
+    -
+      src: /ausbildung/impressionen_1.jpg
+      alt: 'Carrer at HolzFormArt'
+    -
+      src: /ausbildung/impressionen_2.jpg
+      alt: 'Carrer at HolzFormArt'
+    -
+      src: /ausbildung/impressionen_3.jpg
+      alt: 'Carrer at HolzFormArt'
+    -
+      src: /ausbildung/impressionen_4.jpg
+      alt: 'Carrer at HolzFormArt'
+    -
+      src: /ausbildung/impressionen_5.jpg
+      alt: 'Carrer at HolzFormArt'

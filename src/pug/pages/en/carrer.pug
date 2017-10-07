@@ -1,0 +1,24 @@
+extends ../../_layout/en/_layout
+
+block title
+		title Carrer at Holzformart: HOLZFORMART
+
+block hreflang
+		- var pagelinkDe = 'karriere.html'
+		- var pagelinkEn = 'carrer.html'
+		include ../../_layout/hreflang.pug
+
+block meta
+		meta(name="description", content="Carrer at Holzformart: HOLZFORMART ")
+		meta(name="pageColor", content="red")
+
+block content
+		include ../../_sections/en/carrer/hero.pug
+		include ../../_sections/en/carrer/inshort.pug
+		include ../../_sections/en/carrer/description.pug
+		include ../../_sections/en/carrer/linkbox.pug
+		include ../../_sections/en/carrer/reasons.pug
+		include ../../_sections/en/carrer/professions.pug
+		include ../../_sections/en/carrer/azubis.pug
+		include ../../_sections/en/carrer/impressions.pug
+		include ../../_sections/en/carrer/bewerbung.pug

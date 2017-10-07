@@ -1,0 +1,19 @@
+.Clients(data-aos="fade-up" data-aos-duration="400")
+	.Columns__marginal
+		span KEY POINTS
+	.Clients__body
+		.Clients__text
+			.Heading.Heading--major
+				h2 Good reasons to choose HolzFormArt
+			p HolzFormArt has been voted Best Apprenticeship Training Organisation in NRW and offers diversified professional training in the various departments of a modern business enterprise.
+			ul
+				li
+					img(src=images+"/ausbildung/logo-tischler.jpg" style="width:201px;")
+		.Clients__box.Clients__box--red
+			h3 Awards
+			p Awarded as Best Apprenticeship Training Organisation 2016/2017 for Joinery in NRW
+			div
+				ul
+					if content
+						each el, index in content.reasons
+							li= '- ' + el

@@ -6,10 +6,10 @@ content:
       title: 1. Gesellenjahr
       surname: Jakob
       description: „In dem Wettbewerb ‚Die Gute Form‘ konnte ich mit meinem Gesellenstück den 1. Platz auf Innungsebene belegen.“
-    -
-      title: 1. Gesellenjahr
-      surname: Sven
-      description: Holz gibt einem die Möglichkeit, seine Kreativität auszudrücken und Ideen zu verwirklichen. Bei HolzFormArt wird dies in besonderer Weise gefördert. In der Zeit meiner Gesellenprüfung habe ich nicht nur in finanzieller Hinsicht große Unterstützung erfahren, sondern auch menschlich und fachlich.
+    # -
+    #   title: 1. Gesellenjahr
+    #   surname: Sven
+    #   description: Holz gibt einem die Möglichkeit, seine Kreativität auszudrücken und Ideen zu verwirklichen. Bei HolzFormArt wird dies in besonderer Weise gefördert. In der Zeit meiner Gesellenprüfung habe ich nicht nur in finanzieller Hinsicht große Unterstützung erfahren, sondern auch menschlich und fachlich.
     -
       title: 3. Lehrjahr
       surname: Wiebke
@@ -37,16 +37,16 @@ content:
   impressions:
     -
       src: /ausbildung/impressionen_1.jpg
-      alt: 'Das sind wir: Holzformart'
+      alt: 'Karriere bei HolzFormArt'
     -
       src: /ausbildung/impressionen_2.jpg
-      alt: 'Das sind wir: Holzformart'
+      alt: 'Karriere bei HolzFormArt'
     -
       src: /ausbildung/impressionen_3.jpg
-      alt: 'Das sind wir: Holzformart'
+      alt: 'Karriere bei HolzFormArt'
     -
       src: /ausbildung/impressionen_4.jpg
-      alt: 'Das sind wir: Holzformart'
+      alt: 'Karriere bei HolzFormArt'
     -
       src: /ausbildung/impressionen_5.jpg
-      alt: 'Das sind wir: Holzformart'
+      alt: 'Karriere bei HolzFormArt'
