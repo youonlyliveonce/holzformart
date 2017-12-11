@@ -60,5 +60,14 @@
 			width: +unit(1,2)
 		&--red
 			border-color: $color-red
+			ul
+				li
+					position: relative
+					padding-left: 16px
+					&::before
+						content: "– "
+						position: absolute
+						left: 0
+						top: 4px
 			>div
 				width: 100%
